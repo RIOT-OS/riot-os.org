@@ -1,0 +1,350 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="icon" type="image/png" href="images/riot-symbol.png">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>RIOT - The friendly Operating System for the Internet of Things</title>
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link href="css/nivo-slider.css" type="text/css" rel="stylesheet">
+<link href="css/prettyPhoto.css" type="text/css" rel="stylesheet">
+<link href="css/tipsy.css" type="text/css" rel="stylesheet">
+
+<script type="text/javascript" src="js/libs/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="js/libs/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="js/libs/modernizr-1.7.min.js"></script>
+<script type="text/javascript" src="js/libs/css3-mediaqueries.js"></script>
+<script type="text/javascript" src="js/libs/jquery.easing.1.2.js"></script>
+<script type="text/javascript" src="js/libs/jquery.visualNav.min.js"></script>
+<script type="text/javascript" src="js/libs/jquery.quicksand.js"></script>
+<script type="text/javascript" src="js/libs/jquery.tipsy.js"></script>	
+<script type="text/javascript" src="js/libs/jquery.livetwitter.min.js"></script>
+<!-- fancybox -->
+<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>
+
+
+<link type="text/css" href="css/jquery.gcal_flow.css" rel="stylesheet">
+<script type="text/javascript" src="js/libs/jquery.gcal_flow.js"></script>
+<script type="text/javascript">
+      var $ = jQuery;
+      $(function() {
+        $('#gcf-simple').gCalFlow({
+          calid: 'k3ql8setv7l48ofnol0tfuu6ts@group.calendar.google.com',
+          maxitem: 3,
+          link_item_description: true
+        });
+        $('#gcf-custom-template').gCalFlow({
+          calid: 'linuxfoundation.org_34363837313836302d343036@resource.calendar.google.com',
+          maxitem: 50,
+          mode: 'updates',
+          date_formatter: function(d, allday_p) { return (d.getMonth()+1) + "/" + d.getDate() + "/" + d.getYear().toString().substr(-2) }
+        });
+      });
+</script>
+
+</head>
+
+<body>
+<div id="page">
+  <header id="header">
+    <div class="center">
+      <nav id="main-menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#download">Get Started</a></li>
+          <li class="logo-wrap"><a href="#home" id="logo" title="RIOT"><img src="images/logo-menu.png"  alt="RIOT" /></a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+      <ul id="filter" class="mobile-ipad-menu">
+        <li id="top"><a class="top-link">Home</a>
+          <ul id="controls">
+            <li><a href="#home" class="visualNav">Home</a>
+            <li><a href="#download" class="visualNav">Get Started</a> </li>
+                        <li><a href="#elements" class="visualNav">RIOT</a> </li>
+            <li><a href="#community" class="visualNav">Community</a> </li>
+            <li><a href="#about" class="visualNav">About</a> </li>
+
+          </ul>
+        </li>
+
+        <!--END #filter-->
+      </ul>
+      <!-- /END nav -->
+      <div class="clear"></div>
+    </div>
+  </header>
+  <!-- /END header-->
+  <section id="home" class="content first_content">
+    <div class="center">
+      <h1 id="intro">The friendly Operating System for the Internet of Things. <a href="#nutshell" class="visualNav">Learn more.</a></h1>
+      <div class="clear"></div>
+      <div id="slider_wrap">
+        <!--<div id="slider" class="nivoSlider"> <img src="images/slider1.jpg" alt="" /> <img src="images/slider2.jpg" alt="" /> <img src="images/slider3.jpg" alt="" /> </div>-->
+        <img src="images/logo-large.png" alt="RIOT logo"/>
+      </div>
+    </div>
+    <!-- /END .center-->
+  </section>
+  <!-- /END #home-->
+
+  <section id="nutshell" class="content">
+    <div class="center">
+      <h2 class="title"><span>In a Nutshell</span></h2>
+      <hgroup>
+        <h1>RIOT: The friendly Operating System for the Internet of Things.</h1>
+      </hgroup>
+      <div class="columns">
+        <div class="one_half">
+          <p>
+	    RIOT powers the Internet of Things like Linux powers the Internet.
+            RIOT is a <a href="#about" class="visualNav">free, open source</a> operating system developed by a <a href="#community" class="visualNav">grassroots community</a> gathering companies, academia, and hobbyists, <a href="http://summit.riot-os.org/">distributed all around the world</a>.
+          </p>
+        </div>
+        <div class="one_half last">
+          <p>
+            RIOT supports most low-power <a href="https://github.com/RIOT-OS/RIOT/tree/master/boards">IoT devices</a> and microcontroller architectures (32-bit, 16-bit and 8-bit). RIOT implements all the relevant <a href="#features" class="visualNav">open standards</a> supporting an Internet
+            of Things that is connected, secure, durable & privacy-friendly.
+          </p>
+        </div>
+      </div>
+      <!--End column_wrap-->
+      <div class="clear"></div>
+    </div>
+  </section>
+
+
+  <section id="community" class="community content">
+    <div class="center">
+      <h2 class="title"><span>Community</span></h2>
+      <h1>Join the RIOT!</h1>
+      <div class="columns">
+        <div class="one_third">
+          <h2>Twitter</h2>
+<p>
+<a class="twitter-timeline" href="https://twitter.com/RIOT_OS" data-widget-id="413250520141156352">Tweets by @RIOT_OS</a></p>
+        </div>
+        <div class="one_third">
+          <h2>Developers</h2>
+          <p> You want to participate and contribute to the kernel development or integrate new MCU and platform support? You're welcome! Read the <a href="https://github.com/RIOT-OS/RIOT/wiki/Contributing-to-RIOT">newcomer guide</a> and scan through our <a href="https://github.com/RIOT-OS/RIOT/wiki/RIOT-Community-Processes"> community processes</a>. Subscribe to the <a href="http://lists.riot-os.org/mailman/listinfo/devel">RIOT-devel mailing list</a>, which is the right place in case you have questions. For live discussions, join the IRC channel <a href="irc://irc.freenode.net/#riot-os">#riot-os</a> at <a href="irc://irc.freenode.net/#riot-os">irc.freenode.net</a>.</p>
+          <p>The <a href="https://github.com/RIOT-OS/RIOT/issues?state=open">RIOT issue tracker</a> informs about bugs and enhancement requests. You could also subscribe to the <a href="http://lists.riot-os.org/mailman/listinfo/notifications/">notifications mailing list</a> to get informed about new issues, comments, and pull requests.
+          All commits to the source code will be posted to the <a href="http://lists.riot-os.org/mailman/listinfo/commits">commits mailing list</a>.
+          </p>
+        </div>
+        <div class="one_third last">
+          <h2>Users</h2>
+          <p>Whether you are looking for help with writing an application for RIOT, learn more about it, or just want to stay in the loop, you are invited to join the <a href="http://lists.riot-os.org/mailman/listinfo/users">RIOT-users mailing list</a>.</p>
+          <p>RIOTers meet face to face at the <a href="http://summit.riot-os.org/">annual RIOT Summit</a>.
+        </div>
+      </div>
+      <!--End column_wrap-->
+
+
+      <div class="clear"></div>
+    </div>
+  </section>
+  <!-- /END #community-->
+
+  <section id="download" class="content">
+    <div class="center">
+      <h2 class="title"><span>Get Started</span></h2>
+      <div class="columns">
+          <div class="one_half">
+              <h2>First Steps</h2>
+              <p>You find all the information you need to get started on the <a
+                  href="https://github.com/RIOT-OS/RIOT/wiki/"
+                  title="RIOT wiki on GitHub">GitHub wiki</a>. For a quick high-level overview, check this <a href="https://github.com/RIOT-OS/RIOT/wiki/Introduction" title="RIOT Introduction">introduction</a> to RIOT. For a first hands-on experience, you can try a <a href="https://github.com/RIOT-OS/Tutorials/blob/master/README.md" title="FAQ">tutorial</a>. You might also find answers to your questions in the <a href="https://github.com/RIOT-OS/RIOT/wiki/FAQ" title="FAQ">FAQ</a>.</p>
+          </div>
+          <div class="one_half last">
+              <h2>API Documentation & Coding Conventions</h2>
+              <p>The RIOT API documentation is built from the code itself using doxygen. The latest version is uploaded daily to <a href="http://riot-os.org/api/" title="RIOT API">http://riot-os.org/api</a>.
+              </p>
+              <p>
+	    You can find our <a href="https://github.com/RIOT-OS/RIOT/wiki/Coding-conventions"
+	    title="RIOT coding conventions">coding conventions</a> and <a href="https://github.com/RIOT-OS/RIOT/wiki/Development-procedures">development procedures</a> on the GitHub wiki.
+	  </p>
+        </div>
+      </div>
+      <!--End column_wrap-->
+      <div class="columns">
+        <div class="one_half">
+          <h2>Download</h2>
+          <p>RIOT is a community project and publicly available. We host
+          our source code on GitHub. Checkout the code from <a href="https://github.com/RIOT-OS/">https://github.com/RIOT-OS/</a> or download the <a href="https://github.com/RIOT-OS/RIOT/releases" title="RIOT releases">latest release</a>.
+          </p>
+        </div>
+        <div class="one_third last">
+          <a href="https://github.com/RIOT-OS/RIOT"><img src="images/github-logo.png" align="right"></a>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="one_half">
+          <h2>Development Environment in a Box</h2>
+          <p>
+          <a href="https://registry.hub.docker.com/repos/riot/"><img width=200 src="images/docker-small_h-dark-trans.png"></a>
+          <a href="https://github.com/RIOT-OS/RIOT/tree/master/dist/tools/vagrant"><img width=80 src="images/vagrant-logo.png"></a>
+          </p>
+        </div>
+        <div class="one_half last">
+          <h2></h2>
+          <p>Everything in a box. RIOT supports Docker and Vagrant. Setup your RIOT development environment very easily. We provide a <a href="https://registry.hub.docker.com/repos/riot/">Docker repository</a>, as well as a <a href="https://github.com/RIOT-OS/RIOT/tree/master/dist/tools/vagrant">Vagrant image</a>.</p>
+        </div>
+      </div>
+      <!--End column_wrap-->
+      <div class="clear"></div>
+    </div>
+  </section>
+
+  <section id="about" class="content">
+    <div class="center">
+      <h2 class="title"><span>About</span></h2>
+      <h2>What is RIOT?</h2>
+      <p>RIOT is a real-time multi-threading operating system that supports a wide variety of
+      devices that are typically found in the Internet of Things: 8-bit, 16-bit and 32-bit microcontrollers.
+      RIOT is based on the following design principles: small memory footprint, energy-efficiency, real-time
+      capabilities, modularity, and uniform API access, independent
+      of the underlying hardware (this API offers partial POSIX compliance).
+      RIOT is developed by an international open source community which is independent of specific vendors
+      (e.g. similarly to the Linux community). RIOT is licensed with LGPLv2.1, a
+      copyleft license which fosters indirect business models around the free
+      open-source software platform provided by RIOT, e.g. it is possible to link closed-source code with the LGPL code.
+      </p>
+      <p>As such, RIOT is a software platform that is open source, free, and driven by a grassroots community aiming to:
+              <ul class="check_style">
+
+                <li>allow long-term IoT software security and robustness</li>
+                <li>enable trust, transparency and the protection of IoT users’ privacy</li>
+                <li>accelerate innovation by spreading IoT software development costs</li>
+                <li>reduce environmental impact by preventing IoT device lock-down</li>
+
+              </ul></p>
+
+
+      <div class="columns">
+      </br></br>
+       <h2>Reference</h2>
+        <div class="one_full last">
+          <p>You are using RIOT in a scientific context? Please consider one of the following references for citation.</p>
+          <ul class="riot_style">
+            <li> Emmanuel Baccelli, Cenk G&uuml;ndogan, Oliver Hahm, Peter Kietzmann, Martine Lenders, Hauke Petersen, Kaspar Schleiser, Thomas C. Schmidt, Matthias W&auml;hlisch, <a href="docs/riot-ieeeiotjournal-2018.pdf">RIOT: An Open Source Operating System for Low-End Embedded Devices in the IoT</a>, IEEE Internet of Things Journal, Vol. 5, No. 6, pp. 4428-4440, December 2018.</li>
+            <li> Emmanuel Baccelli, Oliver Hahm, Mesut G&uuml;nes, Matthias
+            W&auml;hlisch, Thomas C. Schmidt, <a href="docs/riot-infocom2013-abstract.pdf">RIOT OS: Towards an OS for
+            the Internet of Things</a>, in Proceedings of the 32nd IEEE
+	    International Conference on Computer Communications (INFOCOM),
+	    Poster/Demo Session, April 2013.
+	    </br></br>
+            </li>
+          </ul>
+        </div>
+        </div>
+      <!-- END column wrap-->
+
+
+      <div class="clear"></div>
+      <div class="columns">
+        <div class="one_third">
+          <h3>Personal Thanks</h3>
+          <p>
+	  To the original authors of <a
+href="http://dx.doi.org/10.1109/LCN.2009.5355049">FeuerWare</a>, the members of the research
+	  projects AVS Extrem, G-Mesh-Lab, OPNEX, SAFEST and VIVE, and anybody
+      else who has contributed to FeuerWare, &micro;kleos, and RIOT.
+      Furthermore, a special thank goes to Peter Schmerzl!
+          </p>
+        </div>
+        <div class="one_third">
+          <h3>Supporters</h3>
+          <p>
+           RIOT is significantly supported by <a href="http://cst.mi.fu-berlin.de">Freie
+           Universit&auml;t Berlin</a>, by <a
+           href="http://www.inria.fr/en/">INRIA</a>, and by <a href="http://inet.cpt.haw-hamburg.de">Hamburg University of Applied Sciences</a>. Complementary support from the private sector finances development time, hardware, and <a href="http://summit.riot-os.org/">events</a> related to RIOT.
+         </p>
+        </div>
+        <div class="one_third last">
+          <h3>Contact</h3>
+          <p>
+            Many people are working on RIOT. Public development questions should
+            be directed to the <a href="http://lists.riot-os.org/mailman/listinfo/devel">RIOT-devel</a> mailing list.
+            If you require one-to-one communication for other development
+	    questions, you can contact the <a
+            href="mailto:riot@riot-os.org">RIOT maintainers</a>, and for
+            questions related to formal project establishment or
+            collaboration, you can contact <a
+            href="mailto:Emmanuel.Baccelli@inria.fr">Emmanuel Baccelli</a>, <a href="mailto:t.schmidt@haw-hamburg.de">Thomas Schmidt</a>, and
+            <a href="mailto:m.waehlisch@fu-berlin.de">Matthias
+            W&auml;hlisch</a>.
+          </p>
+        </div>
+      </div>
+      <!-- END column wrap-->
+
+      <div class="clear"></div>
+    </div>
+  </section>
+
+  <section id="copyright" class="footer content">
+    <div class="center">
+      <p>&copy; 2013-2017. All Rights Reserved. <a href="imprint.html">Imprint</a>.</p>
+      <div class="clear"></div>
+    </div>
+  </section>
+    </div>
+    <script src="js/custom.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+    $("#ajax-contact-form").submit(function(){
+
+    var str = $(this).serialize();
+
+       $.ajax({
+       type: "POST",
+   url: "contact.php",
+   data: str,
+   success: function(msg){
+
+$("#note").ajaxComplete(function(event, request, settings){
+
+if(msg == 'OK') // Message Sent? Show the 'Thank You' message and hide the form
+{
+result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
+$("#fields").hide();
+}
+else
+{
+result = '<ul class="error">'+msg+'</ul>';
+}
+
+$(this).html(result);
+
+});
+
+}
+
+ });
+
+return false;
+
+});
+
+});
+</script>
+
+<!--/border-->
+<div id="left-border"></div>
+<div id="right-border"></div>
+<div id="top-border"></div>
+<div id="bottom-border"></div>
+</body>
+</html>
+
