@@ -1,0 +1,114 @@
+/*
+ * jQuery Nivo Slider v2.4
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2011, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * March 2010
+ */
+ 
+ 
+/* The Nivo Slider styles */
+
+#slider {
+    background:url(../images/loading.gif) no-repeat 50% 50%;
+	height:439px;
+}
+.nivoSlider {
+	position:relative;
+	/*height:447px;*/
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:60;
+	display:none;
+	
+}
+/* The slices in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:50;
+	height:100%;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.8; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:89;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	width:30px;
+	height:30px;
+	z-index:59;
+	cursor:pointer;
+	text-indent:-9999px;
+	background:url(../images/arrows.png) no-repeat;
+	border:0;
+}
+
+a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+	
+}
+a.nivo-prevNav {
+	left:15px;
+}
+
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	position:absolute;
+	/*left:430px;*/
+	left:49%;
+	bottom:-24px;
+	z-index:65;
+}
+.nivo-controlNav a {
+	display:block;
+	width:5px;
+	height:5px;
+	background:url(../images/bullets2.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:8px;
+	float:left;
+	cursor:pointer;
+}
+
+.nivo-controlNav a.active {
+	background-position:0 -5px;
+}
