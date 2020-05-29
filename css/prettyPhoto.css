@@ -22,15 +22,15 @@ $(window).load(function(){
 	
 		$(this).prepend('<span class="commentnumber"> #'+i+'</span>');
    });
-   
+
    $("#nav .menu ul li:last-child").addClass("last");
-   
-   
+
+
    $('.img_featured').bind('fade-cycle', function() {
     $(this).fadeTo(2000, 0.5, function() {
-      
+
         $(this).fadeTo(2000, 1,function() {
-          
+
             $(this).trigger('fade-cycle');
         });
     });
@@ -69,7 +69,7 @@ $(window).load(function(){
 <script type='text/javascript' src='http://html5awesome.com/wp-includes/js/jquery/jquery.js?ver=1.7.1'></script>
 <script type='text/javascript' src='http://html5awesome.com/wp-content/plugins/i-like-this/js/i-like-this.js?ver=3.3'></script>
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://html5awesome.com/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://html5awesome.com/wp-includes/wlwmanifest.xml" /> 
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://html5awesome.com/wp-includes/wlwmanifest.xml" />
 <meta name="generator" content="WordPress 3.3" />
 <link rel="stylesheet" type="text/css" href="http://html5awesome.com/wp-content/plugins/i-like-this/css/i-like-this.css" media="screen" />
 <script type="text/javascript">var blogUrl = 'http://html5awesome.com'</script>
@@ -86,7 +86,7 @@ $(window).load(function(){
       </section>
       <section id="hRight">
         <nav id="nav" role="navigation">
-        	 
+        	
           <ul>
             <li ><a href="http://html5awesome.com/">Home</a></li>
             <li ><a href="/featured/">Featured Site</a></li>
@@ -108,7 +108,7 @@ $(window).load(function(){
         	<h2>404 Page not Found</h2>
             <div class="clear">&nbsp;</div>
 			<p>Apologies, but the page you requested could not be found. Perhaps searching will help.</p>
-            
+
             <p>Click the links below</p>
             <ul>
             	<li><a href="/">Home</a></li>
@@ -122,7 +122,7 @@ $(window).load(function(){
 		document.getElementById('s') && document.getElementById('s').focus();
 	</script>
 
- 
+
  <aside class="clear footer_wrap">
  	<div class="bsa_ads">
     	<!-- BuySellAds.com Zone Code -->
@@ -160,7 +160,7 @@ $(window).load(function(){
 </ul>
 
     </section>
-    
+
     <section id="twitter_wrap">
       <header><h3 class="uppercase">Latest Tweet</h3></header>
       <ul id="twitter_update_list"><li>&nbsp;</li></ul>
@@ -168,7 +168,7 @@ $(window).load(function(){
       <p><a href="http://twitter.com/html5awesome" class="button">Follow us on twitter</a></p>
       </footer>
     </section>
-    
+
     <section id="facebook_wrap">
       <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
       <fb:like-box href="http://www.facebook.com/HTML5Awesome" width="292" show_faces="true" stream="false" header="true"></fb:like-box>
@@ -176,7 +176,7 @@ $(window).load(function(){
     </aside>
 
   </section>
-  
+
 </section>
 <script type='text/javascript' src='http://html5awesome.com/wp-content/plugins/contact-form-7/jquery.form.js?ver=2.52'></script>
 <script type='text/javascript' src='http://html5awesome.com/wp-content/plugins/contact-form-7/scripts.js?ver=2.4.4'></script>

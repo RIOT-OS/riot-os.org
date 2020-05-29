@@ -8,19 +8,19 @@ Date:14 Aug 2011
 /*--------------------------
 RESET
 ---------------------------*/
-html, body, div, span, applet, object, iframe, 
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
-a, abbr, acronym, address, big, cite, code, 
-del, dfn, em, img, ins, kbd, q, s, samp, 
-small, strike, strong, sub, sup, tt, var, 
-b, u, i, center, 
-dl, dt, dd, ol, ul, li, 
-fieldset, form, label, legend, 
-table, caption, tbody, tfoot, thead, tr, th, td, 
-article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary, 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video{margin:0; padding:0}
-article, aside, details, figcaption, figure, footer, 
+article, aside, details, figcaption, figure, footer,
 header, hgroup, menu, nav, section{display:block}
 
 table{border-collapse:collapse; border-spacing:0}
@@ -68,9 +68,9 @@ LAYOUT
 html{ overflow-y:scroll; font-size:100%; font-family:Arial,Helvetica,sans-serif; line-height:1.5; background:#0e0e0e; color:#353232; }
 body{ min-height:100%; background:#0e0e0e; float:left; width:100%; font-size:.8125em; color:#aaaaaa;}
 #top-border,#bottom-border,#left-border,#right-border{position: fixed; z-index: 10; background: #111111; display: block; z-index:99; }
-#left-border,#right-border{ top:0;bottom:0; width:10px} 
-#left-border{left:0} #right-border{right:0} 
-#top-border,#bottom-border{ left:0;right:0; height:10px} 
+#left-border,#right-border{ top:0;bottom:0; width:10px}
+#left-border{left:0} #right-border{right:0}
+#top-border,#bottom-border{ left:0;right:0; height:10px}
 #top-border{top:0} #bottom-border{bottom:0}
 :focus {outline: 0; }
 .center{ max-width:978px; margin:0 auto; padding:0 30px;}
