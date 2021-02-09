@@ -404,86 +404,33 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
-.features .nav-tabs {
-  border: 0;
-}
+#features {
 
-.features .nav-link {
-  border: 1px solid #d4d6df;
-  padding: 15px;
-  transition: 0.3s;
-  color: $dark;
-  border-radius: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  h3 i {
+    line-height: 33px;
+  }
 
-.features .nav-link i {
-  padding-right: 15px;
-  font-size: 48px;
-}
+  .card-body h3 {
+    font-family: "Miso";
+    font-weight: 600;
+    font-size: 26px;
+  }
 
-.features .nav-link h4 {
-  font-size: 18px;
-  font-weight: 600;
-  margin: 0;
-}
-
-.features .nav-link:hover {
-  color: $primary;
-}
-
-.features .nav-link.active {
-  background: $primary;
-  color: $light;
-  border-color: $primary;
-}
-
-@media (max-width: 768px) {
-  .features .nav-link i {
+  .card-body ul {
+    list-style: none;
     padding: 0;
-    line-height: 1;
-    font-size: 36px;
   }
-}
 
-@media (max-width: 575px) {
-  .features .nav-link {
-    padding: 15px;
+  .card-body ul li {
+    padding-bottom: 10px;
   }
-  .features .nav-link i {
-    font-size: 24px;
+
+  .card-body ul i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: $primary;
   }
-}
 
-.features .tab-content {
-  margin-top: 30px;
-}
-
-.features .tab-pane h3 {
-  font-family: "Miso";
-  font-weight: 600;
-  font-size: 26px;
-}
-
-.features .tab-pane ul {
-  list-style: none;
-  padding: 0;
-}
-
-.features .tab-pane ul li {
-  padding-bottom: 10px;
-}
-
-.features .tab-pane ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: $primary;
-}
-
-.features .tab-pane p:last-child {
-  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
