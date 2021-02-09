@@ -1338,7 +1338,7 @@ section {
     width: 100%;
     overflow: hidden;
     position: relative;
-    background: linear-gradient(0deg, $dark 0%, #33364a 100%);
+    background: linear-gradient(0deg, $dark 0%, darken($dark, 10) 100%);
     padding: 0;
 
     .carousel-container {
@@ -1356,16 +1356,17 @@ section {
     color: $light;
     margin-bottom: 30px;
     font-family: "Raleway", sans-serif;
-    font-size: 48px;
+    font-size: 4em;
     font-weight: 700;
   }
 
   p {
-    width: 80%;
+    width: 100%;
     -webkit-animation-delay: 0.4s;
     animation-delay: 0.4s;
     margin: 0 auto 30px auto;
     color: $light;
+    font-size: 1.5em;
   }
 
   .carousel-control-prev, .carousel-control-next {
