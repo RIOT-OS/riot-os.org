@@ -295,48 +295,6 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio #portfolio-flters {
-  list-style: none;
-  margin-bottom: 20px;
-}
-
-.portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  margin: 0 0 10px 10px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #444444;
-  transition: all 0.3s ease-in-out;
-}
-
-.portfolio #portfolio-flters li::before {
-  content: "[";
-  margin-right: 6px;
-  color: $light;
-  font-size: 18px;
-  font-weight: 400;
-  transition: all 0.3s ease-in-out;
-}
-
-.portfolio #portfolio-flters li::after {
-  content: "]";
-  margin-left: 6px;
-  color: $light;
-  font-size: 18px;
-  font-weight: 400;
-  transition: all 0.3s ease-in-out;
-}
-
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: $primary;
-}
-
-.portfolio #portfolio-flters li.filter-active::before, .portfolio #portfolio-flters li.filter-active::after {
-  color: $primary;
-}
 
 .portfolio .portfolio-item {
   margin-bottom: 30px;
@@ -371,7 +329,7 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-info p {
-  color: #fedac0;
+  color: $light;
   font-size: 14px;
   margin-bottom: 0;
 }
@@ -386,7 +344,7 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #fd9f5b;
+  color: $primary-light;
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
