@@ -436,53 +436,52 @@ section {
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
-.cta {
+#counters {
+
   background: $dark;
   padding: 80px 0;
-}
-
-.cta h3 {
-  color: $light;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.cta p {
-  color: $light;
-}
-
-.cta .cta-btn {
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 30px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  color: $light;
-  background: $primary;
-}
-
-.cta .cta-btn:hover {
-  background: $light;
-  color: $primary;
-}
-
-@media (max-width: 1024px) {
-  .cta {
-    background-attachment: scroll;
+  
+  h2 {
+    color: $light;
+    font-size: 3em;
   }
-}
-
-@media (min-width: 769px) {
-  .cta .cta-btn-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  
+  p {
+    color: $light;
   }
+  
+  .cta-btn {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    color: $light;
+    background: $primary;
+  }
+  
+  .cta-btn:hover {
+    background: $light;
+    color: $primary;
+  }
+  
+  @media (max-width: 1024px) {
+      background-attachment: scroll;
+  }
+  
+  @media (min-width: 769px) {
+    .cta-btn-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+
 }
 
 /*--------------------------------------------------------------
