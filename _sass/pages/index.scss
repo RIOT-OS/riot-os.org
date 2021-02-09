@@ -57,7 +57,7 @@
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: rgba(42, 44, 57, 0.9);
+  background: transparentize($dark, 0.05);
 }
 
 #header.header-transparent {
@@ -65,7 +65,7 @@
 }
 
 #header.header-scrolled {
-  background: rgba(42, 44, 57, 0.9);
+  background: transparentize($dark, 0.05);
 }
 
 #header .logo h1 {
@@ -202,8 +202,8 @@ section {
     line-height: 33px;
   }
 
-  .card-body h3 {
-    font-family: "Miso";
+  .card-header h3 {
+    font-family: "Raleway";
     font-weight: 600;
     font-size: 26px;
   }
