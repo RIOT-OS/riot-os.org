@@ -10,8 +10,8 @@
 --------------------------------------------------------------*/
 
 @font-face {
-  font-family: 'Miso';
-  src: url('/assets/fonts/miso-regular.woff') format('woff');
+  font-family: "Miso";
+  src: url("/assets/fonts/miso-regular.woff") format("woff");
 }
 
 body {
@@ -30,7 +30,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Miso";
+  font-family: "Raleway";
 }
 
 /*--------------------------------------------------------------
@@ -508,6 +508,7 @@ section {
 }
 
 .section-title h2 {
+  font-family: 'Miso';
   font-size: 14px;
   font-weight: 500;
   padding: 0;
@@ -660,6 +661,7 @@ section {
 }
 
 .features .tab-pane h3 {
+  font-family: "Miso";
   font-weight: 600;
   font-size: 26px;
 }
