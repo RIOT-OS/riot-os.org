@@ -86,8 +86,6 @@ section {
   margin: 0;
   font-family: 'Miso';
   font-size: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
   color: $dark;
 }
 
@@ -96,6 +94,12 @@ section {
 --------------------------------------------------------------*/
 .about {
   padding-top: 80px;
+  background: #000000;
+  color: $gray;
+}
+
+.about .section-title p {
+  color: #ffffff;
 }
 
 .about .content h3 {
