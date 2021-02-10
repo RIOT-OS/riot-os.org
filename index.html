@@ -240,46 +240,20 @@ main: true
 
         <div class="row" data-aos="fade-up">
 
-          <div class="col-12 col-lg-4 border-0">
-            <div class="card text-white overflow-hidden">
-              <a href="#blog" class="overflow-hidden">
-                <img src="assets/img/blog/bobo.jpg" class="card-img" alt="">
-                <div class="card-img-overlay">
-                  <h5 class="card-title">Happy Bobo</h5>
-                  <p class="card-text">Mauris pellentesque dignissim ultrices. Etiam ac nulla dignissim, finibus turpis
-                    quis, iaculis purus. Curabitur eleifend orci a leo pretium maximus.</p>
-                  <p class="card-text"><small>Posted 3 mins ago</small></p>
-                </div>
-              </a>
+          {% for post in site.posts %}
+            <div class="col-12 col-lg-4 border-0">
+              <div class="card text-white overflow-hidden">
+                <a href="{{ post.url }}" class="overflow-hidden">
+                  <img src="{% link /assets/img/blog/{{ post.image }} %}" class="card-img" alt="">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">{{ post.title }}</h5>
+                    <p class="card-text">{{ post.description }}</p>
+                    <p class="card-text"><small>Posted on {{ post.date | date: "%Y-%m-%d" }}</small></p>
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
-
-          <div class="col-12 col-lg-4 border-0">
-            <div class="card text-white overflow-hidden">
-              <a href="#blog" class="overflow-hidden">
-                <img src="assets/img/blog/air_monitor.jpg" class="card-img" alt="">
-                <div class="card-img-overlay">
-                  <h5 class="card-title">RIOT powered Air Monitor</h5>
-                  <p class="card-text">In tempus libero id arcu venenatis dictum. Nunc sit amet dapibus dui, in laoreet
-                    metus.</p>
-                  <p class="card-text"><small>Posted 2 days ago</small></p>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-12 col-lg-4 border-0">
-            <div class="card text-white overflow-hidden">
-              <a href="#blog" class="overflow-hidden">
-                <img src="assets/img/blog/summit.jpg" class="card-img" alt="">
-                <div class="card-img-overlay">
-                  <h5 class="card-title">RIOT Summit 2019</h5>
-                  <p class="card-text">Morbi tempus euismod mauris nec scelerisque.</p>
-                  <p class="card-text"><small>Posted 5 days ago</small></p>
-                </div>
-              </a>
-            </div>
-          </div>
+          {% endfor %}
 
         </div>
       </div>
