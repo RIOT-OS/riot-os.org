@@ -920,26 +920,19 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #14151c;
+  background: $dark;
   color: $light;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
 }
 
-#footer h3 {
-  font-size: 36px;
-  font-weight: 700;
-  color: $light;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  padding: 0;
-  margin: 0 0 15px 0;
+#footer .logo {
+  max-width: 8em;
 }
 
 #footer p {
   font-size: 15;
-  font-style: italic;
   padding: 0;
   margin: 0 0 40px 0;
 }
@@ -951,7 +944,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: $primary;
+  background: transparent;
   color: $light;
   line-height: 1;
   padding: 8px 0;
@@ -964,7 +957,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: $primary-light;
+  background: $primary;
   color: $light;
   text-decoration: none;
 }
