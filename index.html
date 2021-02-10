@@ -171,6 +171,36 @@ main: true
       </div>
     </section><!-- End Cta Section -->
 
+
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container">
+        <div class="section-title">
+          <h2>Blog</h2>
+          <p>What's new in RIOT</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+
+          {% for post in site.posts %}
+            <div class="col-12 col-lg-4 border-0">
+              <div class="card text-white overflow-hidden">
+                <a href="{{ post.url }}" class="overflow-hidden">
+                  <img src="{% link /assets/img/blog/{{ post.image }} %}" class="card-img" alt="">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">{{ post.title }}</h5>
+                    <p class="card-text">{{ post.description }}</p>
+                    <p class="card-text"><small>Posted on {{ post.date | date: "%Y-%m-%d" }}</small></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </section><!-- End Blog Section -->
+
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container">
@@ -229,35 +259,6 @@ main: true
 
       </div>
     </section><!-- End Services Section -->
-
-    <!-- ======= Blog Section ======= -->
-    <section id="blog" class="blog">
-      <div class="container">
-        <div class="section-title">
-          <h2>Blog</h2>
-          <p>What's new in RIOT</p>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-
-          {% for post in site.posts %}
-            <div class="col-12 col-lg-4 border-0">
-              <div class="card text-white overflow-hidden">
-                <a href="{{ post.url }}" class="overflow-hidden">
-                  <img src="{% link /assets/img/blog/{{ post.image }} %}" class="card-img" alt="">
-                  <div class="card-img-overlay">
-                    <h5 class="card-title">{{ post.title }}</h5>
-                    <p class="card-text">{{ post.description }}</p>
-                    <p class="card-text"><small>Posted on {{ post.date | date: "%Y-%m-%d" }}</small></p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          {% endfor %}
-
-        </div>
-      </div>
-    </section><!-- End Blog Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
