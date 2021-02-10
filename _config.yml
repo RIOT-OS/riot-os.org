@@ -1,3 +1,6 @@
 title: test
 sass:
     sass_dir: _sass
+collections:
+    use_cases:
+        output: true
