@@ -201,6 +201,8 @@ main: true
       </div>
     </section><!-- End Blog Section -->
 
+<!-- hide this on production for now -->
+{% if jekyll.environment == "development" %}
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container">
@@ -569,5 +571,7 @@ main: true
       </div>
     </section><!-- End Contact Section -->
 
+{% endif %}
+  
   </main><!-- End #main -->
 
