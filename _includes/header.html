@@ -8,12 +8,12 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
+            <li><a class="nav-link scrollto active" href="{{ "#hero" | relative_url }}">Home</a></li>
+            <li><a class="nav-link scrollto" href="{{ "#about" | relative_url }}">About</a></li>
+            <li><a class="nav-link scrollto " href="{{ "#blog" | relative_url }}">Blog</a></li>
 {% if jekyll.environment == "development" %}
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+<li><a class="nav-link scrollto" href="{{ "#services" | relative_url }}">Services</a></li>
+<li><a class="nav-link scrollto" href="{{ "#team" | relative_url }}">Team</a></li>
 {% endif %}
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
