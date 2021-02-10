@@ -155,16 +155,16 @@
   });
 
   /**
-   * Testimonials slider
+   * Use-cases slider
    */
-  new Swiper('.testimonials-slider', {
+  new Swiper('.use-cases-slider', {
     speed: 600,
-    loop: true,
+    loop: false,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
     },
-    slidesPerView: 'auto',
+    slidesPerView: '3',
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
