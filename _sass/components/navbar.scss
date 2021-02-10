@@ -154,7 +154,6 @@
     left: 15px;
     padding: 10px 0;
     border-radius: 10px;
-    background-color: $light;
     overflow-y: auto;
     transition: 0.3s;
   }
@@ -164,10 +163,14 @@
     margin: 5px;
     font-size: 15px;
     color: $dark;
+    font-size: 21px;
+    color: $primary;
   }
   
   .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
     color: $light;
+    color: #fff;
+    text-decoration: underline;
   }
   
   .navbar-mobile .getstarted {
@@ -182,7 +185,7 @@
     z-index: 99;
     opacity: 1;
     visibility: visible;
-    background: $light;
+    background: #444444;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   }
   
