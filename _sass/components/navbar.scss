@@ -28,6 +28,7 @@
     white-space: nowrap;
     transition: 0.3s;
     border-radius: 50px;
+    color: $primary;
   }
   
   .navbar a i {
@@ -37,7 +38,9 @@
   }
   
   .navbar a:hover, .navbar .active, .navbar li:hover > a {
-    background: $primary;
+    /* background: $primary; */
+    color: #fff;
+    text-decoration: underline;
   }
   
   .navbar .dropdown ul {
@@ -50,7 +53,7 @@
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: $light;
+    background: #444444;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     transition: 0.3s;
     border-radius: 15px;
@@ -62,7 +65,7 @@
   
   .navbar .dropdown ul a {
     padding: 10px 20px;
-    color: $dark;
+    color: $primary;
     margin: 0 5px;
     font-size: 21px;
   }
