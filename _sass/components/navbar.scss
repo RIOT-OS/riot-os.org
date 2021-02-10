@@ -2,7 +2,7 @@
 * Desktop Navigation 
 */
 .navbar {
-    padding: 0;
+    font-family: "Miso";
   }
   
   .navbar ul {
@@ -23,7 +23,7 @@
     justify-content: space-between;
     padding: 5px 15px 7px 15px;
     margin-left: 5px;
-    font-size: 14px;
+    font-size: 21px;
     color: $light;
     white-space: nowrap;
     transition: 0.3s;
