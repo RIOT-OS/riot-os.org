@@ -20,16 +20,13 @@ jobs:
       - name: Fetch statistics
         working-directory: ${{ github.workspace }}/_RIOT
         run: |
-          ls -l boards | grep "^d" | grep -v "common" | wc -l | printf "boards: %d\n"> ${{ github.workspace }}/_data/riot_stats.yml
-          git grep "config CPU_FAM_" | grep "Kconfig" | wc -l | printf "cpus: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
+          ls -l boards | grep "^d" | grep -v "common" > boards.txt
+          wc -l boards.txt | printf "boards: %d\n"> ${{ github.workspace }}/_data/riot_stats.yml
+          git grep "config CPU_FAM_" | grep "Kconfig" > cpus.txt
+          wc -l cpus.txt | printf "cpus: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
           git rev-list --count master | printf "commits: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
-          git log --pretty=format:"%s" --merges | awk -F " " '/pull/ {match($NF, "(\\w*)", a); print a[1]}' | sort -u | wc -l | printf "contributors: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
-      - name: REMOVE_ME debug RIOT
-        working-directory: ${{ github.workspace }}/_RIOT
-        run: |
-          git grep "config CPU_FAM_" | grep "Kconfig"
-          git rev-list --count master
-          git log --pretty=format:"%s" --merges | awk -F " " '/pull/ {match($NF, "(\\w*)", a); print a[1]}' | sort -u
+          git log --pretty=format:"%s" --merges | awk -F " " '/pull/ {match($NF, "(\\w*)", a); print a[1]}' | sort -u > contributors.txt
+          wc -l contributors.txt | printf "contributors: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
       - name: Build
         uses: jerryjvl/jekyll-build-action@v1
       - name: Deploy
