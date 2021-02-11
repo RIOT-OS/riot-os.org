@@ -1166,3 +1166,12 @@ section {
     }
   }
 }
+
+///
+// Twitter timeline
+///
+#twitter-timeline {
+  max-height: 650px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
