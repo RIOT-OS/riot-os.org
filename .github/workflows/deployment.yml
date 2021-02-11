@@ -13,17 +13,12 @@ jobs:
         uses: actions/checkout@v2
       - name: Build
         uses: jerryjvl/jekyll-build-action@v1
-      - name: Create SSH key
-        run: |
-          mkdir -p ~/.ssh/
-          echo "$SSH_PRIVATE_KEY" > ../private.key
-          sudo chmod 600 ../private.key
-          echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
-        shell: bash
-        env:
-          SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
-          SSH_KNOWN_HOSTS: ${{secrets.SSH_KNOWN_HOSTS}}
-          SSH_KEY_PATH: ${{ github.workspace }}/../private.key
       - name: Deploy
-        run: |
-         rsync -r ./_site/* revamp@alamos.cc:/var/www/demo
+        uses: burnett01/rsync-deployments@4.1
+        with:
+          switches: -avzr --delete
+          path: _site/
+          remote_path: /var/www/demo/
+          remote_host: alamos.cc
+          remote_user: revamp
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
