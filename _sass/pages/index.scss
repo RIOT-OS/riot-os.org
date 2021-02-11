@@ -186,6 +186,31 @@ section {
 }
 
 /*--------------------------------------------------------------
+# social media
+--------------------------------------------------------------*/
+
+#social-media .social-links a {
+  display: inline-block;
+  background: transparent;
+  color: $light;
+  line-height: 1;
+  padding: 8px 0;
+  Margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 56px;
+  height: 56px;
+  transition: 0.3s;
+}
+
+#social-media .social-links a:hover {
+  background: $primary;
+  color: $light;
+  text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
 #counters {

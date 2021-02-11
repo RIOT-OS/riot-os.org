@@ -253,19 +253,15 @@ main: true
           <a class="twitter-timeline" data-lang="en" data-height="300" data-dnt="true" href="https://twitter.com/RIOT_OS?ref_src=twsrc%5Etfw">Tweets by RIOT_OS</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>        </div>
       </div> -->
     </div>
-    <section data-aos="zoom-out">
+    <section id="social-media" data-aos="zoom-out">
       <div class="container-fluid background-dark text-white p-5">
         <div class="container">
           <div class="row">
             <div class="col text-center">
               <h2 class="ft-miso display-5">Connect with us!</h2>
               <div class="row">
-                <div class="col text-center fs-1">
-                  <a href="https://github.com/RIOT-OS/RIOT" class="text-white"><i class="ri-github-fill"></i></a>
-                  <a href="https://twitter.com/RIOT_OS" class="text-white"><i class="ri-twitter-fill"></i></a>
-                  <a href="https://fosstodon.org/@riot" class="text-white"><i class="ri-mastodon-fill"></i></a>
-                  <a href="https://www.youtube.com/channel/UCmcXy2qyoQfq7ByoxtFSOjg" class="text-white"><i class="ri-youtube-fill"></i></a>
-                  <a href="https://forum.riot-os.org" class="text-white"><i class="ri-chat-1-fill"></i></a>
+                <div class="col text-center social-links fs-1">
+                  {% include social-media.html %}
                 </div>
               </div>
             </div>
