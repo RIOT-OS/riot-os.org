@@ -152,19 +152,19 @@ main: true
 
         <div class="row" data-aos="fade-up" data-aos-id="countUp">
           <div class="col-md-3 col-12 text-center">
-            <h2 class="count">30000</h2>
+            <h2 class="count">{{ site.data.riot_stats.commits }}</h2>
             <p>Commits</p>
           </div>
           <div class="col-md-3 col-12 text-center">
-            <h2 class="count"> 260 </h2>
+            <h2 class="count"> {{ site.data.riot_stats.contributors }} </h2>
             <p>Contributors</p>
           </div>
           <div class="col-md-3 col-12 text-center">
-            <h2 class="count"> 250 </h2>
+            <h2 class="count"> {{ site.data.riot_stats.boards }} </h2>
             <p>Boards</p>
           </div>
           <div class="col-md-3 col-12 text-center">
-            <h2> 34 </h2>
+            <h2 class="count"> {{ site.data.riot_stats.cpus }} </h2>
             <p>Supported CPUs</p>
           </div>
         </div>
