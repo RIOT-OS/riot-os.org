@@ -1,0 +1,24 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        uses: jerryjvl/jekyll-build-action@v1
+      - name: Deploy
+        uses: burnett01/rsync-deployments@4.1
+        with:
+          switches: -avzr --delete
+          path: _site/
+          remote_path: /var/www/demo/
+          remote_host: alamos.cc
+          remote_user: revamp
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
