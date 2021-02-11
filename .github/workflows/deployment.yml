@@ -18,16 +18,22 @@ jobs:
           repository: 'RIOT-OS/RIOT'
           path: _RIOT
           fetch-depth: 0
-      - name: Fetch statistics
+      - name: Fetch boards
         working-directory: ${{ github.workspace }}/_RIOT
         run: |
-          ls -l boards | grep "^d" | grep -v "common" > boards.txt
-          wc -l boards.txt | printf "boards: %d\n"> ${{ github.workspace }}/_data/riot_stats.yml
-          git grep "config CPU_FAM_" | grep "Kconfig" > cpus.txt
-          wc -l cpus.txt | printf "cpus: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
-          git rev-list --count master | printf "commits: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
-          git log --pretty=format:"%s" --merges | awk -F " " '/pull/ {match($NF, "(\\w*)", a); print a[1]}' | sort -u > contributors.txt
-          wc -l contributors.txt | printf "contributors: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
+          ls -l boards | grep "^d" | grep -v "common" | wc -l | xargs printf "boards: %d\n" > ${{ github.workspace }}/_data/riot_stats.yml
+      - name: Fetch CPUs
+        working-directory: ${{ github.workspace }}/_RIOT
+        run: |
+          git grep "config CPU_FAM_" | grep "Kconfig" | wc -l | xargs printf "cpus: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
+      - name: Fetch commits
+        working-directory: ${{ github.workspace }}/_RIOT
+        run: |
+          git rev-list --count master | xargs printf "commits: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
+      - name: Fetch contributors
+        working-directory: ${{ github.workspace }}/_RIOT
+        run: |
+          git log --pretty=format:"%s" --merges | awk -F " " '/pull/ {match($NF, "(\\w*)", a); print a[1]}' | sort -u | wc -l | xargs printf "contributors: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
       - name: Build
         uses: jerryjvl/jekyll-build-action@v1
       - name: Deploy
