@@ -11,6 +11,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Checkout RIOT
+        uses: actions/checkout@v2
+        with:
+          repository: 'RIOT-OS/RIOT'
+      - name: Fetch statistics
+        run: |
+          ls -l RIOT/boards | grep "^d" | grep -v "common" | wc -l > riot_stats.txt
+          cat riot_stats.txt
       - name: Build
         uses: jerryjvl/jekyll-build-action@v1
       - name: Deploy
