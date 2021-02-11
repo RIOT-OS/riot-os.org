@@ -17,9 +17,12 @@ jobs:
           repository: 'RIOT-OS/RIOT'
           path: RIOT
       - name: Fetch statistics
+        working_directory: ${{ github.workspace }}/RIOT
         run: |
-          ls -l RIOT/boards | grep "^d" | grep -v "common" | wc -l > riot_stats.txt
-          cat riot_stats.txt
+          ls -l boards | grep "^d" | grep -v "common" | wc -l | printf "boards: %d\n"> ${{ github.workspace }}/_data/riot_stats.yml
+          grep "config CPU_FAM_" | grep "Kconfig" | wc -l | printf "cpus: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
+          git rev-list --count master | printf "commits: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
+          git log --pretty=format:"%s" --merges | awk -F " " '/pull/ {match($NF, "(\\w*)", a); print a[1]}' | sort -u | wc -l | printf "contributors: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
       - name: Build
         uses: jerryjvl/jekyll-build-action@v1
       - name: Deploy
