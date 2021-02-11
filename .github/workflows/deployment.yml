@@ -17,7 +17,7 @@ jobs:
           repository: 'RIOT-OS/RIOT'
           path: RIOT
       - name: Fetch statistics
-        working_directory: ${{ github.workspace }}/RIOT
+        working-directory: ${{ github.workspace }}/RIOT
         run: |
           ls -l boards | grep "^d" | grep -v "common" | wc -l | printf "boards: %d\n"> ${{ github.workspace }}/_data/riot_stats.yml
           grep "config CPU_FAM_" | grep "Kconfig" | wc -l | printf "cpus: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
