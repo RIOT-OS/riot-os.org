@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          path: riot-os.org
       - name: Checkout RIOT
         uses: actions/checkout@v2
         with:
@@ -23,18 +25,24 @@ jobs:
           grep "config CPU_FAM_" | grep "Kconfig" | wc -l | printf "cpus: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
           git rev-list --count master | printf "commits: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
           git log --pretty=format:"%s" --merges | awk -F " " '/pull/ {match($NF, "(\\w*)", a); print a[1]}' | sort -u | wc -l | printf "contributors: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
-      - name: REMOVE_ME debug
+      - name: REMOVE_ME debug riot-os.org
+        working-directory: ${{ github.workspace }}/riot-os.org
         run: |
-          ls ${{ github.workspace }}
-          cat ${{ github.workspace }}/_data/riot_stats.yml
+          ls
+          cat _data/riot_stats.yml
+      - name: REMOVE_ME debug RIOT
+        working-directory: ${{ github.workspace }}/RIOT
+        run: |
           ls -l boards | grep "^d" | grep -v "common"
           grep "config CPU_FAM_" | grep "Kconfig"
           git rev-list --count master
           git log --pretty=format:"%s" --merges | awk -F " " '/pull/ {match($NF, "(\\w*)", a); print a[1]}' | sort -u
       - name: Build
         uses: jerryjvl/jekyll-build-action@v1
+        working-directory: ${{ github.workspace }}/riot-os.org
       - name: Deploy
         uses: burnett01/rsync-deployments@4.1
+        working-directory: ${{ github.workspace }}/riot-os.org
         with:
           switches: -avzr --delete
           path: _site/
