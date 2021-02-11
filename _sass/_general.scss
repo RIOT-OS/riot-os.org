@@ -19,6 +19,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway";
 }
 
+.check_style li {
+  padding-left: 20px;
+}
+
+.check_style li:before {
+  content: "\eb7a";
+  font-family: remixicon;
+  display: inline-block;
+  color: $primary;
+  margin-left: -1.3em; /* same as padding-left set on li */
+}
+
 .background-dark {
   background-color: $dark !important;
 }
