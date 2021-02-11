@@ -89,6 +89,24 @@ section {
   color: $dark;
 }
 
+#page-header {
+
+  background: $dark;
+  padding: 180px 0 120px 0;
+  
+  h2 {
+    font-family: 'Miso';
+    color: $light;
+    font-size: 4em;
+  }
+  h3 {
+    font-family: 'Miso';
+    color: $riot-green;
+    font-size: 2em;
+  }
+
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
