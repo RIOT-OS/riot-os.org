@@ -25,6 +25,5 @@ jobs:
           SSH_KNOWN_HOSTS: ${{secrets.SSH_KNOWN_HOSTS}}
           SSH_KEY_PATH: ${{ github.workspace }}/../private.key
       - name: Deploy
-         run: |
-          cd _sites
-          rsync -r * revamp@alamos.cc:/var/www/demo 
+        run: |
+         cd _sites; rsync -r * revamp@alamos.cc:/var/www/demo 
