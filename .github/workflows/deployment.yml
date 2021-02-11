@@ -9,6 +9,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        uses: jerryjvl/jekyll-build-action@v1
       - name: Create SSH key
         run: |
           mkdir -p ~/.ssh/
@@ -20,3 +24,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
           SSH_KNOWN_HOSTS: ${{secrets.SSH_KNOWN_HOSTS}}
           SSH_KEY_PATH: ${{ github.workspace }}/../private.key
+      - name: Deploy
+         run: |
+          cd _sites
+          rsync -r * revamp@alamos.cc:/var/www/demo 
