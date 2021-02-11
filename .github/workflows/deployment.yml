@@ -16,6 +16,7 @@ jobs:
         with:
           repository: 'RIOT-OS/RIOT'
           path: _RIOT
+          fetch-depth: 0
       - name: Fetch statistics
         working-directory: ${{ github.workspace }}/_RIOT
         run: |
