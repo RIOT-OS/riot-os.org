@@ -26,4 +26,4 @@ jobs:
           SSH_KEY_PATH: ${{ github.workspace }}/../private.key
       - name: Deploy
         run: |
-         cd _sites; rsync -r * revamp@alamos.cc:/var/www/demo 
+         cd ${{ github.workspace }}/riot-os.org/_sites; rsync -r * revamp@alamos.cc:/var/www/demo 
