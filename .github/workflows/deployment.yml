@@ -15,6 +15,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: 'RIOT-OS/RIOT'
+          path: RIOT
       - name: Fetch statistics
         run: |
           ls -l RIOT/boards | grep "^d" | grep -v "common" | wc -l > riot_stats.txt
