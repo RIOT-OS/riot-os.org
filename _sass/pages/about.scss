@@ -1,0 +1,27 @@
+#timeline {
+    $timeline-gap: 30px;
+    $timeline-width: 2px;
+
+    .text-end::after {
+        content: '';
+        width: $timeline-gap;
+        height: 100%;
+        position: absolute;
+        border-right: $timeline-width solid $primary;
+        top: 0;
+    }
+
+    .text-start {
+        padding-left: $timeline-gap * 1.5;
+    }
+
+    .text-start::before {
+        content: '';
+        width: $timeline-gap;
+        height: 100%;
+        position: absolute;
+        border-left: $timeline-width solid $primary;
+        top: 0;
+        left: ($timeline-gap + $timeline-width) / 2;
+    }
+}
