@@ -158,9 +158,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Features
+# Friendly tables
 --------------------------------------------------------------*/
-#features {
+#friendly-tables {
 
   h3 i {
     font-size: 2rem;
@@ -183,6 +183,18 @@ section {
     color: $primary;
   }
 
+}
+
+/*--------------------------------------------------------------
+# Features
+--------------------------------------------------------------*/
+#features {
+  .feature-icon {
+    color: $primary;
+  }
+  .card p {
+    font-size: 0.9rem;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -259,61 +271,6 @@ section {
     }
   }
 
-}
-
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.services .icon-box {
-  padding: 30px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  background: $light;
-  box-shadow: 0 2px 29px 0 rgba(68, 88, 144, 0.12);
-  transition: all 0.4s ease-in-out;
-  width: 100%;
-  height: 100%;
-}
-
-.services .icon-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 2px 35px 0 rgba(68, 88, 144, 0.2);
-}
-
-.services .icon {
-  position: absolute;
-  left: -20px;
-  top: calc(50% - 30px);
-}
-
-.services .icon i {
-  font-size: 64px;
-  line-height: 1;
-  transition: 0.5s;
-}
-
-.services .title {
-  margin-left: 40px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .title a {
-  color: $dark;
-  transition: ease-in-out 0.3s;
-}
-
-.services .title a:hover {
-  color: $primary;
-}
-
-.services .description {
-  font-size: 14px;
-  margin-left: 40px;
-  line-height: 24px;
-  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
