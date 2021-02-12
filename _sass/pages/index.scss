@@ -335,6 +335,48 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Summit
+--------------------------------------------------------------*/
+
+#summit {
+  .card {
+    h2 {
+      font-family: "Miso";
+      color: $dark;
+      padding: 10px 0 0 8px;
+    }
+    h3 {
+      font-family: "Miso";
+      color: $gray;
+      padding: 2px 0 0 8px;
+    }
+    a {
+      color: $light;
+    }
+    .card-img {
+      transition: all 0.8s ease-in-out;
+    }
+    .card-img-overlay {
+      opacity: 0;
+      transition: all ease-in-out 0.5s;
+      .card-text {
+        padding: 80px 0 0 0;
+        font-size: 0.9em;
+      }
+    }
+  }
+  .card:hover {
+    .card-img {
+      transform: scale(1.2);
+    }
+    .card-img-overlay {
+      opacity: 1;
+      background-color: transparentize($color: $dark, $amount: 0.3);
+    }
+  }
+}
+
+/*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
 
