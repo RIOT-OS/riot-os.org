@@ -3,33 +3,39 @@ layout: base
 ---
 
 <main id="main">
+
   <section id="blog-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-6 text-white d-flex align-items-center">
-                <h1 class=""> {{ page.title }} </h1>
-            </div>
-            <div class="col-6">
-                <img class="img-fluid" src="{{ "assets/img/blog/" | relative_url}}{{page.image}}" />
-            </div>
+    <div class="background">
+      <img class="blur" src="{{ "assets/img/blog/" | relative_url}}{{page.image}}" alt="">
+    </div>
+    <div class="container h-100">
+      <div class="row pt-4 d-flex align-items-center text-center h-100">
+        <div class="col-12 text-white">
+          <h1 class="display-3 w-100"> {{ page.title }} </h1>
         </div>
+      </div>
     </div>
   </section>
-  <div class="container">
-      <div class="row">
-          <div class="col-9">
-        {{ content }}
-          </div>
-          <div class="col-3" id="blog-right">
-              <div class="card">
-                  <!--<img class="card-img-top" src="{{ "assets/img/riot-logo.png" | relative_url}}" />-->
+
+  <section class="py-0">
+    <div class="container">
+      <div class="row" id="blog-right">
+        <div class="col-12">
+          <div class="card border-0">
             <div class="card-body social-links">
-                <div class="card-text text-center">
-                   {% include social-media.html %}
-                </div>
+              <div class="card-text text-center fs-1 border-bottom">
+                {% include social-media.html %}
+              </div>
             </div>
           </div>
+        </div>
       </div>
+      <div class="row">
+        <div class="col-12 col-lg-8 offset-lg-2 py-2">
+          {{ content }}
+        </div>
       </div>
-  </div>
+    </div>
+    </div>
+  </section>
 </main>
