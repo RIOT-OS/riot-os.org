@@ -34,3 +34,22 @@ h1, h2, h3, h4, h5, h6 {
 .background-dark {
   background-color: $dark !important;
 }
+
+.btn-primary {
+  color: #fff;
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: $primary-light;
+  border-color: $primary-light;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  color: #fff;
+  background-color: $primary-light;
+  border-color: $primary-light;
+  box-shadow: none !important;
+}
