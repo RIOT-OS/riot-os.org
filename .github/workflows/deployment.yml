@@ -24,7 +24,7 @@ jobs:
       - name: Fetch boards
         working-directory: ${{ github.workspace }}/_RIOT
         run: |
-          ls -l boards | grep "^d" | grep -v "common" | wc -l | xargs printf "boards: %d\n" > ${{ github.workspace }}/_data/riot_stats.yml
+          make info-boards | tr " " "\n" | wc -l | xargs printf "boards: %d\n" > ${{ github.workspace }}/_data/riot_stats.yml
       - name: Fetch CPUs
         working-directory: ${{ github.workspace }}/_RIOT
         run: |
