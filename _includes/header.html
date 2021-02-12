@@ -3,19 +3,19 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-          <a href="index.html"><img src="{{ "assets/img/riot-logo.png" | relative_url }}" alt="" class="img-fluid"></a>
+          <a href="{% link index.html %}"><img src="{{ "assets/img/riot-logo.png" | relative_url }}" alt="" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-            <li><a class="nav-link scrollto active" href="{{ "#hero" | relative_url }}">Home</a></li>
-            <li><a class="nav-link scrollto" href="{{ "#about" | relative_url }}">About</a></li>
-            <li><a class="nav-link scrollto " href="{{ "#blog" | relative_url }}">Blog</a></li>
-            <li><a class="nav-link scrollto" href="{{ "#use-cases" | relative_url }}">Users</a></li>
+            <li><a class="nav-link scrollto active" href="{% link index.html %}#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="{% link index.html %}#about">About</a></li>
+            <li><a class="nav-link scrollto " href="{% link index.html %}#blog">Blog</a></li>
+            <li><a class="nav-link scrollto" href="{% link index.html %}#use-cases">Users</a></li>
 {% if jekyll.environment == "development" %}
-<li><a class="nav-link scrollto" href="{{ "#services" | relative_url }}">Services</a></li>
+<li><a class="nav-link scrollto" href="{% link index.html %}#services">Services</a></li>
 {% endif %}
-          <li class="dropdown"><a href="about.html"><span>Community</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="{% link about.html %}"><span>Community</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="https://forum.riot-os.org">Forum</a></li>
               <li><a href="https://github.com/topics/riot-os">GitHub</a></li>
@@ -28,7 +28,7 @@
               <li><a href="https://github.com/RIOT-OS/RIOT/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="{% link index.html %}#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
