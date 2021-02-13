@@ -1,690 +1,460 @@
-boards_airfy-beacon:
-    name: Airfy Beacon
-    apiurl: https://doc.riot-os.org/group__boards__airfy-beacon.html
-boards_arduino-due:
-    name: Arduino Due
-    apiurl: https://doc.riot-os.org/group__boards__arduino-due.html
-boards_arduino-duemilanove:
-    name: Arduino Duemilanove
-    apiurl: https://doc.riot-os.org/group__boards__arduino-duemilanove.html
-boards_arduino-mega2560:
-    name: Arduino Mega 2560
-    apiurl: https://doc.riot-os.org/group__boards__arduino-mega2560.html
-boards_arduino-mkr1000:
-    name: Arduino MKR1000
-    apiurl: https://doc.riot-os.org/group__boards__arduino-mkr1000.html
-boards_arduino-mkrzero:
-    name: Arduino MKRZERO
-    apiurl: https://doc.riot-os.org/group__boards__arduino-mkrzero.html
-boards_arduino-uno:
-    name: Arduino Uno
-    apiurl: https://doc.riot-os.org/group__boards__arduino-uno.html
-boards_arduino-zero:
-    name: Arduino Zero
-    apiurl: https://doc.riot-os.org/group__boards__arduino-zero.html
-boards_avsextrem:
-    name: Avsextrem
-    apiurl: https://doc.riot-os.org/group__boards__avsextrem.html
-boards_b-l072z-lrwan1:
-    name: ST B-L072Z-LRWAN1 LoRa discovery
-    apiurl: https://doc.riot-os.org/group__boards__b-l072z-lrwan1.html
-boards_calliope-mini:
-    name: Calliope mini
-    apiurl: https://doc.riot-os.org/group__boards__calliope-mini.html
-boards_cc2538dk:
-    name: CC2538DK
-    apiurl: https://doc.riot-os.org/group__boards__cc2538dk.html
-boards_cc2650_launchpad:
-    name: TI CC2650 LaunchPad XL
-    apiurl: https://doc.riot-os.org/group__boards__cc2650__launchpad.html
-boards_cc2650stk:
-    name: CC2650STK
-    apiurl: https://doc.riot-os.org/group__boards__cc2650stk.html
-boards_ek-lm4f120xl:
-    name: EK-LM4F120XL
-    apiurl: https://doc.riot-os.org/group__boards__ek-lm4f120xl.html
-boards_f4vi1:
-    name:  F4VI1
-    apiurl: https://doc.riot-os.org/group__boards__f4vi1.html
-boards_fox:
-    name: fox
-    apiurl: https://doc.riot-os.org/group__boards__fox.html
-boards_frdm-k22f:
-    name: NXP FRDM-K22F Board
-    apiurl: https://doc.riot-os.org/group__boards__frdm-k22f.html
-boards_frdm-k64f:
-    name: NXP FRDM-K64F Board
-    apiurl: https://doc.riot-os.org/group__boards__frdm-k64f.html
-boards_iotlab-a8-m3:
-    name: IoT-LAB A8 M3 open node
-    apiurl: https://doc.riot-os.org/group__boards__iotlab-a8-m3.html
-boards_iotlab-m3:
-    name: IoT-LAB M3 open node
-    apiurl: https://doc.riot-os.org/group__boards__iotlab-m3.html
-boards_limifrog-v1:
-    name: LimiFrog Version 1
-    apiurl: https://doc.riot-os.org/group__boards__limifrog-v1.html
-boards_maple-mini:
-    name: maple-mini
-    apiurl: https://doc.riot-os.org/group__boards__maple-mini.html
-boards_mbed_lpc1768:
-    name: mbed LPC1768 development kit
-    apiurl: https://doc.riot-os.org/group__boards__mbed__lpc1768.html
-boards_microbit:
-    name: BBC micro:bit
-    apiurl: https://doc.riot-os.org/group__boards__microbit.html
-boards_msb430:
-    name: MSB-430
-    apiurl: https://doc.riot-os.org/group__boards__msb430.html
-boards_msb430h:
-    name: MSB-430H
-    apiurl: https://doc.riot-os.org/group__boards__msb430h.html
-boards_msba2:
-    name: MSB-A2
-    apiurl: https://doc.riot-os.org/group__boards__msba2.html
-boards_msbiot:
-    name: MSB-IoT
-    apiurl: https://doc.riot-os.org/group__boards__msbiot.html
-boards_mulle:
-    name: Eistec Mulle
-    apiurl: https://doc.riot-os.org/group__boards__mulle.html
-boards_native:
-    name: Native Board
-    apiurl: https://doc.riot-os.org/group__boards__native.html
-boards_nrf51dongle:
-    name: nRF51 Dongle
-    apiurl: https://doc.riot-os.org/group__boards__nrf51dongle.html
-boards_nrf52840dk:
-    name: nRF52840 DK
-    apiurl: https://doc.riot-os.org/group__boards__nrf52840dk.html
-boards_nrf52dk:
-    name: nRF52 DK
-    apiurl: https://doc.riot-os.org/group__boards__nrf52dk.html
-boards_nrf6310:
-    name: NRF6310 (Nordic NRF Hardware Development Kit)
-    apiurl: https://doc.riot-os.org/group__boards__nrf6310.html
-boards_nz32-sc151:
-    name: NZ32-SC151
-    apiurl: https://doc.riot-os.org/group__boards__nz32-sc151.html
-boards_opencm904:
-    name: OpenCM9.04
-    apiurl: https://doc.riot-os.org/group__boards__opencm904.html
-boards_openmote-cc2538:
-    name: OpenMote-cc2538
-    apiurl: https://doc.riot-os.org/group__boards__openmote-cc2538.html
-boards_pba-d-01-kw2x:
-    name: phyWAVE-KW22 Board
-    apiurl: https://doc.riot-os.org/group__boards__pba-d-01-kw2x.html
-boards_pic32-wifire:
-    name: Digilent PIC32 WiFire
-    apiurl: https://doc.riot-os.org/group__boards__pic32-wifire.html
-boards_remote-pa:
-    name: RE-Mote Prototype A
-    apiurl: https://doc.riot-os.org/group__boards__remote-pa.html
-boards_remote-reva:
-    name: RE-Mote Revision A
-    apiurl: https://doc.riot-os.org/group__boards__remote-reva.html
-boards_remote-revb:
-    name: RE-Mote Revision B
-    apiurl: https://doc.riot-os.org/group__boards__remote-revb.html
-boards_samd21-xpro:
-    name: Atmel SAM D21 Xplained Pro
-    apiurl: https://doc.riot-os.org/group__boards__samd21-xpro.html
-boards_saml21-xpro:
-    name: Atmel SAM L21 Xplained Pro
-    apiurl: https://doc.riot-os.org/group__boards__saml21-xpro.html
-boards_samr21-xpro:
-    name: Atmel SAM R21 Xplained Pro
-    apiurl: https://doc.riot-os.org/group__boards__samr21-xpro.html
-boards_seeduino_arch-pro:
-    name: Seeeduino Arch Pro development kit
-    apiurl: https://doc.riot-os.org/group__boards__seeduino__arch-pro.html
-boards_slwstk6220a:
-    name: Silicon Labs SLWSTK6220A starter kit
-    apiurl: https://doc.riot-os.org/group__boards__slwstk6220a.html
-boards_sodaq-autonomo:
-    name: SODAQ Autonomo
-    apiurl: https://doc.riot-os.org/group__boards__sodaq-autonomo.html
-boards_sodaq-explorer:
-    name: SODAQ ExpLoRer
-    apiurl: https://doc.riot-os.org/group__boards__sodaq-explorer.html
-boards_spark-core:
-    name: Spark-Core
-    apiurl: https://doc.riot-os.org/group__boards__spark-core.html
-boards_stm32f0discovery:
-    name: STM32F0Discovery
-    apiurl: https://doc.riot-os.org/group__boards__stm32f0discovery.html
-boards_stm32f3discovery:
-    name: STM32F3Discovery
-    apiurl: https://doc.riot-os.org/group__boards__stm32f3discovery.html
-boards_stm32f4discovery:
-    name: STM32F4Discovery
-    apiurl: https://doc.riot-os.org/group__boards__stm32f4discovery.html
-boards_telosb:
-    name: TelosB
-    apiurl: https://doc.riot-os.org/group__boards__telosb.html
-boards_udoo:
-    name: UDOO
-    apiurl: https://doc.riot-os.org/group__boards__udoo.html
-boards_waspmote-pro:
-    name: Waspmote PRO v1.2
-    apiurl: https://doc.riot-os.org/group__boards__waspmote-pro.html
-boards_yunjia-nrf51822:
-    name: Yunjia NRF51822
-    apiurl: https://doc.riot-os.org/group__boards__yunjia-nrf51822.html
-boards_z1:
-    name: Zolertia Z1
-    apiurl: https://doc.riot-os.org/group__boards__z1.html
-boards_6lowpan-clicker:
-    name: MikroE 6LoWPAN Clicker
-    apiurl: https://doc.riot-os.org/group__boards__6lowpan-clicker.html
-boards_acd52832:
-    name: ACD52832
-    apiurl: https://doc.riot-os.org/group__boards__acd52832.html
-boards_adafruit-clue:
-    name: Adafruit Clue
-    apiurl: https://doc.riot-os.org/group__boards__adafruit-clue.html
-boards_adafruit-itsybitsy-m4:
-    name: Adafruit-Itsybitsy-M4
-    apiurl: https://doc.riot-os.org/group__boards__adafruit-itsybitsy-m4.html
-boards_adafruit-itsybitsy-nrf52:
-    name: Adafruit-Itsybitsy-nRF52
-    apiurl: https://doc.riot-os.org/group__boards__adafruit-itsybitsy-nrf52.html
-boards_arduino-leonardo:
-    name: Arduino Leonardo
-    apiurl: https://doc.riot-os.org/group__boards__arduino-leonardo.html
-boards_arduino-mkrfox1200:
-    name: Arduino MKRFOX1200
-    apiurl: https://doc.riot-os.org/group__boards__arduino-mkrfox1200.html
-boards_arduino-mkrwan1300:
-    name: Arduino MKR WAN 1300
-    apiurl: https://doc.riot-os.org/group__boards__arduino-mkrwan1300.html
-boards_arduino-nano-33-ble:
-    name: Arduino Nano 33 BLE
-    apiurl: https://doc.riot-os.org/group__boards__arduino-nano-33-ble.html
-boards_arduino-nano-33-iot:
-    name: Arduino Nano 33 IoT
-    apiurl: https://doc.riot-os.org/group__boards__arduino-nano-33-iot.html
-boards_arduino-nano:
-    name: Arduino Nano
-    apiurl: https://doc.riot-os.org/group__boards__arduino-nano.html
-boards_atmega1284p:
-    name: Standalone ATmega1284P
-    apiurl: https://doc.riot-os.org/group__boards__atmega1284p.html
-boards_atmega256rfr2-xpro:
-    name: Atmega256RFR2 Xplained Pro
-    apiurl: https://doc.riot-os.org/group__boards__atmega256rfr2-xpro.html
-boards_atmega328p:
-    name: Standalone ATmega328p
-    apiurl: https://doc.riot-os.org/group__boards__atmega328p.html
-boards_avr-rss2:
-    name: Atmega256RFR2 rss2
-    apiurl: https://doc.riot-os.org/group__boards__avr-rss2.html
-boards_b-l475e-iot01a:
-    name: ST B-L475E-IOT01A
-    apiurl: https://doc.riot-os.org/group__boards__b-l475e-iot01a.html
-boards_blackpill_128kib:
-    name: Blackpill board (128KiB flash hack version)
-    apiurl: https://doc.riot-os.org/group__boards__blackpill__128kib.html
-boards_blackpill:
-    name: Blackpill board
-    apiurl: https://doc.riot-os.org/group__boards__blackpill.html
-boards_bluepill_128kib:
-    name: Bluepill board (128KiB flash hack version)
-    apiurl: https://doc.riot-os.org/group__boards__bluepill__128kib.html
-boards_bluepill-stm32f030c8:
-    name: STM32F030C8 based Bluepill
-    apiurl: https://doc.riot-os.org/group__boards__bluepill-stm32f030c8.html
-boards_bluepill:
-    name: Bluepill board
-    apiurl: https://doc.riot-os.org/group__boards__bluepill.html
-boards_cc1312_launchpad:
-    name: TI CC1312 LaunchPad
-    apiurl: https://doc.riot-os.org/group__boards__cc1312__launchpad.html
-boards_cc1350_launchpad:
-    name: TI CC1350 LaunchPad XL
-    apiurl: https://doc.riot-os.org/group__boards__cc1350__launchpad.html
-boards_cc1352_launchpad:
-    name: TI CC1352 LaunchPad
-    apiurl: https://doc.riot-os.org/group__boards__cc1352__launchpad.html
-boards_cc1352p_launchpad:
-    name: TI CC1352P LaunchPad
-    apiurl: https://doc.riot-os.org/group__boards__cc1352p__launchpad.html
-boards_common_atmega:
-    name: ATmega common
-    apiurl: https://doc.riot-os.org/group__boards__common__atmega.html
-boards_common_blxxxpill:
-    name: Blackpill and Bluepill common code
-    apiurl: https://doc.riot-os.org/group__boards__common__blxxxpill.html
-boards_common_cc2538:
-    name: cc2538 Configuration Snippets
-    apiurl: https://doc.riot-os.org/group__boards__common__cc2538.html
-boards_common:
-    name: Common Board Groups
-    apiurl: https://doc.riot-os.org/group__boards__common.html
-boards_common_e104-bt50xxa-tb:
-    name: E104-BT50xxA-TB common code
-    apiurl: https://doc.riot-os.org/group__boards__common__e104-bt50xxa-tb.html
-boards_common_esp32:
-    name:  ESP32 Common
-    apiurl: https://doc.riot-os.org/group__boards__common__esp32.html
-boards_esp32:
-    name:  ESP32 Boards
-    apiurl: https://doc.riot-os.org/group__boards__esp32.html
-boards_common_esp8266:
-    name:  ESP8266 Common
-    apiurl: https://doc.riot-os.org/group__boards__common__esp8266.html
-boards_esp8266:
-    name:  ESP8266 Boards
-    apiurl: https://doc.riot-os.org/group__boards__esp8266.html
-boards_common_frdm:
-    name: NXP FRDM Common
-    apiurl: https://doc.riot-os.org/group__boards__common__frdm.html
-boards_common_nrf52:
-    name: nRF52 common
-    apiurl: https://doc.riot-os.org/group__boards__common__nrf52.html
-boards_common_particle-mesh:
-    name: Particle Mesh common
-    apiurl: https://doc.riot-os.org/group__boards__common__particle-mesh.html
-boards_common_silabs:
-    name: Silicon Labs Common
-    apiurl: https://doc.riot-os.org/group__boards__common__silabs.html
-boards_common_silabs_drivers:
-    name: Silicon Labs Common Drivers
-    apiurl: https://doc.riot-os.org/group__boards__common__silabs__drivers.html
-boards_common_slwstk6000b:
-    name: Silicon Labs SLWSTK6000B starter kit
-    apiurl: https://doc.riot-os.org/group__boards__common__slwstk6000b.html
-boards_common_stm32:
-    name: STM32 Configuration Snippets
-    apiurl: https://doc.riot-os.org/group__boards__common__stm32.html
-boards_common_weact-f4x1cx:
-    name: WeAct-F4x1Cx common code
-    apiurl: https://doc.riot-os.org/group__boards__common__weact-f4x1cx.html
-boards_deRFmega128:
-    name: deRFmega128 modules from Dresden Elektronik
-    apiurl: https://doc.riot-os.org/group__boards__deRFmega128.html
-boards_deRFmega256:
-    name: deRFmega256 modules from Dresden Elektronik
-    apiurl: https://doc.riot-os.org/group__boards__deRFmega256.html
-boards:
-    name: Boards
-    apiurl: https://doc.riot-os.org/group__boards.html
-boards_dwm1001:
-    name: Decawave DWM1001
-    apiurl: https://doc.riot-os.org/group__boards__dwm1001.html
-boards_e104-bt5010a-tb:
-    name: E104-BT5010A Test Board
-    apiurl: https://doc.riot-os.org/group__boards__e104-bt5010a-tb.html
-boards_e104-bt5011a-tb:
-    name: E104-BT5011A Test Board
-    apiurl: https://doc.riot-os.org/group__boards__e104-bt5011a-tb.html
-boards_e180-zg120b-tb:
-    name: Ebyte E180-ZG120B-TB Test Board
-    apiurl: https://doc.riot-os.org/group__boards__e180-zg120b-tb.html
-boards_esp32_esp-ethernet-kit-v1_0:
-    name: v1.0 Board
-    apiurl: https://doc.riot-os.org/group__boards__esp32__esp-ethernet-kit-v1__0.html
-boards_esp32_esp-ethernet-kit-v1_1:
-    name: v1.1 Board
-    apiurl: https://doc.riot-os.org/group__boards__esp32__esp-ethernet-kit-v1__1.html
-boards_esp32_esp-ethernet-kit-v1_2:
-    name: v1.2 Board
-    apiurl: https://doc.riot-os.org/group__boards__esp32__esp-ethernet-kit-v1__2.html
-boards_esp32_heltec-lora32-v2:
-    name: Heltec WiFi LoRa 32 V2 boards
-    apiurl: https://doc.riot-os.org/group__boards__esp32__heltec-lora32-v2.html
-boards_esp32_mh-et-live-minikit:
-    name: MH-ET LIVE MiniKit
-    apiurl: https://doc.riot-os.org/group__boards__esp32__mh-et-live-minikit.html
-boards_esp32_olimex-esp32-evb:
-    name: Olimex ESP32-EVB
-    apiurl: https://doc.riot-os.org/group__boards__esp32__olimex-esp32-evb.html
-boards_esp32_ttgo-t-beam:
-    name: TTGO T-Beam
-    apiurl: https://doc.riot-os.org/group__boards__esp32__ttgo-t-beam.html
-boards_esp32_wemos-lolin-d32-pro:
-    name: Wemos LOLIN D32 Pro
-    apiurl: https://doc.riot-os.org/group__boards__esp32__wemos-lolin-d32-pro.html
-boards_esp32_wroom-32:
-    name: Generic ESP32-WROOM-32 boards
-    apiurl: https://doc.riot-os.org/group__boards__esp32__wroom-32.html
-boards_esp32_esp-wrover-kit:
-    name: ESP-WROVER-KIT V3
-    apiurl: https://doc.riot-os.org/group__boards__esp32__esp-wrover-kit.html
-boards_esp8266_esp-12x:
-    name:  ESP-12x based boards
-    apiurl: https://doc.riot-os.org/group__boards__esp8266__esp-12x.html
-boards_esp8266_olimex-mod:
-    name: Olimex MOD-WIFI-ESP8266-DEV
-    apiurl: https://doc.riot-os.org/group__boards__esp8266__olimex-mod.html
-boards_esp8266_sparkfun-thing:
-    name: SparkFun ESP8266 Thing
-    apiurl: https://doc.riot-os.org/group__boards__esp8266__sparkfun-thing.html
-boards_feather-m0-lora:
-    name: Adafruit Feather M0 LoRa
-    apiurl: https://doc.riot-os.org/group__boards__feather-m0-lora.html
-boards_feather-m0-wifi:
-    name: Adafruit Feather M0 WiFi
-    apiurl: https://doc.riot-os.org/group__boards__feather-m0-wifi.html
-boards_feather-m0:
-    name: Adafruit Feather M0
-    apiurl: https://doc.riot-os.org/group__boards__feather-m0.html
-boards_feather-nrf52840:
-    name: Adafruit Feather nRF52840 Express
-    apiurl: https://doc.riot-os.org/group__boards__feather-nrf52840.html
-boards_firefly:
-    name: Firefly Board
-    apiurl: https://doc.riot-os.org/group__boards__firefly.html
-boards_frdm-kw41z:
-    name: Freescale FRDM-KW41Z Board
-    apiurl: https://doc.riot-os.org/group__boards__frdm-kw41z.html
-boards_i-nucleo-lrwan1:
-    name: ST I-NUCLEO-LRWAN1 LoRa board
-    apiurl: https://doc.riot-os.org/group__boards__i-nucleo-lrwan1.html
-boards_ikea-tradfri:
-    name: IKEA TRÅDFRI modules
-    apiurl: https://doc.riot-os.org/group__boards__ikea-tradfri.html
-boards_im880b:
-    name: im880b
-    apiurl: https://doc.riot-os.org/group__boards__im880b.html
-boards_lobaro_lorabox:
-    name: Lobaro Lorabox
-    apiurl: https://doc.riot-os.org/group__boards__lobaro__lorabox.html
-boards_lsn50:
-    name: Dragino LSN50 LoRa Sensor Node
-    apiurl: https://doc.riot-os.org/group__boards__lsn50.html
-boards_mcb2388:
-    name: MCB2388 Evaluation Board
-    apiurl: https://doc.riot-os.org/group__boards__mcb2388.html
-boards_mega-xplained:
-    name: Mega1284P-Xplained
-    apiurl: https://doc.riot-os.org/group__boards__mega-xplained.html
-boards_microduino-corerf:
-    name: Microduino CoreRF
-    apiurl: https://doc.riot-os.org/group__boards__microduino-corerf.html
-boards_nrf51dk:
-    name: nRF51DK Development Kit
-    apiurl: https://doc.riot-os.org/group__boards__nrf51dk.html
-boards_nrf52832-mdk:
-    name: nRF52832-MDK
-    apiurl: https://doc.riot-os.org/group__boards__nrf52832-mdk.html
-boards_nrf52840-mdk-dongle:
-    name: nRF52840 MDK USB Dongle
-    apiurl: https://doc.riot-os.org/group__boards__nrf52840-mdk-dongle.html
-boards_nrf52840-mdk:
-    name: nRF52840-MDK
-    apiurl: https://doc.riot-os.org/group__boards__nrf52840-mdk.html
-boards_nrf52840dongle:
-    name: nRF52840-Dongle
-    apiurl: https://doc.riot-os.org/group__boards__nrf52840dongle.html
-boards_nucleo-f030r8:
-    name: STM32 Nucleo-F030R8
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f030r8.html
-boards_nucleo-f031k6:
-    name: STM32 Nucleo-F031K6
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f031k6.html
-boards_nucleo-f042k6:
-    name: STM32 Nucleo-F042K6
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f042k6.html
-boards_nucleo-f070rb:
-    name: STM32 Nucleo-F070RB
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f070rb.html
-boards_nucleo-f072rb:
-    name: STM32 Nucleo-F072RB
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f072rb.html
-boards_nucleo-f091rc:
-    name: STM32 Nucleo-F091RC
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f091rc.html
-boards_nucleo-f103rb:
-    name: STM32 Nucleo-F103RB
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f103rb.html
-boards_nucleo-f207zg:
-    name: STM32 Nucleo-F207ZG
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f207zg.html
-boards_nucleo-f302r8:
-    name: STM32 Nucleo-F302R8
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f302r8.html
-boards_nucleo-f303k8:
-    name: STM32 Nucleo-F303K8
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f303k8.html
-boards_nucleo-f303re:
-    name: STM32 Nucleo-F303RE
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f303re.html
-boards_nucleo-f303ze:
-    name: STM32 Nucleo-F303ZE
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f303ze.html
-boards_nucleo-f334r8:
-    name: STM32 Nucleo-F334R8
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f334r8.html
-boards_nucleo-f401re:
-    name: STM32 Nucleo-F401RE
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f401re.html
-boards_nucleo-f410rb:
-    name: STM32 Nucleo-F410RB
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f410rb.html
-boards_nucleo-f411re:
-    name: STM32 Nucleo-F411RE
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f411re.html
-boards_nucleo-f412zg:
-    name: STM32 Nucleo-F412ZG
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f412zg.html
-boards_nucleo-f413zh:
-    name: STM32 Nucleo-F413ZH
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f413zh.html
-boards_nucleo-f429zi:
-    name: STM32 Nucleo-F429ZI
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f429zi.html
-boards_nucleo-f446re:
-    name: STM32 Nucleo-F446RE
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f446re.html
-boards_nucleo-f446ze:
-    name: STM32 Nucleo-F446ZE
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f446ze.html
-boards_nucleo-f722ze:
-    name: STM32 Nucleo-F722ZE
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f722ze.html
-boards_nucleo-f746zg:
-    name: STM32 Nucleo-F746ZG
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f746zg.html
-boards_nucleo-f767zi:
-    name: STM32 Nucleo-F767ZI
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-f767zi.html
-boards_nucleo-g070rb:
-    name: STM32 Nucleo-G070RB
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-g070rb.html
-boards_nucleo-g071rb:
-    name: STM32 Nucleo-G071RB
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-g071rb.html
-boards_nucleo-g431rb:
-    name: STM32 Nucleo-G431RB
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-g431rb.html
-boards_nucleo-g474re:
-    name: STM32 Nucleo-G474RE
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-g474re.html
-boards_nucleo-l011k4:
-    name: STM32 Nucleo-L011K4
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-l011k4.html
-boards_nucleo-l031k6:
-    name: STM32 Nucleo-L031K6
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-l031k6.html
-boards_nucleo-l053r8:
-    name: STM32 Nucleo-L053R8
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-l053r8.html
-boards_nucleo-l073rz:
-    name: STM32 Nucleo-L073RZ
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-l073rz.html
-boards_nucleo-l152re:
-    name: STM32 Nucleo-L152RE
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-l152re.html
-boards_nucleo-l412kb:
-    name: STM32 Nucleo-L412KB
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-l412kb.html
-boards_nucleo-l432kc:
-    name: STM32 Nucleo-L432KC
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-l432kc.html
-boards_nucleo-l433rc:
-    name: STM32 Nucleo-L433RC
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-l433rc.html
-boards_nucleo-l452re:
-    name: STM32 Nucleo-L452RE
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-l452re.html
-boards_nucleo-l476rg:
-    name: STM32 Nucleo-L476RG
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-l476rg.html
-boards_nucleo-l496zg:
-    name: STM32 Nucleo-L496ZG
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-l496zg.html
-boards_nucleo144-l4r5:
-    name: STM32 Nucleo-L4R5ZI
-    apiurl: https://doc.riot-os.org/group__boards__nucleo144-l4r5.html
-boards_nucleo-l552ze-q:
-    name: STM32 Nucleo-L552ZE-Q
-    apiurl: https://doc.riot-os.org/group__boards__nucleo-l552ze-q.html
-boards_olimexino-stm32:
-    name: STM32 Olimexino-stm32
-    apiurl: https://doc.riot-os.org/group__boards__olimexino-stm32.html
-boards_omote:
-    name: omote
-    apiurl: https://doc.riot-os.org/group__boards__omote.html
-boards_openlabs-kw41z-mini-256kib:
-    name: openlabs.co kw41z-mini-256kib board
-    apiurl: https://doc.riot-os.org/group__boards__openlabs-kw41z-mini-256kib.html
-boards_openlabs-kw41z-mini:
-    name: openlabs.co kw41z-mini board
-    apiurl: https://doc.riot-os.org/group__boards__openlabs-kw41z-mini.html
-boards_openmote-b:
-    name: OpenMote-b
-    apiurl: https://doc.riot-os.org/group__boards__openmote-b.html
-boards_p-l496g-cell02:
-    name: ST P-L496G-CELL02
-    apiurl: https://doc.riot-os.org/group__boards__p-l496g-cell02.html
-boards_p-nucleo-wb55:
-    name: STM32 p-nucleo-wb55
-    apiurl: https://doc.riot-os.org/group__boards__p-nucleo-wb55.html
-boards_particle-argon:
-    name: Particle Argon
-    apiurl: https://doc.riot-os.org/group__boards__particle-argon.html
-boards_particle-boron:
-    name: Particle Boron
-    apiurl: https://doc.riot-os.org/group__boards__particle-boron.html
-boards_particle-xenon:
-    name: Particle Xenon
-    apiurl: https://doc.riot-os.org/group__boards__particle-xenon.html
-boards_phynode-kw41z:
-    name: PhyNODE KW41Z
-    apiurl: https://doc.riot-os.org/group__boards__phynode-kw41z.html
-boards_pinetime:
-    name: PineTime
-    apiurl: https://doc.riot-os.org/group__boards__pinetime.html
-boards_pyboard:
-    name: pyboard
-    apiurl: https://doc.riot-os.org/group__boards__pyboard.html
-boards_qn9080dk:
-    name: QN9080DK base board
-    apiurl: https://doc.riot-os.org/group__boards__qn9080dk.html
-boards_reel:
-    name: Phytec reel board
-    apiurl: https://doc.riot-os.org/group__boards__reel.html
-boards_ruuvitag:
-    name: RuuviTag
-    apiurl: https://doc.riot-os.org/group__boards__ruuvitag.html
-boards_samd10-xmini:
-    name: Atmel SAM D10 Xplained Mini
-    apiurl: https://doc.riot-os.org/group__boards__samd10-xmini.html
-boards_samd20-xpro:
-    name: Atmel SAM D20 Xplained Pro
-    apiurl: https://doc.riot-os.org/group__boards__samd20-xpro.html
-boards_same54-xpro:
-    name: Microchip SAM E54 Xplained Pro
-    apiurl: https://doc.riot-os.org/group__boards__same54-xpro.html
-boards_saml10-xpro:
-    name: Microchip SAML10 Xplained Pro
-    apiurl: https://doc.riot-os.org/group__boards__saml10-xpro.html
-boards_saml11-xpro:
-    name: Microchip SAML11 Xplained Pro
-    apiurl: https://doc.riot-os.org/group__boards__saml11-xpro.html
-boards_sensebox_samd21:
-    name: SenseBox MCU with SAMD21
-    apiurl: https://doc.riot-os.org/group__boards__sensebox__samd21.html
-boards_serpente:
-    name: Serpente R2
-    apiurl: https://doc.riot-os.org/group__boards__serpente.html
-boards_slstk3400a:
-    name: Silicon Labs SLSTK3400A starter kit
-    apiurl: https://doc.riot-os.org/group__boards__slstk3400a.html
-boards_slstk3401a:
-    name: Silicon Labs SLSTK3401A starter kit
-    apiurl: https://doc.riot-os.org/group__boards__slstk3401a.html
-boards_slstk3402a:
-    name: Silicon Labs SLSTK3402A starter kit
-    apiurl: https://doc.riot-os.org/group__boards__slstk3402a.html
-boards_sltb001a:
-    name: Silicon Labs SLTB001A starter kit
-    apiurl: https://doc.riot-os.org/group__boards__sltb001a.html
-boards_sodaq-one:
-    name: SODAQ ONE
-    apiurl: https://doc.riot-os.org/group__boards__sodaq-one.html
-boards_sodaq-sara-aff:
-    name: SODAQ SARA AFF
-    apiurl: https://doc.riot-os.org/group__boards__sodaq-sara-aff.html
-boards_sodaq-sara-sff:
-    name: SODAQ SARA SFF
-    apiurl: https://doc.riot-os.org/group__boards__sodaq-sara-sff.html
-boards_stk3200:
-    name: Silicon Labs STK3200 starter kit
-    apiurl: https://doc.riot-os.org/group__boards__stk3200.html
-boards_stk3600:
-    name: Silicon Labs STK3600 starter kit
-    apiurl: https://doc.riot-os.org/group__boards__stk3600.html
-boards_stk3700:
-    name: Silicon Labs STK3700 starter kit
-    apiurl: https://doc.riot-os.org/group__boards__stk3700.html
-boards_stm32f030f4-demo:
-    name: STM32F030F4 Demo Board
-    apiurl: https://doc.riot-os.org/group__boards__stm32f030f4-demo.html
-boards_stm32f429i-disc1:
-    name: STM32F429I-DISC1
-    apiurl: https://doc.riot-os.org/group__boards__stm32f429i-disc1.html
-boards_stm32f429i-disco:
-    name: STM32F429I-DISCO
-    apiurl: https://doc.riot-os.org/group__boards__stm32f429i-disco.html
-boards_stm32f723e-disco:
-    name: STM32F723E-DISCO board
-    apiurl: https://doc.riot-os.org/group__boards__stm32f723e-disco.html
-boards_stm32f769i-disco:
-    name: STM32F769I-DISCO board
-    apiurl: https://doc.riot-os.org/group__boards__stm32f769i-disco.html
-boards_stm32l0538-disco:
-    name: STM32L0538-DISCO
-    apiurl: https://doc.riot-os.org/group__boards__stm32l0538-disco.html
-boards_stm32mp157c-dk2:
-    name: STM32MP157C-DK2 board
-    apiurl: https://doc.riot-os.org/group__boards__stm32mp157c-dk2.html
-boards_teensy31:
-    name: Teensy3.1 & 3.2
-    apiurl: https://doc.riot-os.org/group__boards__teensy31.html
-boards_thingy52:
-    name: Nordic Thingy:52
-    apiurl: https://doc.riot-os.org/group__boards__thingy52.html
-boards_usb-kw41z:
-    name: NXP USB-KW41Z Board
-    apiurl: https://doc.riot-os.org/group__boards__usb-kw41z.html
-boards_weact-f401cc:
-    name: WeAct-F401CC board
-    apiurl: https://doc.riot-os.org/group__boards__weact-f401cc.html
-boards_weact-f401ce:
-    name: WeAct-F401CE board
-    apiurl: https://doc.riot-os.org/group__boards__weact-f401ce.html
-boards_weact-f411ce:
-    name: WeAct-F411CE board
-    apiurl: https://doc.riot-os.org/group__boards__weact-f411ce.html
-boards_wemos-zero:
-    name: WeMos Arduino Zero Clone
-    apiurl: https://doc.riot-os.org/group__boards__wemos-zero.html
-boards_yarm:
-    name: Acmesystems YARM board
-    apiurl: https://doc.riot-os.org/group__boards__yarm.html
-boards_zigduino:
-    name: Zigduino
-    apiurl: https://doc.riot-os.org/group__boards__zigduino.html
+-  name: Airfy Beacon
+   apiurl: https://doc.riot-os.org/group__boards__airfy-beacon.html
+-  name: Arduino Due
+   apiurl: https://doc.riot-os.org/group__boards__arduino-due.html
+-  name: Arduino Duemilanove
+   apiurl: https://doc.riot-os.org/group__boards__arduino-duemilanove.html
+-  name: Arduino Mega 2560
+   apiurl: https://doc.riot-os.org/group__boards__arduino-mega2560.html
+-  name: Arduino MKR1000
+   apiurl: https://doc.riot-os.org/group__boards__arduino-mkr1000.html
+-  name: Arduino MKRZERO
+   apiurl: https://doc.riot-os.org/group__boards__arduino-mkrzero.html
+-  name: Arduino Uno
+   apiurl: https://doc.riot-os.org/group__boards__arduino-uno.html
+-  name: Arduino Zero
+   apiurl: https://doc.riot-os.org/group__boards__arduino-zero.html
+-  name: Avsextrem
+   apiurl: https://doc.riot-os.org/group__boards__avsextrem.html
+-  name: ST B-L072Z-LRWAN1 LoRa discovery
+   apiurl: https://doc.riot-os.org/group__boards__b-l072z-lrwan1.html
+-  name: Calliope mini
+   apiurl: https://doc.riot-os.org/group__boards__calliope-mini.html
+-  name: CC2538DK
+   apiurl: https://doc.riot-os.org/group__boards__cc2538dk.html
+-  name: TI CC2650 LaunchPad XL
+   apiurl: https://doc.riot-os.org/group__boards__cc2650__launchpad.html
+-  name: CC2650STK
+   apiurl: https://doc.riot-os.org/group__boards__cc2650stk.html
+-  name: EK-LM4F120XL
+   apiurl: https://doc.riot-os.org/group__boards__ek-lm4f120xl.html
+-  name:  F4VI1
+   apiurl: https://doc.riot-os.org/group__boards__f4vi1.html
+-  name: fox
+   apiurl: https://doc.riot-os.org/group__boards__fox.html
+-  name: NXP FRDM-K22F Board
+   apiurl: https://doc.riot-os.org/group__boards__frdm-k22f.html
+-  name: NXP FRDM-K64F Board
+   apiurl: https://doc.riot-os.org/group__boards__frdm-k64f.html
+-  name: IoT-LAB A8 M3 open node
+   apiurl: https://doc.riot-os.org/group__boards__iotlab-a8-m3.html
+-  name: IoT-LAB M3 open node
+   apiurl: https://doc.riot-os.org/group__boards__iotlab-m3.html
+-  name: LimiFrog Version 1
+   apiurl: https://doc.riot-os.org/group__boards__limifrog-v1.html
+-  name: maple-mini
+   apiurl: https://doc.riot-os.org/group__boards__maple-mini.html
+-  name: mbed LPC1768 development kit
+   apiurl: https://doc.riot-os.org/group__boards__mbed__lpc1768.html
+-  name: BBC micro:bit
+   apiurl: https://doc.riot-os.org/group__boards__microbit.html
+-  name: MSB-430
+   apiurl: https://doc.riot-os.org/group__boards__msb430.html
+-  name: MSB-430H
+   apiurl: https://doc.riot-os.org/group__boards__msb430h.html
+-  name: MSB-A2
+   apiurl: https://doc.riot-os.org/group__boards__msba2.html
+-  name: MSB-IoT
+   apiurl: https://doc.riot-os.org/group__boards__msbiot.html
+-  name: Eistec Mulle
+   apiurl: https://doc.riot-os.org/group__boards__mulle.html
+-  name: Native Board
+   apiurl: https://doc.riot-os.org/group__boards__native.html
+-  name: nRF51 Dongle
+   apiurl: https://doc.riot-os.org/group__boards__nrf51dongle.html
+-  name: nRF52840 DK
+   apiurl: https://doc.riot-os.org/group__boards__nrf52840dk.html
+-  name: nRF52 DK
+   apiurl: https://doc.riot-os.org/group__boards__nrf52dk.html
+-  name: NRF6310 (Nordic NRF Hardware Development Kit)
+   apiurl: https://doc.riot-os.org/group__boards__nrf6310.html
+-  name: NZ32-SC151
+   apiurl: https://doc.riot-os.org/group__boards__nz32-sc151.html
+-  name: OpenCM9.04
+   apiurl: https://doc.riot-os.org/group__boards__opencm904.html
+-  name: OpenMote-cc2538
+   apiurl: https://doc.riot-os.org/group__boards__openmote-cc2538.html
+-  name: phyWAVE-KW22 Board
+   apiurl: https://doc.riot-os.org/group__boards__pba-d-01-kw2x.html
+-  name: Digilent PIC32 WiFire
+   apiurl: https://doc.riot-os.org/group__boards__pic32-wifire.html
+-  name: RE-Mote Prototype A
+   apiurl: https://doc.riot-os.org/group__boards__remote-pa.html
+-  name: RE-Mote Revision A
+   apiurl: https://doc.riot-os.org/group__boards__remote-reva.html
+-  name: RE-Mote Revision B
+   apiurl: https://doc.riot-os.org/group__boards__remote-revb.html
+-  name: Atmel SAM D21 Xplained Pro
+   apiurl: https://doc.riot-os.org/group__boards__samd21-xpro.html
+-  name: Atmel SAM L21 Xplained Pro
+   apiurl: https://doc.riot-os.org/group__boards__saml21-xpro.html
+-  name: Atmel SAM R21 Xplained Pro
+   apiurl: https://doc.riot-os.org/group__boards__samr21-xpro.html
+-  name: Seeeduino Arch Pro development kit
+   apiurl: https://doc.riot-os.org/group__boards__seeduino__arch-pro.html
+-  name: Silicon Labs SLWSTK6220A starter kit
+   apiurl: https://doc.riot-os.org/group__boards__slwstk6220a.html
+-  name: SODAQ Autonomo
+   apiurl: https://doc.riot-os.org/group__boards__sodaq-autonomo.html
+-  name: SODAQ ExpLoRer
+   apiurl: https://doc.riot-os.org/group__boards__sodaq-explorer.html
+-  name: Spark-Core
+   apiurl: https://doc.riot-os.org/group__boards__spark-core.html
+-  name: STM32F0Discovery
+   apiurl: https://doc.riot-os.org/group__boards__stm32f0discovery.html
+-  name: STM32F3Discovery
+   apiurl: https://doc.riot-os.org/group__boards__stm32f3discovery.html
+-  name: STM32F4Discovery
+   apiurl: https://doc.riot-os.org/group__boards__stm32f4discovery.html
+-  name: TelosB
+   apiurl: https://doc.riot-os.org/group__boards__telosb.html
+-  name: UDOO
+   apiurl: https://doc.riot-os.org/group__boards__udoo.html
+-  name: Waspmote PRO v1.2
+   apiurl: https://doc.riot-os.org/group__boards__waspmote-pro.html
+-  name: Yunjia NRF51822
+   apiurl: https://doc.riot-os.org/group__boards__yunjia-nrf51822.html
+-  name: Zolertia Z1
+   apiurl: https://doc.riot-os.org/group__boards__z1.html
+-  name: MikroE 6LoWPAN Clicker
+   apiurl: https://doc.riot-os.org/group__boards__6lowpan-clicker.html
+-  name: ACD52832
+   apiurl: https://doc.riot-os.org/group__boards__acd52832.html
+-  name: Adafruit Clue
+   apiurl: https://doc.riot-os.org/group__boards__adafruit-clue.html
+-  name: Adafruit-Itsybitsy-M4
+   apiurl: https://doc.riot-os.org/group__boards__adafruit-itsybitsy-m4.html
+-  name: Adafruit-Itsybitsy-nRF52
+   apiurl: https://doc.riot-os.org/group__boards__adafruit-itsybitsy-nrf52.html
+-  name: Arduino Leonardo
+   apiurl: https://doc.riot-os.org/group__boards__arduino-leonardo.html
+-  name: Arduino MKRFOX1200
+   apiurl: https://doc.riot-os.org/group__boards__arduino-mkrfox1200.html
+-  name: Arduino MKR WAN 1300
+   apiurl: https://doc.riot-os.org/group__boards__arduino-mkrwan1300.html
+-  name: Arduino Nano 33 BLE
+   apiurl: https://doc.riot-os.org/group__boards__arduino-nano-33-ble.html
+-  name: Arduino Nano 33 IoT
+   apiurl: https://doc.riot-os.org/group__boards__arduino-nano-33-iot.html
+-  name: Arduino Nano
+   apiurl: https://doc.riot-os.org/group__boards__arduino-nano.html
+-  name: Standalone ATmega1284P
+   apiurl: https://doc.riot-os.org/group__boards__atmega1284p.html
+-  name: Atmega256RFR2 Xplained Pro
+   apiurl: https://doc.riot-os.org/group__boards__atmega256rfr2-xpro.html
+-  name: Standalone ATmega328p
+   apiurl: https://doc.riot-os.org/group__boards__atmega328p.html
+-  name: Atmega256RFR2 rss2
+   apiurl: https://doc.riot-os.org/group__boards__avr-rss2.html
+-  name: ST B-L475E-IOT01A
+   apiurl: https://doc.riot-os.org/group__boards__b-l475e-iot01a.html
+-  name: Blackpill board (128KiB flash hack version)
+   apiurl: https://doc.riot-os.org/group__boards__blackpill__128kib.html
+-  name: Blackpill board
+   apiurl: https://doc.riot-os.org/group__boards__blackpill.html
+-  name: Bluepill board (128KiB flash hack version)
+   apiurl: https://doc.riot-os.org/group__boards__bluepill__128kib.html
+-  name: STM32F030C8 based Bluepill
+   apiurl: https://doc.riot-os.org/group__boards__bluepill-stm32f030c8.html
+-  name: Bluepill board
+   apiurl: https://doc.riot-os.org/group__boards__bluepill.html
+-  name: TI CC1312 LaunchPad
+   apiurl: https://doc.riot-os.org/group__boards__cc1312__launchpad.html
+-  name: TI CC1350 LaunchPad XL
+   apiurl: https://doc.riot-os.org/group__boards__cc1350__launchpad.html
+-  name: TI CC1352 LaunchPad
+   apiurl: https://doc.riot-os.org/group__boards__cc1352__launchpad.html
+-  name: TI CC1352P LaunchPad
+   apiurl: https://doc.riot-os.org/group__boards__cc1352p__launchpad.html
+-  name: ATmega common
+   apiurl: https://doc.riot-os.org/group__boards__common__atmega.html
+-  name: Blackpill and Bluepill common code
+   apiurl: https://doc.riot-os.org/group__boards__common__blxxxpill.html
+-  name: cc2538 Configuration Snippets
+   apiurl: https://doc.riot-os.org/group__boards__common__cc2538.html
+-  name: Common Board Groups
+   apiurl: https://doc.riot-os.org/group__boards__common.html
+-  name: E104-BT50xxA-TB common code
+   apiurl: https://doc.riot-os.org/group__boards__common__e104-bt50xxa-tb.html
+-  name:  ESP32 Common
+   apiurl: https://doc.riot-os.org/group__boards__common__esp32.html
+-  name:  ESP32 Boards
+   apiurl: https://doc.riot-os.org/group__boards__esp32.html
+-  name:  ESP8266 Common
+   apiurl: https://doc.riot-os.org/group__boards__common__esp8266.html
+-  name:  ESP8266 Boards
+   apiurl: https://doc.riot-os.org/group__boards__esp8266.html
+-  name: NXP FRDM Common
+   apiurl: https://doc.riot-os.org/group__boards__common__frdm.html
+-  name: nRF52 common
+   apiurl: https://doc.riot-os.org/group__boards__common__nrf52.html
+-  name: Particle Mesh common
+   apiurl: https://doc.riot-os.org/group__boards__common__particle-mesh.html
+-  name: Silicon Labs Common
+   apiurl: https://doc.riot-os.org/group__boards__common__silabs.html
+-  name: Silicon Labs Common Drivers
+   apiurl: https://doc.riot-os.org/group__boards__common__silabs__drivers.html
+-  name: Silicon Labs SLWSTK6000B starter kit
+   apiurl: https://doc.riot-os.org/group__boards__common__slwstk6000b.html
+-  name: STM32 Configuration Snippets
+   apiurl: https://doc.riot-os.org/group__boards__common__stm32.html
+-  name: WeAct-F4x1Cx common code
+   apiurl: https://doc.riot-os.org/group__boards__common__weact-f4x1cx.html
+-  name: deRFmega128 modules from Dresden Elektronik
+   apiurl: https://doc.riot-os.org/group__boards__deRFmega128.html
+-  name: deRFmega256 modules from Dresden Elektronik
+   apiurl: https://doc.riot-os.org/group__boards__deRFmega256.html
+-  name: Boards
+   apiurl: https://doc.riot-os.org/group__boards.html
+-  name: Decawave DWM1001
+   apiurl: https://doc.riot-os.org/group__boards__dwm1001.html
+-  name: E104-BT5010A Test Board
+   apiurl: https://doc.riot-os.org/group__boards__e104-bt5010a-tb.html
+-  name: E104-BT5011A Test Board
+   apiurl: https://doc.riot-os.org/group__boards__e104-bt5011a-tb.html
+-  name: Ebyte E180-ZG120B-TB Test Board
+   apiurl: https://doc.riot-os.org/group__boards__e180-zg120b-tb.html
+-  name: v1.0 Board
+   apiurl: https://doc.riot-os.org/group__boards__esp32__esp-ethernet-kit-v1__0.html
+-  name: v1.1 Board
+   apiurl: https://doc.riot-os.org/group__boards__esp32__esp-ethernet-kit-v1__1.html
+-  name: v1.2 Board
+   apiurl: https://doc.riot-os.org/group__boards__esp32__esp-ethernet-kit-v1__2.html
+-  name: Heltec WiFi LoRa 32 V2 boards
+   apiurl: https://doc.riot-os.org/group__boards__esp32__heltec-lora32-v2.html
+-  name: MH-ET LIVE MiniKit
+   apiurl: https://doc.riot-os.org/group__boards__esp32__mh-et-live-minikit.html
+-  name: Olimex ESP32-EVB
+   apiurl: https://doc.riot-os.org/group__boards__esp32__olimex-esp32-evb.html
+-  name: TTGO T-Beam
+   apiurl: https://doc.riot-os.org/group__boards__esp32__ttgo-t-beam.html
+-  name: Wemos LOLIN D32 Pro
+   apiurl: https://doc.riot-os.org/group__boards__esp32__wemos-lolin-d32-pro.html
+-  name: Generic ESP32-WROOM-32 boards
+   apiurl: https://doc.riot-os.org/group__boards__esp32__wroom-32.html
+-  name: ESP-WROVER-KIT V3
+   apiurl: https://doc.riot-os.org/group__boards__esp32__esp-wrover-kit.html
+-  name:  ESP-12x based boards
+   apiurl: https://doc.riot-os.org/group__boards__esp8266__esp-12x.html
+-  name: Olimex MOD-WIFI-ESP8266-DEV
+   apiurl: https://doc.riot-os.org/group__boards__esp8266__olimex-mod.html
+-  name: SparkFun ESP8266 Thing
+   apiurl: https://doc.riot-os.org/group__boards__esp8266__sparkfun-thing.html
+-  name: Adafruit Feather M0 LoRa
+   apiurl: https://doc.riot-os.org/group__boards__feather-m0-lora.html
+-  name: Adafruit Feather M0 WiFi
+   apiurl: https://doc.riot-os.org/group__boards__feather-m0-wifi.html
+-  name: Adafruit Feather M0
+   apiurl: https://doc.riot-os.org/group__boards__feather-m0.html
+-  name: Adafruit Feather nRF52840 Express
+   apiurl: https://doc.riot-os.org/group__boards__feather-nrf52840.html
+-  name: Firefly Board
+   apiurl: https://doc.riot-os.org/group__boards__firefly.html
+-  name: Freescale FRDM-KW41Z Board
+   apiurl: https://doc.riot-os.org/group__boards__frdm-kw41z.html
+-  name: ST I-NUCLEO-LRWAN1 LoRa board
+   apiurl: https://doc.riot-os.org/group__boards__i-nucleo-lrwan1.html
+-  name: IKEA TRÅDFRI modules
+   apiurl: https://doc.riot-os.org/group__boards__ikea-tradfri.html
+-  name: im880b
+   apiurl: https://doc.riot-os.org/group__boards__im880b.html
+-  name: Lobaro Lorabox
+   apiurl: https://doc.riot-os.org/group__boards__lobaro__lorabox.html
+-  name: Dragino LSN50 LoRa Sensor Node
+   apiurl: https://doc.riot-os.org/group__boards__lsn50.html
+-  name: MCB2388 Evaluation Board
+   apiurl: https://doc.riot-os.org/group__boards__mcb2388.html
+-  name: Mega1284P-Xplained
+   apiurl: https://doc.riot-os.org/group__boards__mega-xplained.html
+-  name: Microduino CoreRF
+   apiurl: https://doc.riot-os.org/group__boards__microduino-corerf.html
+-  name: nRF51DK Development Kit
+   apiurl: https://doc.riot-os.org/group__boards__nrf51dk.html
+-  name: nRF52832-MDK
+   apiurl: https://doc.riot-os.org/group__boards__nrf52832-mdk.html
+-  name: nRF52840 MDK USB Dongle
+   apiurl: https://doc.riot-os.org/group__boards__nrf52840-mdk-dongle.html
+-  name: nRF52840-MDK
+   apiurl: https://doc.riot-os.org/group__boards__nrf52840-mdk.html
+-  name: nRF52840-Dongle
+   apiurl: https://doc.riot-os.org/group__boards__nrf52840dongle.html
+-  name: STM32 Nucleo-F030R8
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f030r8.html
+-  name: STM32 Nucleo-F031K6
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f031k6.html
+-  name: STM32 Nucleo-F042K6
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f042k6.html
+-  name: STM32 Nucleo-F070RB
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f070rb.html
+-  name: STM32 Nucleo-F072RB
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f072rb.html
+-  name: STM32 Nucleo-F091RC
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f091rc.html
+-  name: STM32 Nucleo-F103RB
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f103rb.html
+-  name: STM32 Nucleo-F207ZG
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f207zg.html
+-  name: STM32 Nucleo-F302R8
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f302r8.html
+-  name: STM32 Nucleo-F303K8
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f303k8.html
+-  name: STM32 Nucleo-F303RE
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f303re.html
+-  name: STM32 Nucleo-F303ZE
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f303ze.html
+-  name: STM32 Nucleo-F334R8
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f334r8.html
+-  name: STM32 Nucleo-F401RE
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f401re.html
+-  name: STM32 Nucleo-F410RB
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f410rb.html
+-  name: STM32 Nucleo-F411RE
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f411re.html
+-  name: STM32 Nucleo-F412ZG
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f412zg.html
+-  name: STM32 Nucleo-F413ZH
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f413zh.html
+-  name: STM32 Nucleo-F429ZI
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f429zi.html
+-  name: STM32 Nucleo-F446RE
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f446re.html
+-  name: STM32 Nucleo-F446ZE
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f446ze.html
+-  name: STM32 Nucleo-F722ZE
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f722ze.html
+-  name: STM32 Nucleo-F746ZG
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f746zg.html
+-  name: STM32 Nucleo-F767ZI
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-f767zi.html
+-  name: STM32 Nucleo-G070RB
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-g070rb.html
+-  name: STM32 Nucleo-G071RB
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-g071rb.html
+-  name: STM32 Nucleo-G431RB
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-g431rb.html
+-  name: STM32 Nucleo-G474RE
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-g474re.html
+-  name: STM32 Nucleo-L011K4
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-l011k4.html
+-  name: STM32 Nucleo-L031K6
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-l031k6.html
+-  name: STM32 Nucleo-L053R8
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-l053r8.html
+-  name: STM32 Nucleo-L073RZ
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-l073rz.html
+-  name: STM32 Nucleo-L152RE
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-l152re.html
+-  name: STM32 Nucleo-L412KB
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-l412kb.html
+-  name: STM32 Nucleo-L432KC
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-l432kc.html
+-  name: STM32 Nucleo-L433RC
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-l433rc.html
+-  name: STM32 Nucleo-L452RE
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-l452re.html
+-  name: STM32 Nucleo-L476RG
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-l476rg.html
+-  name: STM32 Nucleo-L496ZG
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-l496zg.html
+-  name: STM32 Nucleo-L4R5ZI
+   apiurl: https://doc.riot-os.org/group__boards__nucleo144-l4r5.html
+-  name: STM32 Nucleo-L552ZE-Q
+   apiurl: https://doc.riot-os.org/group__boards__nucleo-l552ze-q.html
+-  name: STM32 Olimexino-stm32
+   apiurl: https://doc.riot-os.org/group__boards__olimexino-stm32.html
+-  name: omote
+   apiurl: https://doc.riot-os.org/group__boards__omote.html
+-  name: openlabs.co kw41z-mini-256kib board
+   apiurl: https://doc.riot-os.org/group__boards__openlabs-kw41z-mini-256kib.html
+-  name: openlabs.co kw41z-mini board
+   apiurl: https://doc.riot-os.org/group__boards__openlabs-kw41z-mini.html
+-  name: OpenMote-b
+   apiurl: https://doc.riot-os.org/group__boards__openmote-b.html
+-  name: ST P-L496G-CELL02
+   apiurl: https://doc.riot-os.org/group__boards__p-l496g-cell02.html
+-  name: STM32 p-nucleo-wb55
+   apiurl: https://doc.riot-os.org/group__boards__p-nucleo-wb55.html
+-  name: Particle Argon
+   apiurl: https://doc.riot-os.org/group__boards__particle-argon.html
+-  name: Particle Boron
+   apiurl: https://doc.riot-os.org/group__boards__particle-boron.html
+-  name: Particle Xenon
+   apiurl: https://doc.riot-os.org/group__boards__particle-xenon.html
+-  name: PhyNODE KW41Z
+   apiurl: https://doc.riot-os.org/group__boards__phynode-kw41z.html
+-  name: PineTime
+   apiurl: https://doc.riot-os.org/group__boards__pinetime.html
+-  name: pyboard
+   apiurl: https://doc.riot-os.org/group__boards__pyboard.html
+-  name: QN9080DK base board
+   apiurl: https://doc.riot-os.org/group__boards__qn9080dk.html
+-  name: Phytec reel board
+   apiurl: https://doc.riot-os.org/group__boards__reel.html
+-  name: RuuviTag
+   apiurl: https://doc.riot-os.org/group__boards__ruuvitag.html
+-  name: Atmel SAM D10 Xplained Mini
+   apiurl: https://doc.riot-os.org/group__boards__samd10-xmini.html
+-  name: Atmel SAM D20 Xplained Pro
+   apiurl: https://doc.riot-os.org/group__boards__samd20-xpro.html
+-  name: Microchip SAM E54 Xplained Pro
+   apiurl: https://doc.riot-os.org/group__boards__same54-xpro.html
+-  name: Microchip SAML10 Xplained Pro
+   apiurl: https://doc.riot-os.org/group__boards__saml10-xpro.html
+-  name: Microchip SAML11 Xplained Pro
+   apiurl: https://doc.riot-os.org/group__boards__saml11-xpro.html
+-  name: SenseBox MCU with SAMD21
+   apiurl: https://doc.riot-os.org/group__boards__sensebox__samd21.html
+-  name: Serpente R2
+   apiurl: https://doc.riot-os.org/group__boards__serpente.html
+-  name: Silicon Labs SLSTK3400A starter kit
+   apiurl: https://doc.riot-os.org/group__boards__slstk3400a.html
+-  name: Silicon Labs SLSTK3401A starter kit
+   apiurl: https://doc.riot-os.org/group__boards__slstk3401a.html
+-  name: Silicon Labs SLSTK3402A starter kit
+   apiurl: https://doc.riot-os.org/group__boards__slstk3402a.html
+-  name: Silicon Labs SLTB001A starter kit
+   apiurl: https://doc.riot-os.org/group__boards__sltb001a.html
+-  name: SODAQ ONE
+   apiurl: https://doc.riot-os.org/group__boards__sodaq-one.html
+-  name: SODAQ SARA AFF
+   apiurl: https://doc.riot-os.org/group__boards__sodaq-sara-aff.html
+-  name: SODAQ SARA SFF
+   apiurl: https://doc.riot-os.org/group__boards__sodaq-sara-sff.html
+-  name: Silicon Labs STK3200 starter kit
+   apiurl: https://doc.riot-os.org/group__boards__stk3200.html
+-  name: Silicon Labs STK3600 starter kit
+   apiurl: https://doc.riot-os.org/group__boards__stk3600.html
+-  name: Silicon Labs STK3700 starter kit
+   apiurl: https://doc.riot-os.org/group__boards__stk3700.html
+-  name: STM32F030F4 Demo Board
+   apiurl: https://doc.riot-os.org/group__boards__stm32f030f4-demo.html
+-  name: STM32F429I-DISC1
+   apiurl: https://doc.riot-os.org/group__boards__stm32f429i-disc1.html
+-  name: STM32F429I-DISCO
+   apiurl: https://doc.riot-os.org/group__boards__stm32f429i-disco.html
+-  name: STM32F723E-DISCO board
+   apiurl: https://doc.riot-os.org/group__boards__stm32f723e-disco.html
+-  name: STM32F769I-DISCO board
+   apiurl: https://doc.riot-os.org/group__boards__stm32f769i-disco.html
+-  name: STM32L0538-DISCO
+   apiurl: https://doc.riot-os.org/group__boards__stm32l0538-disco.html
+-  name: STM32MP157C-DK2 board
+   apiurl: https://doc.riot-os.org/group__boards__stm32mp157c-dk2.html
+-  name: Teensy3.1 & 3.2
+   apiurl: https://doc.riot-os.org/group__boards__teensy31.html
+-  name: Nordic Thingy:52
+   apiurl: https://doc.riot-os.org/group__boards__thingy52.html
+-  name: NXP USB-KW41Z Board
+   apiurl: https://doc.riot-os.org/group__boards__usb-kw41z.html
+-  name: WeAct-F401CC board
+   apiurl: https://doc.riot-os.org/group__boards__weact-f401cc.html
+-  name: WeAct-F401CE board
+   apiurl: https://doc.riot-os.org/group__boards__weact-f401ce.html
+-  name: WeAct-F411CE board
+   apiurl: https://doc.riot-os.org/group__boards__weact-f411ce.html
+-  name: WeMos Arduino Zero Clone
+   apiurl: https://doc.riot-os.org/group__boards__wemos-zero.html
+-  name: Acmesystems YARM board
+   apiurl: https://doc.riot-os.org/group__boards__yarm.html
+-  name: Zigduino
+   apiurl: https://doc.riot-os.org/group__boards__zigduino.html
