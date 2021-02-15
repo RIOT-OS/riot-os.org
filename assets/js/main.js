@@ -213,4 +213,26 @@
       });
     });
   });
+
+  /**
+   * Generic list search
+   *
+   * This will filter the elements of a list with ID <prefix>List using the value entered via an
+   * input with name <prefix>SearchInput. For example, to filter boards that are contained in a
+   * <div id="boardList">...</div>, place an
+   * <input name="boardSearchInput" type="text" placeholder="Search..">
+   */
+  $(document).ready(function(){
+    $("input[name*='SearchInput']").on("keyup", function(e) {
+      var target = $(e.target);
+      var prefix = target.attr("name").split("SearchInput")[0];
+      var list = $("#" + prefix + "List *");
+      var searchValue = target.val().toLowerCase();
+
+      list.filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1)
+      })
+    });
+  });
+
 })()

@@ -3,42 +3,26 @@ layout: simple-page
 title: Supported Boards
 subtitle: RIOT has a hardware abstraction layer, which enables us to support many boards easily.
 ---
+<main>
+  <!-- ======= Board Section ======= -->
+  <section id="boards">
+    <div class="container">
 
-    <!-- ======= Board Section ======= -->
-    <section id="boards">
-      <div class="container">
-
-  <!--<input class="form-control" id="myInput" type="text" placeholder="Search..">
-  <div id="myboards">-->
-
+      <input class="form-control" name="boardSearchInput" type="text" placeholder="Search..">
+      <hr>
+      <div id="boardList">
         <div class="row row-cols-1 row-cols-md-4 g-4">
           {% for board in site.data.riot_boards %}
-            <div class="col">
-              <a href="{{ board.apiurl }}">
-                <div class="card shadow rounded btn-primary h-100">
-                  <div class="card-body align-middle">
-                    <h5 class="text-center">{{ board.name }}</h5>
-                  </div>
+          <div class="col">
+            <a href="{{ board.apiurl }}">
+              <div class="card shadow rounded btn-primary h-100">
+                <div class="card-body align-middle">
+                  <h5 class="text-center">{{ board.name }}</h5>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
+          </div>
           {% endfor %}
         </div>
-    </section><!-- End Board Section -->
-
-
-
-  </main><!-- End #main -->
-
-<!--
-<script>
-$(document).ready(function(){
-  $("#myInput").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#myboards *").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
-</script>
--->
+  </section><!-- End Board Section -->
+</main><!-- End #main -->
