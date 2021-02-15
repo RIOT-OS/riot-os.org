@@ -90,38 +90,38 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About
+# nutshell
 --------------------------------------------------------------*/
-.about {
+.nutshell {
   padding-top: 80px;
   background: #000000;
   color: $gray;
 }
 
-.about .section-title p {
+.nutshell .section-title p {
   color: #ffffff;
 }
 
-.about .content h3 {
+.nutshell .content h3 {
   font-weight: 600;
   font-size: 26px;
 }
 
-.about .content ul {
+.nutshell .content ul {
   list-style: none;
   padding: 0;
 }
 
-.about .content ul li {
+.nutshell .content ul li {
   padding-left: 28px;
   position: relative;
 }
 
-.about .content ul li + li {
+.nutshell .content ul li + li {
   margin-top: 10px;
 }
 
-.about .content ul i {
+.nutshell .content ul i {
   position: absolute;
   left: 0;
   top: 2px;
@@ -130,11 +130,11 @@ section {
   line-height: 1;
 }
 
-.about .content p:last-child {
+.nutshell .content p:last-child {
   margin-bottom: 0;
 }
 
-.about .content .btn-learn-more {
+.nutshell .content .btn-learn-more {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -151,7 +151,7 @@ section {
   border: 2px solid $primary;
 }
 
-.about .content .btn-learn-more:hover {
+.nutshell .content .btn-learn-more:hover {
   background: $primary;
   color: $light;
   text-decoration: none;
