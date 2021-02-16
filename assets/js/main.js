@@ -226,9 +226,8 @@
     $("input[name*='SearchInput']").on("keyup", function(e) {
       var target = $(e.target);
       var prefix = target.attr("name").split("SearchInput")[0];
-      var list = $("#" + prefix + "List *");
+      var list = $("#" + prefix + "List *").not(".exclude");
       var searchValue = target.val().toLowerCase();
-
       list.filter(function() {
         $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1)
       })
