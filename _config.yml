@@ -4,3 +4,5 @@ sass:
 collections:
     use_cases:
         output: true
+    faqs:
+        output: true
