@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" {% if page.layout == "simple-page" %} class="h-100" {% endif %}>
 
 <head>
   <meta charset="utf-8">
@@ -37,11 +37,10 @@
   ======================================================== -->
 </head>
 
-<body>
+<body {% if page.layout == "simple-page" %} class="d-flex flex-column h-100" {% endif %}>
     <div class="container-md">
   {% include header.html %}
     </div>
-
   {{ content }}
 
   {% include footer.html %}
