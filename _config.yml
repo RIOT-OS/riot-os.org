@@ -6,3 +6,10 @@ collections:
         output: true
     faqs:
         output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "use_cases"
+    values:
+      layout: "use-case"

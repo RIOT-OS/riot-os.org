@@ -1,0 +1,17 @@
+#use-case {
+  .header {
+    background: $dark;
+    padding: 80px 0;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      max-width: 100px;
+    }
+  }
+
+  blockquote i {
+    color: $primary-light;
+  }
+}
