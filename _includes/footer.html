@@ -1,5 +1,5 @@
   <!-- ======= Footer ======= -->
-  <footer id="footer">
+  <footer id="footer" {% unless page.main %} class="mt-auto" {% endunless %}>
     <div class="container">
       <div class="row text-center mb-3">
         <div class="col-12">
@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="copyright">
-        <small>&copy; 2013 - {{ "now" | date: "%Y" }}. All Rights Reserved</small>
+        <small>&copy; 2013 - {{ "now" | date: "%Y" }}. All Rights Reserved</small> | <a href="{%link imprint.html %}">Imprint</a>
       </div>
     </div>
   </footer><!-- End Footer -->
