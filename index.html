@@ -89,14 +89,14 @@ main: true
               <div class="card shadow h-100 p-2 border-0 rounded">
                 <div class="card-body">
                   <div class="row h-100">
-                    <div class="col-2 feature-icon d-flex align-items-center"><h1><i class="ri-shield-keyhole-line"></i></h1></div>
+                    <div class="col-2 feature-icon d-flex text-center align-items-center"><h1 class="w-100"><i class="ri-shield-keyhole-line"></i></h1></div>
                     <div class="col">
                       <h5>Security</h5>
                       <h6 class="mb-2 text-muted">Deploy secure IoT applications</h6>
                       <p>
                         RIOT supports DTLS transport layer security, IEEE 802.15.4 encryption,
                         Secure Firmware Updates (SUIT), multiple cryptographic packages and
-                        crypto-peripherals.
+                        crypto secure elements.
                       </p>
                     </div>
                   </div>
@@ -108,13 +108,13 @@ main: true
               <div class="card shadow h-100 p-2 border-0 rounded">
                 <div class="card-body">
                   <div class="row">
-                    <div class="col-2 feature-icon d-flex align-items-center"><h1><i class="ri-links-line"></i></h1></div>
+                    <div class="col-2 feature-icon d-flex text-center align-items-center"><h1 class="w-100"><i class="ri-links-line"></i></h1></div>
                     <div class="col">
                       <h5>Connectivity</h5>
                       <h6 class="mb-2 text-muted">Multiple communication technologies and standards</h6>
                       <p>
-                        RIOT provides support for BLE, LoRaWAN, 802.15.4, WLAN and Ethernet.
-                        As well as 6LoWPAN, IPv6, RPL, UDP, TCP, QUIC, CoAP, LwM2M and CBOR.
+                        RIOT provides support for BLE, LoRaWAN, 802.15.4, WLAN, Ethernet and CAN.
+                        As well as 6LoWPAN, IPv6, ICN stacks, RPL, UDP, TCP, QUIC, CoAP, MQTT-SN, LwM2M and CBOR.
                       </p>
                     </div>
                   </div>
@@ -126,7 +126,7 @@ main: true
               <div class="card shadow h-100 p-2 border-0 rounded">
                 <div class="card-body">
                   <div class="row">
-                    <div class="col-2 feature-icon d-flex align-items-center"><h1><i class="ri-check-double-line"></i></h1></div>
+                    <div class="col-2 feature-icon d-flex text-center align-items-center"><h1 class="w-100"><i class="ri-check-double-line"></i></h1></div>
                     <div class="col">
                       <h5>Tested software</h5>
                       <h6 class="mb-2 text-muted">RIOT is constantly tested</h6>
@@ -149,7 +149,7 @@ main: true
               <div class="card shadow h-100 p-2 border-0 rounded">
                 <div class="card-body">
                   <div class="row">
-                    <div class="col-2 feature-icon d-flex align-items-center"><h1><i class="ri-open-source-line"></i></h1></div>
+                    <div class="col-2 feature-icon d-flex text-center align-items-center"><h1 class="w-100"><i class="ri-open-source-line"></i></h1></div>
                     <div class="col">
                       <h5>Open source</h5>
                       <h6 class="mb-2 text-muted">RIOT is free software</h6>
@@ -330,7 +330,7 @@ main: true
 
           {% for post in site.posts limit:3 %}
             <div class="col-12 col-lg-4 border-0">
-              <div class="card text-white overflow-hidden">
+              <div class="card text-white overflow-hidden shadow">
                 <a href="{{ post.url }}" class="overflow-hidden">
                   <img src="{% link /assets/img/blog/{{ post.image }} %}" class="card-img" alt="">
                   <div class="card-img-overlay">
