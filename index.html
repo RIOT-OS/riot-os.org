@@ -85,7 +85,67 @@ main: true
 
           <div class="row">
 
-            <div class="col-md-12 col-lg-4 pt-md-2">
+            <div class="col-md-12 col-lg-6 pt-md-4">
+              <div class="card shadow h-100 p-2 border-0 rounded">
+                <div class="card-body">
+                  <div class="row h-100">
+                    <div class="col-2 feature-icon d-flex align-items-center"><h1><i class="ri-shield-keyhole-line"></i></h1></div>
+                    <div class="col">
+                      <h5>Security</h5>
+                      <h6 class="mb-2 text-muted">Deploy secure IoT applications</h6>
+                      <p>
+                        RIOT supports DTLS transport layer security, IEEE 802.15.4 encryption,
+                        Secure Firmware Updates (SUIT), multiple cryptographic packages and
+                        crypto-peripherals.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- End feature -->
+
+            <div class="col-md-12 col-lg-6 pt-md-4">
+              <div class="card shadow h-100 p-2 border-0 rounded">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-2 feature-icon d-flex align-items-center"><h1><i class="ri-links-line"></i></h1></div>
+                    <div class="col">
+                      <h5>Connectivity</h5>
+                      <h6 class="mb-2 text-muted">Multiple communication technologies and standards</h6>
+                      <p>
+                        RIOT provides support for BLE, LoRaWAN, 802.15.4, WLAN and Ethernet.
+                        As well as 6LoWPAN, IPv6, RPL, UDP, TCP, QUIC, CoAP, LwM2M and CBOR.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- End feature -->
+
+            <div class="col-md-12 col-lg-6 pt-md-4">
+              <div class="card shadow h-100 p-2 border-0 rounded">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-2 feature-icon d-flex align-items-center"><h1><i class="ri-check-double-line"></i></h1></div>
+                    <div class="col">
+                      <h5>Tested software</h5>
+                      <h6 class="mb-2 text-muted">RIOT is constantly tested</h6>
+                      <p>
+                        A high code quality and thorough testing is a major concern for the RIOT
+                        community. Therefore, we use established tools like
+                        <a href="http://embunit.sourceforge.net/embunit/">embUnit - Unit Testing </a>
+                        and <a href="https://github.com/RIOT-OS/murdock-scripts"> Continuous Integration</a>
+                        , performing
+                        <a href="https://ci.riot-os.org/hil/blue/organizations/jenkins/RIOT-HIL/activity/">Hardware in the Loop (HIL)</a>
+                        testing on <a href="https://ci.riot-os.org/hil/labelsdashboard/">multiple boards</a> nightly.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- End feature -->
+
+            <div class="col-md-12 col-lg-6 pt-md-4">
               <div class="card shadow h-100 p-2 border-0 rounded">
                 <div class="card-body">
                   <div class="row">
@@ -105,43 +165,6 @@ main: true
               </div>
             </div> <!-- End feature -->
 
-            <div class="col-md-12 col-lg-4 pt-md-2">
-              <div class="card shadow h-100 p-2 border-0 rounded">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-2 feature-icon d-flex align-items-center"><h1><i class="ri-links-fill"></i></h1></div>
-                    <div class="col">
-                      <h5>Lorem Ipsum</h5>
-                      <h6 class="mb-2 text-muted">Dolor Sitema</h6>
-                      <p>
-                        Duis imperdiet lectus a eleifend euismod. Ut venenatis metus sem, et aliquam
-                        quam posuere a. Donec lacus nisi, pulvinar nec pulvinar quis, sodales ut quam.
-                        Maecenas et mauris id magna laoreet laoreet.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> <!-- End feature -->
-
-            <div class="col-md-12 col-lg-4 pt-md-2">
-              <div class="card shadow h-100 p-2 border-0 rounded">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-2 feature-icon d-flex align-items-center"><h1><i class="ri-bluetooth-line"></i></h1></div>
-                    <div class="col">
-                      <h5>Lorem Ipsum</h5>
-                      <h6 class="mb-2 text-muted">Dolor Sitema</h6>
-                      <p>
-                        Morbi posuere, justo nec vestibulum finibus, urna mi lobortis nunc, ut molestie
-                        elit dolor eu purus. Praesent posuere eget libero sed vestibulum. Mauris lacinia
-                        consequat elit, id viverra est.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> <!-- End feature -->
           </div>
         </div>
       </section>
@@ -163,13 +186,13 @@ main: true
                   <ul class="check_style">
                     <li class="pb-3"> Standard programming in C or C++ </li>
                     <li class="pb-3"> Standard tools: gcc, gdb, valgrind </li>
-        <li class="pb-3"> Zero learning curve for embedded programming </li>
+                    <li class="pb-3"> Zero learning curve for embedded programming </li>
                     <li class="pb-3"> Code mostly without hardware dependence </li>
                     <li class="pb-3"> Code once, run on 8-bit  (e.g., Arduino Mega 2560), 16-bit  (e.g.,
                       MSP430), and 32-bit platforms </li>
                     <li class="pb-3"> Benefit from POSIX compliance </li>
                     <li class="pb-3"> Develop under Linux, Mac OS, or Windows </li>
-        <li class="pb-3"> Use the native port, deploy on embedded device when running </li>
+                    <li class="pb-3"> Use the native port, deploy on embedded device when running </li>
                   </ul>
                 </div>
               </div>
@@ -187,7 +210,7 @@ main: true
                   </p>
                   <ul class="check_style">
                     <li class="pb-3"> Robust runtime system </li>
-        <li class="pb-3"> Modular for flexible code-footprint </li>
+                    <li class="pb-3"> Modular for flexible code-footprint </li>
                     <li class="pb-3"> Fosters energy-efficiency </li>
                     <li class="pb-3"> Real-time capable by limiting interrupt latency (~50 clock cycles) and
                       priority-based scheduling </li>
@@ -211,11 +234,11 @@ main: true
                     <li class="pb-3"> 6LoWPAN, IPv6, RPL, UDP, TCP, QUIC</li>
                     <li class="pb-3"> CoAP and CBOR</li>
                     <li class="pb-3"> BLE, LoRaWAN, 802.15.4, WLAN</li>
-        <li class="pb-3"> LWM2M client integration</li>
+                    <li class="pb-3"> LwM2M client integration</li>
                     <li class="pb-3"> Static and dynamic memory allocation</li>
                     <li class="pb-3"> High resolution and long-term timers</li>
                     <li class="pb-3"> Tools and utilities (System shell, Crypto primitives, ...)</li>
-        <li class="pb-3"> Automated testing on various embedded hardware in the loop</li>
+                    <li class="pb-3"> Automated testing on various embedded hardware in the loop</li>
                   </ul>
                 </div>
               </div>
@@ -415,9 +438,6 @@ main: true
               <div id="faq{{ forloop.index }}" class="collapse" data-bs-parent=".faq-list">
                 <p>
                   {{ faqs.content }}
-                </p>
-                <p>
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
                 </p>
               </div>
             </li>

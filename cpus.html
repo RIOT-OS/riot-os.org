@@ -7,38 +7,28 @@ subtitle: RIOT has a hardware abstraction layer, which enables us to support man
     <!-- ======= Board Section ======= -->
     <section id="cpus">
       <div class="container">
-
-  <!--<input class="form-control" id="myInput" type="text" placeholder="Search..">
-  <div id="myboards">-->
-
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-          {% for cpu in site.data.riot_cpus %}
-            <div class="col">
-              <a href="{{ cpu.apiurl }}">
-                <div class="card shadow rounded btn-primary h-100">
-                  <div class="card-body align-middle">
-                    <h5 class="text-center">{{ cpu.name }}</h5>
-                  </div>
-                </div>
-              </a>
-            </div>
-          {% endfor %}
+        <div class="section-title">
+          <h2>Hardware</h2>
+          <p>CPUs</p>
         </div>
+
+        <input class="form-control" name="cpuSearchInput" type="text" placeholder="Search..">
+        <hr>
+        <div id="cpuList">
+          <div class="row row-cols-1 row-cols-md-4 g-4">
+            {% for cpu in site.data.riot_cpus %}
+              <div class="col">
+                <a href="{{ cpu.apiurl }}">
+                  <div class="card shadow rounded btn-primary h-100">
+                    <div class="card-body align-middle">
+                      <h5 class="text-center">{{ cpu.name }}</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
     </section><!-- End Board Section -->
-
-
-
   </main><!-- End #main -->
-
-<!--
-<script>
-$(document).ready(function(){
-  $("#myInput").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#myboards *").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
-</script>
--->
