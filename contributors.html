@@ -1,0 +1,28 @@
+---
+layout: simple-page
+title: Contributors
+subtitle: An ever growing community of people contribute to RIOT
+---
+
+<main>
+  <!-- ======= Contributors Section ======= -->
+  <section id="contributors">
+    <div class="container">
+        Here is a list of some of the contributors. See the whole list <a href="https://github.com/RIOT-OS/RIOT/graphs/contributors">here.</a>
+        <hr>
+      <div id="contributorList">
+        <div class="row row-cols-1 row-cols-md-5 g-5">
+          {% assign prefix = site.data.contributors | sample: 30 %}
+          {% for cont in prefix %}
+          <div class="col">
+            <div class="card shadow border-0 rounded">
+                <img src="{{ cont.avatar_url }} class="card-img-top img-fluid" alt="...">
+              <div class="card-body text-center">
+                  <p class="card-title">{{ cont.login }}</p>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+  </section><!-- End Contributors Section -->
+</main><!-- End #main -->
