@@ -78,7 +78,7 @@ main: true
         <div class="container">
           <div class="row">
             <div class="section-title">
-              <h2>Out of the box</h2>
+              <h2>Out of the box usage</h2>
               <p>Features</p>
             </div>
           </div>
@@ -351,7 +351,7 @@ main: true
       <div class="container border-top border-1 pt-5">
         <div class="section-title">
           <h2>Get in touch</h2>
-          <p>Community</p>
+          <p>On the shoulders of a grassroots community</p>
         </div>
 
         <div class="row">
@@ -362,7 +362,7 @@ main: true
           <hr class="d-block d-lg-none mt-5">
           <div class="col-12 col-md-6 col-lg-4">
             <h4>Developers</h4>
-            <p class="lead">
+            <p >
               You want to participate and contribute to the kernel development or integrate new MCU
               and platform support? You're welcome!
             </p>
@@ -378,25 +378,43 @@ main: true
               or our <a href="https://matrix.to/#/#riot-os:matrix.org">Matrix chat</a>.
             </p>
             <p>
-              The RIOT issue tracker informs about bugs and enhancement requests. You could also
-              subscribe to the notifications mailing list to get informed about new issues,
+              The <a href="https://github.com/RIOT-OS/RIOT/issues?state=open">RIOT issue tracker</a> informs about bugs and enhancement requests. You could also
+              subscribe to the <a href="http://lists.riot-os.org/mailman/listinfo/notifications/">notifications mailing list</a> to get informed about new issues,
               comments, and pull requests. All commits to the source code will be posted to the
-              commits mailing list. Take a look at our coding conventions and development
-              procedures.
+              <a href="http://lists.riot-os.org/mailman/listinfo/commits">commits mailing list</a>. Take a look at our <a href="https://github.com/RIOT-OS/RIOT/blob/master/CODING_CONVENTIONS.md">coding conventions</a>.
             </p>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
             <h4>Users</h4>
             <p>
               Whether you are looking for help with writing an application for RIOT, learn more
-              about it, or just want to stay in the loop, you are invited to join the RIOT Forum.
-              We are also available on Stack Overflow. If you are looking for existing open source
-              projects that are based on RIOT, you can check GitHub #riot-os and hackster.io.
+              about it, or just want to stay in the loop, you are invited to join the <a href="https://forum.riot-os.org/">RIOT Forum</a>.
+              We are also available on <a href="https://stackoverflow.com/questions/tagged/riot-os">Stack Overflow</a>. 
             </p>
             <p>
-              <strong>RIOTers meet face to face at the annual RIOT Summit.</strong>
+              If you are looking for existing open source
+              projects that are based on RIOT, you can check <a href="https://github.com/topics/riot-os">GitHub #riot-os</a> and <a href="https://www.hackster.io/riot-os">hackster.io</a>.
+            </p>
+            <p>
+              RIOTers meet face to face at the annual <a href="community.html#summit">RIOT Summit</a>.
             </p>
           </div>
+        </div>
+      </div>
+      <div class="container border-1 pt-5">
+        <div class="section-title">
+          <p>Contributors from industry, academia, and hobbyist</p>
+        </div>
+        <div id="contributorsList" class="contributors">
+          <div class="contributors-item">
+          {% assign prefix = site.data.contributors %}
+          {% for cont in prefix %}
+            <img  class="contributors-img" src="{{ cont.avatar_url }}" alt="">
+          {% endfor %}
+          </div>
+        </div>
+        <div class="col-lg-12 mt-4 text-center">
+          <a href="community.html" class="btn-learn-more btn-primary btn-lg", role="button">Learn more!</a>
         </div>
       </div>
     </div>
