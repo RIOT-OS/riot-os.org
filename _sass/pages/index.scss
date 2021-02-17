@@ -412,70 +412,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
-#use-cases {
-  .use-case-item {
-    box-sizing: content-box;
-    padding: 30px 30px 0 30px;
-    margin: 30px 15px;
-    text-align: center;
-    min-height: 350px;
-    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
-    .use-case-img {
-      width: 90px;
-      border-radius: 50%;
-      border: 4px solid $light;
-      margin: 0 auto;
-    }
-    h3 {
-      font-size: 18px;
-      font-weight: bold;
-      margin: 10px 0 5px 0;
-      color: #111;
-    }
-    h4 {
-      font-size: 14px;
-      color: #999;
-      margin: 0;
-    }
-    .quote-icon-left, .quote-icon-right {
-      color: $primary-light;
-      font-size: 26px;
-    }
-    .quote-icon-left {
-      display: inline-block;
-      left: -5px;
-      position: relative;
-    }
-    .quote-icon-right {
-      display: inline-block;
-      right: -5px;
-      position: relative;
-      top: 10px;
-    }
-    p {
-      font-style: italic;
-      margin: 0 auto 15px auto;
-    }
-  }
-  .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
-    .swiper-pagination-bullet {
-      width: 12px;
-      height: 12px;
-      background-color: $light;
-      opacity: 1;
-      border: 1px solid $primary;
-    }
-    .swiper-pagination-bullet-active {
-      background-color: $primary;
-    }
-  }
-}
-
-/*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
 .pricing .box {
@@ -1056,12 +992,12 @@ section {
     color: $light;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
+    background: $primary;
     border: 2px solid $primary;
   }
   
   .btn-get-started:hover {
-    background: $primary;
-    color: $light;
+    background: transparent;
     text-decoration: none;
   }
   

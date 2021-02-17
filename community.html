@@ -404,37 +404,7 @@ subtitle: We are an open-source grassroots community gathering companies, academ
       </div>
     </section>
 
-
-    <!-- ======= Use-cases Section ======= -->
-    <section id="use-cases">
-      <div class="container">
-        <div class="section-title">
-          <h2>RIOT in the wild</h2>
-          <p>User stories</p>
-        </div>
-        <div class="use-cases-slider swiper-container" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            {% for use_case in site.use_cases %}
-              <div class="swiper-slide">
-                <div class="use-case-item">
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    {{ use_case.description }}
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img src="{{ use_case.image | default: 'riot-logo.png' | prepend: 'assets/img/use-cases/' | relative_url }}" class="use-case-img" alt="">
-                  <h3>{{ use_case.company }}</h3>
-                  <h4>{{ use_case.project }}</h4>
-                </div>
-              </div>
-            {% endfor %}
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section><!-- End use-case Section -->
+    {% include use-cases-carousel.html %}
 
   </main><!-- End #main -->
 
