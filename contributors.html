@@ -14,7 +14,7 @@ subtitle: An ever growing community of people contribute to RIOT
           <div class="contributors-item">
           {% assign prefix = site.data.contributors %}
           {% for cont in prefix %}
-            <img  class="contributors-img" src="{{ cont.avatar_url }}" alt="">
+            <a href="{{ cont.html_url }}"><img  class="contributors-img" src="{{ cont.avatar_url }}" alt=""></a>
           {% endfor %}
           </div>
         </div>
