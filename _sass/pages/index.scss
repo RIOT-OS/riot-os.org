@@ -992,12 +992,12 @@ section {
     color: $light;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
+    background: $primary;
     border: 2px solid $primary;
   }
   
   .btn-get-started:hover {
-    background: $primary;
-    color: $light;
+    background: transparent;
     text-decoration: none;
   }
   
