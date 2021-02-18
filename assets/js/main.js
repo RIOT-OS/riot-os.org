@@ -226,14 +226,19 @@
     $("input[name*='SearchInput']").on("keyup", function(e) {
       var target = $(e.target);
       var prefix = target.attr("name").split("SearchInput")[0];
-      var list = $(".list-group-item");
       var searchValue = target.val().toLowerCase();
+      if (prefix == "driver") {
+        var list = $(".list-group-item");
         if (searchValue == "") {
             $(".collapse").collapse("hide");
         }
         else {
             $(".collapse").collapse("show");
         }
+      }
+      else {
+        var list = $("#" + prefix + "List *").not(".exclude");
+      }
 
       list.filter(function() {
         $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1)
