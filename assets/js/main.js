@@ -226,8 +226,15 @@
     $("input[name*='SearchInput']").on("keyup", function(e) {
       var target = $(e.target);
       var prefix = target.attr("name").split("SearchInput")[0];
-      var list = $("#" + prefix + "List *").not(".exclude");
+      var list = $(".list-group-item");
       var searchValue = target.val().toLowerCase();
+        if (searchValue == "") {
+            $(".collapse").collapse("hide");
+        }
+        else {
+            $(".collapse").collapse("show");
+        }
+
       list.filter(function() {
         $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1)
       })
