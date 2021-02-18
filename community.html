@@ -39,82 +39,99 @@ subtitle: We are an open-source grassroots community gathering companies, academ
 
          <div class="col-12 col-md-4">
            <div class="card border-0 d-flex h-100">
-             <div class="card-header d-flex align-items-center justify-content-center h-100">
+             <div class="card-header d-flex align-items-center justify-content-center h-100 border-0">
                <a href="https://github.com/RIOT-OS/RIOT/"><img class="card-img-top" src="/assets/img/GitHub_Logo.png" alt="Card image"></a>
              </div>
-             <div class="card-body">
+             <div class="card-body px-0">
                <!--<h4 class="card-title">Our coding platform.</h4>-->
                <!--<p class="card-text">Some example text.</p>-->
-               <a href="https://github.com/RIOT-OS/RIOT/" class="btn btn-primary">Code base</a>
-               <a href="https://github.com/topics/riot-os" class="btn btn-primary">RIOT projects</a>
+               <div class="btn-group w-100" role="group">
+                 <a href="https://github.com/RIOT-OS/RIOT/" class="btn btn-outline-primary">Code base</a>
+                 <a href="https://github.com/topics/riot-os" class="btn btn-outline-primary">RIOT projects</a>
+              </div>
              </div>
            </div>
          </div>
 
          <div class="col-12 col-md-4">
            <div class="card border-0 d-flex h-100">
-             <div class="card-header d-flex align-items-center justify-content-center h-100">
+             <div class="card-header d-flex align-items-center justify-content-center h-100 border-0">
                <a href="https://forum.riot-os.org"><img class="card-img-top" src="/assets/img/discourse_logo.png" alt="Card image"></a>
              </div>
-             <div class="card-body">
+             <div class="card-body px-0">
                <!--<h4 class="card-title">Our forum for discussions.</h4>-->
-               <a href="https://forum.riot-os.org" class="btn btn-primary">Join for Q&A and discussions</a>
+               <a href="https://forum.riot-os.org" class="btn btn-outline-primary w-100">Join for Q&A and discussions</a>
              </div>
            </div>
          </div>
 
          <div class="col-12 col-md-4">
            <div class="card border-0 d-flex h-100">
-             <div class="card-header d-flex align-items-center justify-content-center h-100">
+             <div class="card-header d-flex align-items-center justify-content-center h-100 border-0">
                <a href="https://www.hackster.io/riot-os"><img class="card-img-top" src="/assets/img/Hackster_RGB.png" alt="Card image"></a>
              </div>
-             <div class="card-body">
+             <div class="card-body px-0">
                <!--<h4 class="card-title">Our forum for discussions.</h4>-->
-               <a href="https://www.hackster.io/riot-os" class="btn btn-primary">Check RIOT showcases</a>
+               <a href="https://www.hackster.io/riot-os" class="btn btn-outline-primary w-100">Check RIOT showcases</a>
              </div>
            </div>
          </div>
 
          <div id="socialmedia" class="col-12 col-md-4 mt-5">
            <div class="card border-0 d-flex h-100">
-             <div class="card-header d-flex align-items-center justify-content-center h-100">
+             <div class="card-header d-flex align-items-center justify-content-center h-100 border-0">
                <a href="https://twitter.com/RIOT_OS"><img class="card-img-top" src="/assets/img/twitter-logo-riotos.png" alt="Card image"></a>
              </div>
-             <div class="card-body">
+             <div class="card-body px-0">
                <!--<h4 class="card-title">Our forum for discussions.</h4>-->
-               <a href="https://twitter.com/RIOT_OS" class="btn btn-primary">Our news</a>
+               <a href="https://twitter.com/RIOT_OS" class="btn btn-outline-primary w-100">Our news</a>
              </div>
            </div>
          </div>
 
          <div class="col-12 col-md-4 mt-5">
            <div class="card border-0 d-flex h-100">
-             <div class="card-header d-flex align-items-center justify-content-center h-100">
+             <div class="card-header d-flex align-items-center justify-content-center h-100 border-0">
                <a href="https://fosstodon.org/@riot"><img class="card-img-top" src="/assets/img/mastodon-logo-riot.png" alt="Card image"></a>
              </div>
-             <div class="card-body">
+             <div class="card-body px-0">
                <!--<h4 class="card-title">Our forum for discussions.</h4>-->
-               <a href="https://fosstodon.org/@riot" class="btn btn-primary">Our news</a>
+               <a href="https://fosstodon.org/@riot" class="btn btn-outline-primary w-100">Our news</a>
              </div>
            </div>
          </div>
 
          <div class="col-12 col-md-4 mt-5">
            <div class="card border-0 d-flex h-100">
-             <div class="card-header d-flex align-items-center justify-content-center h-100">
+             <div class="card-header d-flex align-items-center justify-content-center h-100 border-0">
                <a href="https://www.youtube.com/channel/UCmcXy2qyoQfq7ByoxtFSOjg"><img class="card-img-top" src="/assets/img/yt_logo_rgb_light.png" alt="Card image"></a>
              </div>
-             <div class="card-body">
+             <div class="card-body px-0">
                <!--<h4 class="card-title">Our forum for discussions.</h4>-->
-               <a href="https://www.youtube.com/channel/UCmcXy2qyoQfq7ByoxtFSOjg" class="btn btn-primary">Watch RIOT</a>
+               <a href="https://www.youtube.com/channel/UCmcXy2qyoQfq7ByoxtFSOjg" class="btn btn-outline-primary w-100">Watch RIOT</a>
              </div>
            </div>
          </div>
-
         </div>
       </div>
     </section>
     <!-- ======= end Platform Section ======= -->
+
+    <section id="contributors" class="contributors background-dark">
+         <div class="container border-1 pt-5 background-dark">
+          <div class="section-title">
+            <p class="text-white">An ever growing community of people contribute to RIOT</p>
+          </div>
+           <div id="contributorsList" class="contributors">
+             <div class="contributors-item">
+             {% assign prefix = site.data.contributors | sample: site.data.contributors.size %}
+             {% for cont in prefix %}
+               <a href="{{ cont.html_url }}"><img  class="contributors-img" src="{{ cont.avatar_url }}" alt=""></a>
+             {% endfor %}
+             </div>
+           </div>
+         </div>
+    </section>
 
 
     <!-- ======= Summit Section ======= -->
@@ -122,14 +139,14 @@ subtitle: We are an open-source grassroots community gathering companies, academ
       <div class="container">
         <div class="section-title">
           <h2>RIOT Summit</h2>
-          <p>The yearly get-together of the RIOT community.</p>
+          <p>The yearly get-together of the RIOT community</p>
         </div>
 
         <div class="row">
             <!-- per Summit -->
-            <div class="col-12 col-lg-4 border-0">
-              <div class="card text-white overflow-hidden">
-                <h2>RIOT Summit 2016</h2>
+            <div class="col-12 col-lg-4 border-0 pt-4">
+              <div class="card text-white overflow-hidden h-100 border-0 shadow rounded p-2">
+                <h2 class="mb-0">RIOT Summit 2016</h2>
                 <h3>Berlin, Germany</h3>
                 <a href="https://summit.riot-os.org/2016" class="overflow-hidden">
                   <img src="/assets/img/summits/summit2016.jpg" class="card-img" alt="">
@@ -140,9 +157,9 @@ subtitle: We are an open-source grassroots community gathering companies, academ
               </div>
             </div>
 
-            <div class="col-12 col-lg-4 border-0">
-              <div class="card text-white overflow-hidden">
-                <h2>RIOT Summit 2017</h2>
+            <div class="col-12 col-lg-4 border-0 pt-4">
+              <div class="card text-white overflow-hidden h-100 border-0 shadow rounded p-2">
+                <h2 class="mb-0">RIOT Summit 2017</h2>
                 <h3>Berlin, Germany</h3>
                 <a href="https://summit.riot-os.org/2017" class="overflow-hidden">
                   <img src="/assets/img/summits/summit2017.jpg" class="card-img" alt="">
@@ -154,9 +171,9 @@ subtitle: We are an open-source grassroots community gathering companies, academ
               </div>
             </div>
 
-            <div class="col-12 col-lg-4 border-0">
-              <div class="card text-white overflow-hidden">
-                <h2>RIOT Summit 2018</h2>
+            <div class="col-12 col-lg-4 border-0 pt-4">
+              <div class="card text-white overflow-hidden h-100 border-0 shadow rounded p-2">
+                <h2 class="mb-0">RIOT Summit 2018</h2>
                 <h3>Amsterdam, Netherlands</h3>
                 <a href="https://summit.riot-os.org/2018" class="overflow-hidden">
                   <img src="/assets/img/summits/summit2018.jpg" class="card-img" alt="">
@@ -166,12 +183,10 @@ subtitle: We are an open-source grassroots community gathering companies, academ
                 </a>
               </div>
             </div>
-       </div>
 
-        <div class="row mt-4">
-            <div class="col-12 col-lg-4 border-0">
-              <div class="card text-white overflow-hidden">
-                <h2>RIOT Summit 2019</h2>
+            <div class="col-12 col-lg-4 border-0 pt-4">
+              <div class="card text-white overflow-hidden h-100 border-0 shadow rounded p-2">
+                <h2 class="mb-0">RIOT Summit 2019</h2>
                 <h3>Helsinki, Finland</h3>
                 <a href="https://summit.riot-os.org/2019" class="overflow-hidden">
                   <img src="/assets/img/summits/summit2019-02.jpg" class="card-img" alt="">
@@ -182,9 +197,9 @@ subtitle: We are an open-source grassroots community gathering companies, academ
               </div>
             </div>
 
-            <div class="col-12 col-lg-4 border-0">
-              <div class="card text-white overflow-hidden">
-                <h2>RIOT Summit 2020</h2>
+            <div class="col-12 col-lg-4 border-0 pt-4">
+              <div class="card text-white overflow-hidden h-100 border-0 shadow rounded p-2">
+                <h2 class="mb-0">RIOT Summit 2020</h2>
                 <h3>Online, the Internet</h3>
                 <a href="https://summit.riot-os.org/2020" class="overflow-hidden">
                   <img src="/assets/img/summits/summit2020.jpg" class="card-img" alt="">
@@ -194,9 +209,8 @@ subtitle: We are an open-source grassroots community gathering companies, academ
                 </a>
               </div>
             </div>
-
-            <!-- end per Summit -->
-        </div>
+            <!-- per Summit -->
+       </div>
       </div>
     </section><!-- End Blog Section -->
     <!-- ======= End Summit Section ======= -->

@@ -54,6 +54,17 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: none !important;
 }
 
+.btn-outline-primary {
+  color: $primary;
+  border-color: $primary;
+
+  &:hover {
+    color: $light;
+    border-color: $primary;
+    background-color: $primary;
+  }
+}
+
 .text-gray {
   color: $gray !important;
 }
