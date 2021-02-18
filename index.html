@@ -409,7 +409,7 @@ main: true
           <div class="contributors-item">
           {% assign prefix = site.data.contributors  | sample: site.data.contributors.size %}
           {% for cont in prefix %}
-            <a href="{{ cont.html_url }}"><img  class="contributors-img" src="{{ cont.avatar_url | append: '&s=48' }}" alt=""></a>
+          <a href="{{ cont.html_url }}"><img  class="contributors-img" src="{{ cont.avatar_url | append: '&s=48' }}" title="{{ cont.login }}" alt=""></a>
           {% endfor %}
           </div>
         </div>
