@@ -223,6 +223,14 @@
    * <input name="boardSearchInput" type="text" placeholder="Search..">
    */
   $(document).ready(function(){
+    $.getJSON("https://ci.riot-os.org/RIOT-OS/RIOT/master/nightlies.json",function(data)
+    {
+    $.each(data, function(i,data)
+    {
+        document.write(data.commit + "<br />" + data.commit + "<br /><br />");
+    });
+    }
+    );
     $("input[name*='SearchInput']").on("keyup", function(e) {
       var target = $(e.target);
       var prefix = target.attr("name").split("SearchInput")[0];
