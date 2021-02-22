@@ -37,7 +37,7 @@ jobs:
         uses: actions/github-script@v3
         id: fetch-contributors
         with:
-          github-token: ${{secrets.GH_API_TOKEN}}
+          github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             const script = require(`${process.env.GITHUB_WORKSPACE}/.github/workflows/get_contributors.js`);
             const contributors = await script({github, context});
