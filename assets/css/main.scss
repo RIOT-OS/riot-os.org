@@ -1,5 +1,8 @@
 ---
 ---
+
+$baseurl: "{{ site.baseurl }}";
+
 @import "_colors";
 @import "_fonts";
 @import "_general";
