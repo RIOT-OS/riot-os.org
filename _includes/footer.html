@@ -1,0 +1,26 @@
+  <!-- ======= Footer ======= -->
+  <footer id="footer" {% unless page.main %} class="mt-auto" {% endunless %}>
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col-12">
+          <a href="index.html">
+            <img src="{{ "assets/img/riot-logo.png" | relative_url }}" alt="" class="logo img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col">
+          <small class="fw-bold">The friendly Operating System for the Internet of Things.</small>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col text-center social-links">
+           {% include social-media.html %}
+        </div>
+      </div>
+      <div class="copyright">
+        <small>&copy; 2013 - {{ "now" | date: "%Y" }}. All Rights Reserved</small> | <a href="{%link imprint.html %}">Imprint</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->

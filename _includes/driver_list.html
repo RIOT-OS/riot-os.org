@@ -1,0 +1,11 @@
+<ul class="list-group">
+  {% for item in tree %}
+    {% if item.children %}
+      {% assign tree = item.children %}
+      {% include driver_list.html %}
+    {% endif %}
+    {% unless item.children %}
+    <li class="list-group-item"><a href="https://doc.riot-os.org/{{ item.file }}.html">{{ item.name }}</a></li>
+    {% endunless %}
+  {% endfor %}
+</ul>

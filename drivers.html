@@ -1,0 +1,40 @@
+---
+layout: simple-page
+title: Supported Drivers
+subtitle: RIOT has a hardware abstraction layer, which enables us to support many drivers easily.
+---
+<main>
+  <!-- ======= Driver Section ======= -->
+  <section id="drivers">
+    <div class="container">
+      <input class="form-control" name="driverSearchInput" type="text" placeholder="Search..">
+      <hr>
+      <div id="driverList">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          {% for c in site.data.riot_drivers.children %}
+          {% if c.children %}
+          <div class="accordion accordion-flush" id="accordionFlushExample{{ c.file }}">
+
+  <div class="accordion-item">
+      <h2 class="accordion-header exclude" id="flush-headingOne{{ c.file }}">
+          <button class="accordion-button collapsed exclude " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne{{ c.file }}" aria-expanded="false" aria-controls="flush-collapseOne{{ c.file }}">
+          <b class="exclude">{{ c.name }}</b>
+      </button>
+    </h2>
+    <div id="flush-collapseOne{{ c.file }}" class="accordion-collapse collapse" aria-labelledby="flush-headingOne{{ c.file }}" data-bs-parent="#accordionFlushExample{{ c.file }}">
+      <div class="accordion-body">
+          <ul class="list-group">
+            {% for i in c.children %}
+            <li class="list-group-item"><a href="https://doc.riot-os.org/{{ i.file }}.html">{{ i.name }}</a></li>
+            {% endfor %}
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section><!-- End Driver Section -->
+</main><!-- End #main -->

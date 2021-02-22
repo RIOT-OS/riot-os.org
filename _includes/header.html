@@ -1,0 +1,44 @@
+<!-- ======= Header ======= -->
+<!-- Configurations layouts can apply
+     - header_opaque: set to true to have an opaque background before scrolling
+-->
+  <header id="header" class="fixed-top d-flex align-items-center {% if layout.header_opaque != true %} header-transparent {% endif %}">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+          <a href="{% link index.html %}"><img src="{{ "assets/img/riot-logo.png" | relative_url }}" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+            <li><a class="nav-link scrollto {% if page.main %}active{% endif %}" href="{% link index.html %}{% if page.main %}#hero{% endif %}">Home</a></li>
+            <li><a class="nav-link scrollto" href="{% link index.html %}#features">Features</a></li>
+            <li class="dropdown"><a href="{% link index.html %}#get-started"><span>Users</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{% link index.html %}#get-started">Get started</a></li>
+              <li><a href="{% link index.html %}#use-cases-carousel">Use Cases</a></li>
+              <li><a href="{% link index.html %}#faq">FAQ</a></li>
+            </ul>
+            <li class="dropdown"><a href="{% link boards.html %}"><span>Hardware</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{% link cpus.html %}">CPUs</a></li>
+              <li><a href="{% link boards.html %}">Boards</a></li>
+              <li><a href="{% link drivers.html %}">Drivers</a></li>
+            </ul>
+          <li class="dropdown"><a href="{% link community.html %}"><span>Community</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{% link community.html %}">Overview</a></li>
+              <!--<li><a href="{% link contributors.html %}">Contributors</a></li>-->
+              <li><a href="https://forum.riot-os.org">Forum</a></li>
+              <li><a href="https://github.com/topics/riot-os">GitHub</a></li>
+              <li><a href="{% link community.html %}#socialmedia">Social Media</a></li>
+              <li><a href="{% link branding.html %}">Branding</a></li>
+              <li><a href="https://github.com/RIOT-OS/RIOT/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->

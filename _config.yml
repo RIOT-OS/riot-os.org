@@ -1,0 +1,15 @@
+title: test
+sass:
+    sass_dir: _sass
+collections:
+    use_cases:
+        output: true
+    faqs:
+        output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "use_cases"
+    values:
+      layout: "use-case"
