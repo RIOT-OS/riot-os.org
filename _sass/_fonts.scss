@@ -5,7 +5,7 @@
 // Miso
 @font-face {
     font-family: "Miso";
-    src: url("/assets/fonts/miso-regular.woff") format("woff");
+    src: url("#{$baseurl}/assets/fonts/miso-regular.woff") format("woff");
   }
 
 .ft-miso {
