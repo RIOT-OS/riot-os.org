@@ -1,0 +1,70 @@
+// General styles
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+
+  &:hover {
+  color: $primary-light;
+  text-decoration: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway";
+}
+
+.check_style li {
+  padding-left: 20px;
+}
+
+.check_style li:before {
+  content: "\eb7a";
+  font-family: remixicon;
+  display: inline-block;
+  color: $primary;
+  margin-left: -1.3em; /* same as padding-left set on li */
+}
+
+.background-dark {
+  background-color: $dark !important;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: $primary-light;
+  border-color: $primary-light;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  color: #fff;
+  background-color: $primary-light;
+  border-color: $primary-light;
+  box-shadow: none !important;
+}
+
+.btn-outline-primary {
+  color: $primary;
+  border-color: $primary;
+
+  &:hover {
+    color: $light;
+    border-color: $primary;
+    background-color: $primary;
+  }
+}
+
+.text-gray {
+  color: $gray !important;
+}
