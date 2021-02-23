@@ -1,5 +1,4 @@
 title: test
-baseurl: "/riot-os.org"
 sass:
     sass_dir: _sass
 collections:
