@@ -331,7 +331,7 @@ main: true
           {% for post in site.posts limit:3 %}
             <div class="col-12 col-lg-4 border-0">
               <div class="card text-white overflow-hidden shadow">
-                <a href="{{ post.url }}" class="overflow-hidden">
+                <a href="{% link {{post.path}} %}" class="overflow-hidden">
                   <img src="{% link /assets/img/blog/{{ post.image }} %}" class="card-img" alt="">
                   <div class="card-img-overlay">
                     <h5 class="card-title">{{ post.title }}</h5>
