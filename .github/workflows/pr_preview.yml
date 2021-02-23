@@ -1,0 +1,53 @@
+name: Surge PR Preview
+
+on: [pull_request]
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Checkout RIOT
+        uses: actions/checkout@v2
+        with:
+          repository: 'RIOT-OS/RIOT'
+          path: _RIOT
+          fetch-depth: 0
+      - name: Fetch boards
+        working-directory: ${{ github.workspace }}/_RIOT
+        run: |
+          make info-boards | tr " " "\n" | wc -l | xargs printf "boards: %d\n" > ${{ github.workspace }}/_data/riot_stats.yml
+      - name: Fetch CPUs
+        working-directory: ${{ github.workspace }}/_RIOT
+        run: |
+          git grep "config CPU_FAM_" | grep "Kconfig" | wc -l | xargs printf "cpus: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
+      - name: Fetch commits
+        working-directory: ${{ github.workspace }}/_RIOT
+        run: |
+          git rev-list --count master | xargs printf "commits: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
+      - name: Fetch Github contributors
+        uses: actions/github-script@v3
+        id: fetch-contributors
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const script = require(`${process.env.GITHUB_WORKSPACE}/.github/workflows/get_contributors.js`);
+            const contributors = await script({github, context});
+            core.setOutput('contributors-numof', contributors.length);
+            return contributors;
+      - name: Write contributors
+        run: |
+          echo '${{steps.fetch-contributors.outputs.result}}' > ${{ github.workspace }}/_data/contributors.json
+          printf "contributors: %d\n" ${{steps.fetch-contributors.outputs.contributors-numof}} >> ${{ github.workspace }}/_data/riot_stats.yml
+      - uses: afc163/surge-preview@v1
+        id: preview_step
+        with:
+          surge_token: ${{ secrets.SURGE_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          dist: public
+          build: |
+            npm install
+            npm run build
+      - name: Get the preview_url
+        run: echo "url => ${{ steps.preview_step.outputs.preview_url }}"
