@@ -15,44 +15,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Checkout RIOT
-        uses: actions/checkout@v2
-        with:
-          repository: 'RIOT-OS/RIOT'
-          path: _RIOT
-          fetch-depth: 0
-      - name: Fetch boards
-        working-directory: ${{ github.workspace }}/_RIOT
-        run: |
-          make info-boards | tr " " "\n" | wc -l | xargs printf "boards: %d\n" > ${{ github.workspace }}/_data/riot_stats.yml
-      - name: Fetch CPUs
-        working-directory: ${{ github.workspace }}/_RIOT
-        run: |
-          git grep "config CPU_FAM_" | grep "Kconfig" | wc -l | xargs printf "cpus: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
-      - name: Fetch commits
-        working-directory: ${{ github.workspace }}/_RIOT
-        run: |
-          git rev-list --count master | xargs printf "commits: %d\n" >> ${{ github.workspace }}/_data/riot_stats.yml
-      - name: Fetch Github contributors
-        uses: actions/github-script@v3
-        id: fetch-contributors
-        with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
-          script: |
-            const script = require(`${process.env.GITHUB_WORKSPACE}/.github/workflows/get_contributors.js`);
-            const contributors = await script({github, context});
-            core.setOutput('contributors-numof', contributors.length);
-            return contributors;
-      - name: Write contributors
-        run: |
-          echo '${{steps.fetch-contributors.outputs.result}}' > ${{ github.workspace }}/_data/contributors.json
-          printf "contributors: %d\n" ${{steps.fetch-contributors.outputs.contributors-numof}} >> ${{ github.workspace }}/_data/riot_stats.yml
-      # Use GitHub Actions' cache to shorten build times and decrease load on servers
+
+      - name: Update RIOT data
+        run: make update_riot_data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+        # Use GitHub Actions' cache to shorten build times and decrease load on servers
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
           restore-keys: ${{ runner.os }}-gems-
+
       - name: Deploy
         uses: helaili/jekyll-action@v2
         with:
