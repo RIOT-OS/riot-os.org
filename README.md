@@ -23,3 +23,25 @@ To build for production environment set the environmental variable
 ### Serving
 
 Serve the website running `bundle exec jekyll serve --livereload`.
+
+### Updating RIOT-related data
+All RIOT-related data that is rendered in the website (e.g. statistics, contributors
+and board list) is parsed from files in the `_data` folder. To update these files
+with fresh information some `make` targets are available:
+
+- `update_riot_stats`
+- `update_riot_board_list`
+- `update_riot_contributors`
+
+To update everything at once run `make update_riot_data`.
+
+#### Local RIOT repo
+You can specify where your local RIOT repo is located by defining the `RIOTBASE`
+environment variable. When the variable is not defined the repo will be cloned
+into the project folder.
+
+#### Github Token
+In order to update the list of contributors requests to the Github API are performed.
+If no [token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) is provided then you may run into restrictions on the
+amount of times you can update the list. To provide the token define the environment
+variable `GITHUB_TOKEN` with the value of the token.
