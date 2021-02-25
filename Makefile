@@ -1,5 +1,6 @@
 .PHONY: update_riot_stats update_riot_repo update_riot_board_list update_riot_data
 .PHONY: update_riot_contributors install_python_requirements
+.PHONY: build serve
 
 RIOT_REPO_URL = "https://github.com/RIOT-OS/RIOT.git"
 
@@ -11,6 +12,17 @@ RIOTBASE ?= $(_DEFAULT_RIOTBASE)
 RIOT_BOARDS_FILE = $(DATA_DIR)/riot_boards.yml
 RIOT_STATS_FILE = $(DATA_DIR)/riot_stats.yml
 RIOT_CONTRIBUTORS_FILE = $(DATA_DIR)/contributors.json
+
+WATCH ?= 0
+
+ifeq ($(WATCH),1)
+	JEKYLL_BUILD_ARGS += --watch
+endif
+
+PRODUCTION ?= 0
+ifeq ($(PRODUCTION),1)
+	JEKYLL_BUILD_ARGS += --config _config.yml,_config_production.yml
+endif
 
 $(RIOTBASE):
 	@git clone $(RIOT_REPO_URL) $(RIOTBASE)
@@ -33,3 +45,9 @@ update_riot_contributors: install_python_requirements
 	@python $(TOOLS_DIR)/riot-contributors.py > $(RIOT_CONTRIBUTORS_FILE)
 
 update_riot_data: update_riot_contributors update_riot_board_list update_riot_stats;
+
+build:
+	@bundle exec jekyll build $(JEKYLL_BUILD_ARGS)
+
+serve:
+	@bundle exec jekyll serve --livereload

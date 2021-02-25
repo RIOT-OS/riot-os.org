@@ -11,27 +11,30 @@ bundle
 
 to install all further dependencies.
 
-Run `bundle exec jekyll build`. This will create a directory `_site`. To watch
-for file changes and trigger a rebuild, you can run
-`bundle exec jekyll build --watch`.
+Run `make build`. This will create a directory `_site`. To watch
+for file changes and trigger a rebuild, you can set the environment variable
+`WATCH`:
+
+`WATCH=1 make build`.
 
 To build for production environment set the environmental variable
-`JEKYLL_ENV=production`. For production environments you need to add the
-`_config_production.yml` file to the build to override the `baseurl`, by adding
-`--config _config.yml,_config_production.yml` to the build command.
+`PRODUCTION=1`.
+
+`PRODUCTION=1 make build`.
 
 ### Serving
 
-Serve the website running `bundle exec jekyll serve --livereload`.
+Serve the website running `make serve`.
 
 ### Updating RIOT-related data
-All RIOT-related data that is rendered in the website (e.g. statistics, contributors
-and board list) is parsed from files in the `_data` folder. To update these files
-with fresh information some `make` targets are available:
+All RIOT-related data that is rendered in the website (e.g. statistics,
+contributors board list, etc) is parsed from files in the `_data` folder. To
+update these files with fresh information some `make` targets are available:
 
 - `update_riot_stats`
 - `update_riot_board_list`
 - `update_riot_contributors`
+- `update_riot_drivers`
 
 To update everything at once run `make update_riot_data`.
 
