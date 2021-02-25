@@ -38,6 +38,7 @@ update these files with fresh information some `make` targets are available:
 - `update_riot_stats`
 - `update_riot_board_list`
 - `update_riot_contributors`
+- `update_riot_drivers`
 
 To update everything at once run `make update_riot_data`.
 
