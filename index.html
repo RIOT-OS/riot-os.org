@@ -336,7 +336,18 @@ main: true
                   <div class="card-img-overlay">
                     <h5 class="card-title">{{ post.title }}</h5>
                     <p class="card-text">{{ post.description }}</p>
-                    <p class="card-text"><small>Posted on {{ post.date | date: "%Y-%m-%d" }}</small></p>
+                    <p class="card-text mb-0"><small><i class="ri-time-line align-text-bottom me-2"></i>Posted on {{ post.date | date: "%Y-%m-%d" }}</small></p>
+                    <p class="card-text">
+                      <small>
+                        {% for author in post.authors %}
+                          {% if forloop.first %}
+                            <i class="ri-user-line"></i> By
+                          {% endif %}
+                          {{ author.name | default: "Anonymous"}} {% if author.affiliation %} ({{ author.affiliation }}) {% endif %}
+                          {% unless forloop.last %}, {% endunless %}
+                        {% endfor %}
+                      </small>
+                    </p>
                   </div>
                 </a>
               </div>
