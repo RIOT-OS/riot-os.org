@@ -28,7 +28,7 @@ Serve the website running `make serve`.
 
 ### Updating RIOT-related data
 All RIOT-related data that is rendered in the website (e.g. statistics,
-contributors board list, etc) is parsed from files in the `_data` folder. To
+contributors board list) is parsed from files in the `_data` folder. To
 update these files with fresh information some `make` targets are available:
 
 - `update_riot_stats`
