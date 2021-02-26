@@ -17,6 +17,13 @@ RIOT_DRIVERS_FILE = $(DATA_DIR)/riot_drivers.csv
 RIOT_DRIVERS_CATS_FILE = $(DATA_DIR)/riot_drivers_cats.csv
 RIOT_CPUS_FILE = $(DATA_DIR)/riot_cpus.yml
 
+RIOT_DATA_FILES += $(RIOT_BOARDS_FILE)
+RIOT_DATA_FILES += $(RIOT_STATS_FILE)
+RIOT_DATA_FILES += $(RIOT_CONTRIBUTORS_FILE)
+RIOT_DATA_FILES += $(RIOT_DRIVERS_FILE)
+RIOT_DATA_FILES += $(RIOT_DRIVERS_CATS_FILE)
+RIOT_DATA_FILES += $(RIOT_CPUS_FILE)
+
 WATCH ?= 0
 
 ifeq ($(WATCH),1)
@@ -59,7 +66,10 @@ update_riot_cpus:
 
 update_riot_data: update_riot_contributors update_riot_board_list update_riot_stats update_riot_drivers update_riot_cpus
 
-build:
+$(RIOT_DATA_FILES):
+	@cp $@.dist $@
+
+build: $(RIOT_DATA_FILES)
 	@bundle exec jekyll build $(JEKYLL_BUILD_ARGS)
 
 serve:
