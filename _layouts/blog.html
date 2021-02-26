@@ -12,6 +12,50 @@ layout: base
       <div class="row pt-4 d-flex align-items-center text-center h-100">
         <div class="col-12 text-white">
           <h1 class="display-3 w-100"> {{ page.title }} </h1>
+          <h4>
+            {% for author in page.authors %}
+              {% if forloop.first %} by {% endif %}
+              {% if author.email %}<a href="mailto:{{ author.email }}">{% endif %}
+              {{ author.name | default: "Anonymous"}}
+              {% if author.email %}</a>{% endif %}
+              {% if author.affiliation %}<small>({{ author.affiliation }})</small>{% endif %}
+
+              <!-- Start Social badges -->
+              {% if author.web %}
+                <a href="{{ author.web }}" target="_blank"><i class="ri-links-fill align-text-bottom"></i></a>
+              {% endif %}
+              {% if author.githubid %}
+                <a href="https://github.com/{{ author.githubid }}" target="_blank"><i class="ri-github-fill align-text-bottom"></i></a>
+              {% endif %}
+
+              {% if author.twitterid %}
+                <a href="https://twitter.com/{{ author.twitterid }}" target="_blank"><i class="ri-twitter-fill align-text-bottom"></i></a>
+              {% endif %}
+
+              {% if author.stackoverflowid %}
+                <a href="https://stackoverflow.com/u/{ author.stackoverflowid }}" target="_blank"><i class="ri-stack-overflow-fill align-text-bottom"></i></a>
+              {% endif %}
+
+              {% if author.redditid %}
+                <a href="https://reddit.com/user/{{ author.redditid }}" target="_blank"><i class="ri-reddit-fill align-text-bottom"></i></a>
+              {% endif %}
+
+              {% if author.linkedinid %}
+                <a href="https://linkedin.com/in/{ author.linkedinid }}" target="_blank"><i class="ri-linkedin-box-fill align-text-bottom"></i></a>
+              {% endif %}
+
+              {% if author.mastodonurl %}
+                <a href="{{ author.mastodonurl }}" target="_blank"><i class="ri-mastodon-fill align-text-bottom"></i></a>
+              {% endif %}
+
+              {% if author.facebookid %}
+                <a href="https://facebook.com/{{ author.facebookid }}" target="_blank"><i class="ri-facebook-fill align-text-bottom"></i></a>
+              {% endif %}
+              <!-- End Social badges -->
+
+              {% unless forloop.last %} , {% endunless %}
+            {% endfor %}
+          </h4>
         </div>
       </div>
     </div>
