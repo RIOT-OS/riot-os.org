@@ -25,7 +25,7 @@ endif
 
 PRODUCTION ?= 0
 ifeq ($(PRODUCTION),1)
-	JEKYLL_BUILD_ARGS += --config _config.yml,_config_production.yml
+  JEKYLL_BUILD_ARGS += --config _config.yml,_config_production.yml
 endif
 
 $(RIOTBASE):
