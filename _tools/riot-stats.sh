@@ -9,19 +9,17 @@
 RIOTBASE=$1
 
 countboards () {
-  make -C ${RIOTBASE} info-boards | tr " " "\n" | wc -l | xargs printf "boards: %d\n" 
+  make -C $RIOTBASE info-boards | tr " " "\n" | wc -l | \
+      xargs printf "boards: %d\n" 
 }
 
 countcpus () {
-  cd $RIOTBASE
-  git grep "config CPU_FAM_" | grep "Kconfig" | wc -l | xargs printf "cpus: %d\n"
-  cd - > /dev/null
+    git -C $RIOTBASE grep "config CPU_FAM_" | grep "Kconfig" | wc -l | \
+        xargs printf "cpus: %d\n"
 }
 
 countcommits () {
-  cd $RIOTBASE
-  git rev-list --count master | xargs printf "commits: %d\n" 
-  cd - > /dev/null
+    git -C $RIOTBASE rev-list --count master | xargs printf "commits: %d\n" 
 }
 
 countboards
