@@ -19,3 +19,5 @@ defaults:
       type: "use_cases"
     values:
       layout: "use-case"
+
+highlighter: rouge

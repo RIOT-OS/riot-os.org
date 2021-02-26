@@ -7,6 +7,8 @@ $baseurl: "{{ site.baseurl }}";
 @import "_fonts";
 @import "_general";
 
+@import "riot-code.css";
+
 @import "pages/about";
 @import "pages/index";
 @import "pages/blog";
