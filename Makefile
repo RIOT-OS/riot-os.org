@@ -55,7 +55,7 @@ update_riot_board_list: update_riot_repo
 update_riot_contributors: install_python_requirements
 	@python $(TOOLS_DIR)/riot-contributors.py > $(RIOT_CONTRIBUTORS_FILE)
 
-update_drivers_cats:
+update_drivers_cats: update_riot_repo
 	@$(TOOLS_DIR)/riot-drivers-cats.sh $(RIOTBASE) > $(RIOT_DRIVERS_CATS_FILE)
 
 update_riot_drivers: update_drivers_cats
