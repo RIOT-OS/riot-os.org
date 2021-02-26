@@ -6,7 +6,6 @@
 #  $ ./riot-stats.sh repo
 # * repo: path to RIOT's repository
 
-CDIR=`pwd`
 RIOTBASE=$1
 
 countboards () {

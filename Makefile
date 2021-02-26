@@ -57,7 +57,7 @@ update_riot_drivers: update_drivers_cats
 update_riot_cpus:
 	@$(TOOLS_DIR)/riot-cpus.sh $(RIOTBASE) > $(RIOT_CPUS_FILE)
 
-update_riot_data: update_riot_contributors update_riot_board_list update_riot_stats update_riot_drivers update_riot_cpus;
+update_riot_data: update_riot_contributors update_riot_board_list update_riot_stats update_riot_drivers update_riot_cpus
 
 build:
 	@bundle exec jekyll build $(JEKYLL_BUILD_ARGS)
