@@ -20,7 +20,7 @@ RIOT_CPUS_FILE = $(DATA_DIR)/riot_cpus.yml
 WATCH ?= 0
 
 ifeq ($(WATCH),1)
-	JEKYLL_BUILD_ARGS += --watch
+  JEKYLL_BUILD_ARGS += --watch
 endif
 
 PRODUCTION ?= 0
