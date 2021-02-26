@@ -7,12 +7,30 @@
 # * repo: path to RIOT's repository
 
 RIOTBASE=$1
+URL_PREFIX=https://doc.riot-os.org/group__
 
+# Extract board names from Doxygen's defgroup. Exclude common and config files.
+listboards () {
+    grep -R --include doc.txt defgroup $RIOTBASE/boards | grep -v "common" | \
+        grep -v "config"
+}
 parseboards () {
-    cd $RIOTBASE
-    grep -R --include doc.txt defgroup ./boards | grep -v "common" | grep -v "config" | \
-    awk '/boards_/ {match($0, "(boards_[a-zA-Z0-9\\-_]+)\\s+(.*)$",a); file = a[1] ; board = a[2]; url = "https://doc.riot-os.org/group__"; gsub("_", "__", file); print "- name: " board "\n  apiurl: " url file ".html"}'
-    cd - > /dev/null
+     listboards | \
+    awk '
+        /boards_/ {
+            # Extract group and name of the board
+            match($0, "(boards_[a-zA-Z0-9\\-_]+)\\s+(.*)$",a);
+            group = a[1];
+            name = a[2];
+
+            # Replace underscores with double underscores in order to generate
+            # Doxygen links
+            gsub("_", "__", group);
+
+            # Generate the YAML file
+            print "- name: " name "\n  apiurl: " url group ".html"
+        }
+        ' url=$URL_PREFIX
 }
 
 parseboards
