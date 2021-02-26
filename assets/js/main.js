@@ -246,4 +246,29 @@
     });
   });
 
+  /**
+   * Create a new 'script' element which sources Twitter widgets script
+   */
+  function loadTwitterScript() {
+    let script = document.createElement('script');
+    let timeline = $("#twitter-timeline");
+    let cb = () => {
+      // When the script is loaded we bind to the widget rendering event to display it
+      twttr.events.bind("rendered", (event) => {
+          timeline.addClass("rendered");
+      });
+    }
+
+    script.src = "https://platform.twitter.com/widgets.js"
+    script.onload = cb;
+    document.head.append(script);
+  }
+
+  /**
+   * We need to wait until we know the user accepts using third party cookies
+   */
+  $(window).on("cookiesAccepted", () => {
+    loadTwitterScript();
+  });
+
 })()

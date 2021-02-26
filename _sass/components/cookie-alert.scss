@@ -1,0 +1,17 @@
+.cookiealert {
+    background-color: $dark;
+    color: $light;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+    visibility: hidden;
+    &.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0%);
+        transition-delay: 1000ms;
+    }
+    a {
+        text-decoration: underline;
+    }
+}
