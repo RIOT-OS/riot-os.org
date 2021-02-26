@@ -246,4 +246,21 @@
     });
   });
 
+  /**
+   * Create a new 'script' element which sources Twitter widgets script
+   */
+  function loadTwitterScript() {
+    let script = document.createElement('script');
+
+    script.src = "https://platform.twitter.com/widgets.js"
+    document.head.append(script);
+  }
+
+  /**
+   * We need to wait until we know the user accepts using third party cookies
+   */
+  $(window).on("cookiesAccepted", () => {
+    loadTwitterScript();
+  });
+
 })()
