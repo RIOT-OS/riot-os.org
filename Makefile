@@ -61,7 +61,7 @@ update_drivers_cats:
 update_riot_drivers: update_drivers_cats
 	@$(TOOLS_DIR)/riot-drivers.sh $(RIOTBASE) > $(RIOT_DRIVERS_FILE)
 
-update_riot_cpus:
+update_riot_cpus: update_riot_repo
 	@$(TOOLS_DIR)/riot-cpus.sh $(RIOTBASE) > $(RIOT_CPUS_FILE)
 
 update_riot_data: update_riot_contributors update_riot_board_list update_riot_stats update_riot_drivers update_riot_cpus
