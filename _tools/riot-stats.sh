@@ -10,9 +10,7 @@ CDIR=`pwd`
 RIOTBASE=$1
 
 countboards () {
-  cd $RIOTBASE
-  make info-boards | tr " " "\n" | wc -l | xargs printf "boards: %d\n" 
-  cd - > /dev/null
+  make -C ${RIOTBASE} info-boards | tr " " "\n" | wc -l | xargs printf "boards: %d\n" 
 }
 
 countcpus () {
