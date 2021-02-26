@@ -24,10 +24,6 @@ countcommits () {
   cd - > /dev/null
 }
 
-contributors () {
-  echo
-}
-
 countboards
 countcpus
 countcommits
