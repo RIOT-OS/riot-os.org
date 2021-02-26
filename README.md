@@ -15,12 +15,16 @@ Run `make build`. This will create a directory `_site`. To watch
 for file changes and trigger a rebuild, you can set the environment variable
 `WATCH`:
 
-`WATCH=1 make build`.
+```
+WATCH=1 make build`.
+```
 
 To build for production environment set the environmental variable
-`PRODUCTION=1`:
+`PRODUCTION`:
 
-`PRODUCTION=1 make build`.
+```
+PRODUCTION=1 make build
+```
 
 ### Serving
 
