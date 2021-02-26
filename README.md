@@ -18,13 +18,13 @@ for file changes and trigger a rebuild, you can set the environment variable
 `WATCH=1 make build`.
 
 To build for production environment set the environmental variable
-`PRODUCTION=1`.
+`PRODUCTION=1`:
 
 `PRODUCTION=1 make build`.
 
 ### Serving
 
-Serve the website running `make serve`.
+Run `make serve`. The site will be available at http://localhost:4000
 
 ### Updating RIOT-related data
 All RIOT-related data that is rendered in the website (e.g. statistics,
