@@ -45,6 +45,7 @@ into the project folder.
 
 #### Github Token
 In order to update the list of contributors requests to the Github API are performed.
-If no [token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) is provided then you may run into restrictions on the
+If no [token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
+is provided then you may run into restrictions on the
 amount of times you can update the list. To provide the token define the environment
 variable `GITHUB_TOKEN` with the value of the token.
