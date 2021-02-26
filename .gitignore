@@ -1,4 +1,4 @@
-__data/*
+_data/*
 !_data/*.dist
 _site/
 .sass-cache/
