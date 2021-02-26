@@ -1,0 +1,28 @@
+-  name: Atmel ATmega1281
+   apiurl: https://doc.riot-os.org/group__cpu__atmega1281.html
+-  name: TI CC2538
+   apiurl: https://doc.riot-os.org/group__cpu__cc2538.html
+-  name: Microchip MIPS common
+   apiurl: https://doc.riot-os.org/group__cpu__mips__pic32__common.html
+-  name: Nordic nRF5x MCU
+   apiurl: https://doc.riot-os.org/group__cpu__nrf5x__common.html
+-  name: Atmel SAML21
+   apiurl: https://doc.riot-os.org/group__cpu__saml21.html
+-  name: Atmel ATmega1284p
+   apiurl: https://doc.riot-os.org/group__cpu__atmega1284p.html
+-  name: Atmel ATmega128rfa1
+   apiurl: https://doc.riot-os.org/group__cpu__atmega128rfa1.html
+-  name: Atmel ATmega256rfr2
+   apiurl: https://doc.riot-os.org/group__cpu__atmega256rfr2.html
+-  name: Atmel ATmega32u4
+   apiurl: https://doc.riot-os.org/group__cpu__atmega32u4.html
+-  name: TI CC26x0/CC13x0
+   apiurl: https://doc.riot-os.org/group__cpu__cc26x0__cc13x0.html
+-  name: Silicon Labs EFM32/EFR32/EZR32
+   apiurl: https://doc.riot-os.org/group__cpu__efm32.html
+-  name: SiFive fe310
+   apiurl: https://doc.riot-os.org/group__cpu__fe310.html
+-  name: NXP Kinetis
+   apiurl: https://doc.riot-os.org/group__cpu__kinetis.html
+-  name: NXP QN908x
+   apiurl: https://doc.riot-os.org/group__cpu__qn908x.html
