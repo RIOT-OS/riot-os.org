@@ -829,9 +829,28 @@ section {
 // Twitter timeline
 ///
 #twitter-timeline {
+  $twitter-blue: #1DA1F2;
+
   max-height: 450px;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: hidden;
+  &.rendered {
+    overflow-y: scroll;
+
+    .placeholder {
+      display: none;
+    }
+  }
+
+  .placeholder {
+    color: $twitter-blue;
+    width: 100%;
+    i {
+      font-size: 5rem;
+    }
+    a {
+      color: $twitter-blue;
+    }
+  }
 }
 
 #get-started {

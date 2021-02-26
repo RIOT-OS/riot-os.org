@@ -251,8 +251,16 @@
    */
   function loadTwitterScript() {
     let script = document.createElement('script');
+    let timeline = $("#twitter-timeline");
+    let cb = () => {
+      // When the script is loaded we bind to the widget rendering event to display it
+      twttr.events.bind("rendered", (event) => {
+          timeline.addClass("rendered");
+      });
+    }
 
     script.src = "https://platform.twitter.com/widgets.js"
+    script.onload = cb;
     document.head.append(script);
   }
 
