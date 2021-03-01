@@ -33,7 +33,7 @@ layout: base
               {% endif %}
 
               {% if author.stackoverflowid %}
-                <a href="https://stackoverflow.com/u/{ author.stackoverflowid }}" target="_blank"><i class="ri-stack-overflow-fill align-text-bottom"></i></a>
+                <a href="https://stackoverflow.com/u/{{ author.stackoverflowid }}" target="_blank"><i class="ri-stack-overflow-fill align-text-bottom"></i></a>
               {% endif %}
 
               {% if author.redditid %}
@@ -41,7 +41,7 @@ layout: base
               {% endif %}
 
               {% if author.linkedinid %}
-                <a href="https://linkedin.com/in/{ author.linkedinid }}" target="_blank"><i class="ri-linkedin-box-fill align-text-bottom"></i></a>
+                <a href="https://linkedin.com/in/{{ author.linkedinid }}" target="_blank"><i class="ri-linkedin-box-fill align-text-bottom"></i></a>
               {% endif %}
 
               {% if author.mastodonurl %}
