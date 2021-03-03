@@ -2,6 +2,7 @@
 
 ### Building
 Make sure you have Jekyll and Bundle installed (see https://jekyllrb.com/docs/).
+Python 3.6+ is also required.
 
 Then run
 
@@ -31,16 +32,14 @@ PRODUCTION=1 make build
 Run `make serve`. The site will be available at http://localhost:4000
 
 ### Updating RIOT-related data
-All RIOT-related data that is rendered in the website (e.g. statistics,
-contributors and board list) is parsed from files in the `_data` folder. To
-update these files with fresh information some `make` targets are available:
+All RIOT-related data rendered in the website (e.g. statistics,
+contributors and board list) is parsed from the RIOT repository and the GitHub
+API at build time using a custom Python script (requires Python 3.6+).
 
-- `update_riot_stats`
-- `update_riot_board_list`
-- `update_riot_contributors`
-- `update_riot_drivers`
+To update this data run `make update_riot_data`.
 
-To update everything at once run `make update_riot_data`.
+To fetch the list of RIOT contributor, install the "requests" Python package using
+`make install_python_requirements`
 
 #### Local RIOT repo
 You can specify where your local RIOT repo is located by defining the `RIOTBASE`
