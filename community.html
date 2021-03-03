@@ -124,7 +124,7 @@ subtitle: We are an open-source grassroots community gathering companies, academ
           </div>
            <div id="contributorsList" class="contributors">
              <div class="contributors-item">
-             {% assign prefix = site.data.contributors | sample: site.data.contributors.size %}
+             {% assign prefix = site.data.riot_contributors | sample: site.data.riot_contributors.size %}
              {% for cont in prefix %}
              <a href="{{ cont.html_url }}"><img  class="contributors-img" src="{{ cont.avatar_url| append: '&s=55' }}" title="{{ cont.login }}" alt=" {{ cont.login }} avatar"></a>
              {% endfor %}
