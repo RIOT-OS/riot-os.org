@@ -11,29 +11,32 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-            <li><a class="nav-link scrollto {% if page.main %}active{% endif %}" href="{% link index.html %}{% if page.main %}#hero{% endif %}">Home</a></li>
-            <li><a class="nav-link scrollto" href="{% link index.html %}#features">Features</a></li>
-            <li class="dropdown"><a href="{% link index.html %}#get-started"><span>Users</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
+          <li><a class="nav-link scrollto {% if page.main %}active{% endif %}" href="{% link index.html %}{% if page.main %}#hero{% endif %}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{% link index.html %}#features">Features</a></li>
+          <li class="dropdown">
+            <a href="{% link index.html %}#get-started"><span>Users</span> <i class="bi bi-chevron-down"></i></a>
+            <ul class="dropdown-menu dropdown-menu-end">
               <li><a href="{% link index.html %}#get-started">Get started</a></li>
               <li><a href="{% link index.html %}#use-cases-carousel">Use Cases</a></li>
               <li><a href="{% link index.html %}#faq">FAQ</a></li>
             </ul>
-            <li class="dropdown"><a href="{% link boards.html %}"><span>Hardware</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
+          </li>
+          <li class="dropdown">
+            <a href="{% link boards.html %}"><span>Hardware</span> <i class="bi bi-chevron-down"></i></a>
+            <ul class="dropdown-menu dropdown-menu-end">
               <li><a href="{% link cpus.html %}">CPUs</a></li>
               <li><a href="{% link boards.html %}">Boards</a></li>
               <li><a href="{% link drivers.html %}">Drivers</a></li>
             </ul>
+          </li>
           <li class="dropdown"><a href="{% link community.html %}"><span>Community</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
+            <ul class="dropdown-menu dropdown-menu-end">
               <li><a href="{% link community.html %}">Overview</a></li>
-              <!--<li><a href="{% link contributors.html %}">Contributors</a></li>-->
-              <li><a href="https://forum.riot-os.org">Forum</a></li>
-              <li><a href="https://github.com/topics/riot-os">GitHub</a></li>
+              <li><a href="https://forum.riot-os.org" target="_blank">Forum <i class="bi bi-box-arrow-up-right align-text-bottom"></i></a></li>
+              <li><a href="https://github.com/topics/riot-os" target="_blank">GitHub <i class="bi bi-box-arrow-up-right align-text-bottom"></i></a></li>
               <li><a class="scrollto" href="{% link community.html %}#socialmedia">Social Media</a></li>
               <li><a href="{% link branding.html %}">Branding</a></li>
-              <li><a href="https://github.com/RIOT-OS/RIOT/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+              <li><a href="https://github.com/RIOT-OS/RIOT/blob/master/CODE_OF_CONDUCT.md" target="_blank">Code of Conduct <i class="bi bi-box-arrow-up-right align-text-bottom"></i></a></li>
             </ul>
           </li>
         </ul>
