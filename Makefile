@@ -28,8 +28,9 @@ ifeq ($(PRODUCTION),1)
   export JEKYLL_ENV=production
 endif
 
+# symlinks are disabled to prevent errors when running make serve
 $(RIOTBASE):
-	@git clone $(RIOT_REPO_URL) $(RIOTBASE)
+	@git clone -c core.symlinks=false $(RIOT_REPO_URL) $(RIOTBASE)
 
 install_python_requirements:
 	@pip3 install -r $(TOOLS_DIR)/requirements.txt
