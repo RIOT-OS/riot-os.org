@@ -17,7 +17,7 @@
                             <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                         </p>
                         <img src="{{ use_case.image | default: 'riot-logo.png' | prepend: 'assets/img/use-cases/' | relative_url }}"
-                            class="use-case-img" alt="">
+                             class="use-case-img" alt="{{ use_case.user }}">
                         <h3>{{ use_case.user }}</h3>
                         <h4>{{ use_case.user_affiliation }}, {{ use_case.company }}</h4>
                         <a href="{{ use_case.url }}">Learn more</a>

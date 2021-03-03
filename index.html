@@ -332,7 +332,7 @@ main: true
             <div class="col-12 col-lg-4 border-0">
               <div class="card text-white overflow-hidden shadow">
                 <a href="{% link {{post.path}} %}" class="overflow-hidden">
-                  <img src="{% link /assets/img/blog/{{ post.image }} %}" class="card-img" alt="">
+                  <img src="{% link /assets/img/blog/{{ post.image }} %}" class="card-img" alt="Banner for '{{ page.title }}'">
                   <div class="card-img-overlay">
                     <h5 class="card-title">{{ post.title }}</h5>
                     <p class="card-text">{{ post.description }}</p>
@@ -425,7 +425,7 @@ main: true
           <div class="contributors-item">
           {% assign prefix = site.data.contributors  | sample: 50 %}
           {% for cont in prefix %}
-            <a href="{{ cont.html_url }}"><img  class="contributors-img" src="{{ cont.avatar_url | append: '&s=48' }}" title="{{ cont.login }}" alt=""></a>
+          <a href="{{ cont.html_url }}"><img  class="contributors-img" src="{{ cont.avatar_url | append: '&s=48' }}" title="{{ cont.login }}" alt=" {{ cont.login }} avatar"></a>
           {% endfor %}
           <a href="{% link community.html %}"> <span class="text-muted">...</span> </a>
           </div>
