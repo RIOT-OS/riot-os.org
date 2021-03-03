@@ -1,4 +1,7 @@
 title: test
+exclude:
+  - _RIOT
+  - _tools
 sass:
     sass_dir: _sass
 collections:
