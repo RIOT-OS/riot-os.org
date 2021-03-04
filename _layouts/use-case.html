@@ -14,23 +14,11 @@ layout: base
           <div class="row pt-4 text-center">
             <div class="col-12">
               {% if page.company_logo %}
-                <img src="{{ page.company_logo | default: 'riot-logo.png' | prepend: 'assets/img/use-cases/' | relative_url }}" class="rounded-3 img-fluid">
+              <img src="{{ page.company_logo | default: 'riot-logo.png' | prepend: 'assets/img/use-cases/' | relative_url }}" class="rounded-3 img-fluid" alt="{{ page.company }} logo">
               {% endif %}
               <h4 class="text-uppercase d-inline-block ps-3"><a href="{{ page.company_url | default: '#'}}">{{ page.company }}</a></h4>
             </div>
           </div>
-
-          <!-- <div class="row pt-4">
-            {% if page.company_logo %}
-            <div class="col-12 col-md-2 col-lg-1 offset-md-3 offset-lg-4">
-              <img src="{{ page.company_logo | default: 'riot-logo.png' | prepend: 'assets/img/use-cases/' | relative_url }}" class="rounded-3 img-fluid">
-            </div>
-            {% endif %}
-            <div class="col d-flex align-items-center text-center {% if page.company_logo %} text-md-start {% endif %}">
-              <h4 class="w-100 text-uppercase"><a href="{{ page.company_url | default: '#'}}">{{ page.company }}</a></h4>
-            </div>
-          </div> -->
-
         </div>
       </div>
     </div>
