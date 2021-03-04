@@ -11,21 +11,21 @@ subtitle: RIOT has a hardware abstraction layer, which enables us to support man
       <hr>
       <div id="driverList">
         <div class="row row-cols-1 row-cols-md-4 g-4">
-          {% for c in site.data.riot_drivers_cats %}
-          <div class="accordion accordion-flush" id="accordionFlushExample{{ c.group }}">
+          {% for category in site.data.riot_drivers_cats %}
+          <div class="accordion accordion-flush" id="accordionFlushExample{{ category.group }}">
 
   <div class="accordion-item">
-      <h2 class="accordion-header exclude" id="flush-headingOne{{ c.group }}">
-          <button class="accordion-button collapsed exclude " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne{{ c.group }}" aria-expanded="false" aria-controls="flush-collapseOne{{ c.group }}">
-          <b class="exclude">{{ c["name"] }}</b>
+      <h2 class="accordion-header exclude" id="flush-headingOne{{ category.group }}">
+          <button class="accordion-button collapsed exclude " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne{{ category.group }}" aria-expanded="false" aria-controls="flush-collapseOne{{ category.group }}">
+          <b class="exclude">{{ category["name"] }}</b>
       </button>
     </h2>
-    <div id="flush-collapseOne{{ c.group }}" class="accordion-collapse collapse" aria-labelledby="flush-headingOne{{ c.group }}" data-bs-parent="#accordionFlushExample{{ c.group }}">
+    <div id="flush-collapseOne{{ category.group }}" class="accordion-collapse collapse" aria-labelledby="flush-headingOne{{ category.group }}" data-bs-parent="#accordionFlushExample{{ category.group }}">
       <div class="accordion-body">
           <ul class="list-group">
-            {% for i in site.data.riot_drivers %}
-            {% if i.parent == c.group %}
-            <li class="list-group-item"><a href="https://doc.riot-os.org/group__{{ i.group |replace: "_", "__" }}.html">{{ i.name }}</a></li>
+            {% for driver in site.data.riot_drivers %}
+            {% if driver.parent == category.group %}
+            <li class="list-group-item"><a href="{{ driver.apiurl }}">{{ driver.name }}</a></li>
             {% endif %}
             {% endfor %}
           </ul>
