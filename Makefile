@@ -33,6 +33,7 @@ endif
 PRODUCTION ?= 0
 ifeq ($(PRODUCTION),1)
   JEKYLL_BUILD_ARGS += --config _config.yml,_config_production.yml
+  export JEKYLL_ENV=production
 endif
 
 $(RIOTBASE):
