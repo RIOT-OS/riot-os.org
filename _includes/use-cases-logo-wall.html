@@ -1,0 +1,14 @@
+        <div class="row row-cols-xxl-6 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-3">
+          {% for logo in site.static_files %}
+            {% if logo.path contains 'use-cases/logos' %}
+            <div class="col">
+              <div class="card border-0 d-flex h-100 p-4">
+                <div class="card d-flex align-items-center justify-content-center h-100 border-0">
+                  <img class="card-img-top" src="{{ logo.path }}" alt="">
+                </div>
+              </div>
+            </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+
