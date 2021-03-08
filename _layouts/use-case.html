@@ -32,13 +32,16 @@ layout: base
           <div class="row">
             <div class="row">
               <figure class="shadow-sm rounded-1">
+                {% if page.user_photo %}
+                <img src="{{ page.user_photo | prepend: 'assets/img/use-cases/' | relative_url }}" class="rounded-circle" width="75">
+                {% endif %}
                 <blockquote class="blockquote">
                   <i class="ri-double-quotes-l"></i>
                   {{ page.quote }}
                   <i class="ri-double-quotes-r"></i>
                 </blockquote>
                 <figcaption class="blockquote-footer">
-                  {{ page.user }}, <cite title="Source Title">{{ page.user_affiliation }}</cite>
+                  {{ page.user }}, <cite title="Source Title">{{ page.user_position }}</cite>
                 </figcaption>
               </figure>
             </div>
