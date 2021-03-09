@@ -14,8 +14,9 @@
             <div class="swiper-wrapper">
 
                 {% for use_case in site.use_cases %}
-                <div class="swiper-slide">
-                    <div class="use-case-item rounded">
+                  {% if use_case.quote %}
+                    <div class="swiper-slide">
+                      <div class="use-case-item rounded">
                         <p>
                             <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                             {{ use_case.quote }}
@@ -25,9 +26,12 @@
                              class="use-case-img" alt="{{ use_case.user }}">
                         <h3>{{ use_case.user }}</h3>
                         <h4>{{ use_case.user_position }}, {{ use_case.company }}</h4>
-                        <a href="{{ use_case.url }}">Learn more</a>
+                        {% if use_case.project %}
+                          <a href="{{ use_case.url }}">Learn more</a>
+                        {% endif %}
+                      </div>
                     </div>
-                </div>
+                  {% endif %}
                 {% endfor %}
 
             </div>
