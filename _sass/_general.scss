@@ -64,6 +64,29 @@ h1, h2, h3, h4, h5, h6 {
     background-color: $primary;
   }
 }
+  .btn-learn-more {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: $light;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    background: $primary;
+    border: 2px solid $primary;
+  }
+
+  .btn-learn-more:hover {
+    background: $light;
+    color: $primary;
+    text-decoration: none;
+  }
 
 .text-gray {
   color: $gray !important;
