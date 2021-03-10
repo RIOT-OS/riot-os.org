@@ -1,4 +1,10 @@
 title: test
+exclude:
+  - _RIOT
+  - _tools
+  - Makefile
+  - README.md
+
 sass:
     sass_dir: _sass
 collections:

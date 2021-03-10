@@ -1,6 +1,4 @@
-.PHONY: update_riot_stats update_riot_repo update_riot_board_list update_riot_data
-.PHONY: update_riot_contributors install_python_requirements
-.PHONY: update_riot_drivers update_riot_cpus
+.PHONY: update_riot_repo update_riot_data install_python_requirements
 .PHONY: build serve
 
 RIOT_REPO_URL = "https://github.com/RIOT-OS/RIOT.git"
@@ -10,19 +8,13 @@ DATA_DIR = $(abspath _data)
 _DEFAULT_RIOTBASE = $(abspath _RIOT)
 RIOTBASE ?= $(_DEFAULT_RIOTBASE)
 
-RIOT_BOARDS_FILE = $(DATA_DIR)/riot_boards.yml
-RIOT_STATS_FILE = $(DATA_DIR)/riot_stats.yml
-RIOT_CONTRIBUTORS_FILE = $(DATA_DIR)/contributors.json
-RIOT_DRIVERS_FILE = $(DATA_DIR)/riot_drivers.csv
-RIOT_DRIVERS_CATS_FILE = $(DATA_DIR)/riot_drivers_cats.csv
-RIOT_CPUS_FILE = $(DATA_DIR)/riot_cpus.yml
-
-RIOT_DATA_FILES += $(RIOT_BOARDS_FILE)
-RIOT_DATA_FILES += $(RIOT_STATS_FILE)
-RIOT_DATA_FILES += $(RIOT_CONTRIBUTORS_FILE)
-RIOT_DATA_FILES += $(RIOT_DRIVERS_FILE)
-RIOT_DATA_FILES += $(RIOT_DRIVERS_CATS_FILE)
-RIOT_DATA_FILES += $(RIOT_CPUS_FILE)
+RIOT_FETCH_DATA_CMD = RIOTBASE=$(RIOTBASE) DATA_DIR=$(DATA_DIR) $(TOOLS_DIR)/fetch_riot_data.py
+RIOT_DATA_FILES += $(DATA_DIR)/riot_boards.yml
+RIOT_DATA_FILES += $(DATA_DIR)/riot_stats.yml
+RIOT_DATA_FILES += $(DATA_DIR)/riot_contributors.yml
+RIOT_DATA_FILES += $(DATA_DIR)/riot_drivers.yml
+RIOT_DATA_FILES += $(DATA_DIR)/riot_drivers_cats.yml
+RIOT_DATA_FILES += $(DATA_DIR)/riot_cpus.yml
 
 WATCH ?= 0
 
@@ -36,42 +28,29 @@ ifeq ($(PRODUCTION),1)
   export JEKYLL_ENV=production
 endif
 
+# symlinks are disabled to prevent errors when running make serve
 $(RIOTBASE):
-	@git clone $(RIOT_REPO_URL) $(RIOTBASE)
+	@git clone -c core.symlinks=false $(RIOT_REPO_URL) $(RIOTBASE)
 
 install_python_requirements:
-	@pip install -r $(TOOLS_DIR)/requirements.txt
+	@pip3 install -r $(TOOLS_DIR)/requirements.txt
 
 update_riot_repo: $(RIOTBASE)
 ifeq ($(RIOTBASE),$(_DEFAULT_RIOTBASE))
 	@git -C $(RIOTBASE) pull
 endif
 
-update_riot_stats: update_riot_repo
-	@$(TOOLS_DIR)/riot-stats.sh $(RIOTBASE) > $(RIOT_STATS_FILE)
-
-update_riot_board_list: update_riot_repo
-	@$(TOOLS_DIR)/riot-boards.sh $(RIOTBASE) > $(RIOT_BOARDS_FILE)
-
-update_riot_contributors: install_python_requirements
-	@python $(TOOLS_DIR)/riot-contributors.py > $(RIOT_CONTRIBUTORS_FILE)
-
-update_drivers_cats: update_riot_repo
-	@$(TOOLS_DIR)/riot-drivers-cats.sh $(RIOTBASE) > $(RIOT_DRIVERS_CATS_FILE)
-
-update_riot_drivers: update_drivers_cats
-	@$(TOOLS_DIR)/riot-drivers.sh $(RIOTBASE) > $(RIOT_DRIVERS_FILE)
-
-update_riot_cpus: update_riot_repo
-	@$(TOOLS_DIR)/riot-cpus.sh $(RIOTBASE) > $(RIOT_CPUS_FILE)
-
-update_riot_data: update_riot_contributors update_riot_board_list update_riot_stats update_riot_drivers update_riot_cpus
-
 $(RIOT_DATA_FILES):
-	@cp $@.dist $@
+	@$(RIOT_FETCH_DATA_CMD)
+
+update_riot_data: update_riot_repo
+	@$(RIOT_FETCH_DATA_CMD)
+
+clean_riot_data:
+	rm -f $(RIOT_DATA_FILES)
 
 build: $(RIOT_DATA_FILES)
 	@bundle exec jekyll build $(JEKYLL_BUILD_ARGS)
 
-serve:
+serve: $(RIOT_DATA_FILES)
 	@bundle exec jekyll serve --livereload
