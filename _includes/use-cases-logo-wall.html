@@ -1,10 +1,10 @@
-        <div class="row row-cols-xxl-6 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-3">
+        <div class="row row-cols-xxl-6 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-3 d-flex justify-content-center">
           {% for use_cases in site.use_cases %}
             {% if use_cases.company %}
             <div class="col">
               <div class="card border-0 d-flex h-100 p-4">
                 <div class="card d-flex align-items-center justify-content-center h-100 border-0">
-                  <a href="{{ use_cases.company_url }}"><img class="card-img-top" src="{{ use_cases.company_logo | prepend: 'assets/img/use-cases/' | relative_url }}" alt="{{ use_cases.company }}"></a>
+                  <a href="{{ use_cases.company_url }}" target="_blank"><img class="card-img-top" src="{{ use_cases.company_logo | prepend: 'assets/img/use-cases/' | relative_url }}" alt="{{ use_cases.company }}"></a>
                 </div>
               </div>
             </div>
