@@ -14,7 +14,7 @@ layout: base
           <div class="row pt-4 text-center">
             <div class="col-12">
               {% if page.company_logo %}
-              <img src="{{ page.company_logo | default: 'riot-logo.png' | prepend: 'assets/img/use-cases/' | relative_url }}" class="rounded-3 img-fluid" alt="{{ page.company }} logo">
+              <img src="{{ page.company_logo | default: 'riot-logo.png' | prepend: 'assets/img/use-cases/' | relative_url }}" class="img-fluid" alt="{{ page.company }} logo">
               {% endif %}
               <h4 class="text-uppercase d-inline-block ps-3"><a href="{{ page.company_url | default: '#'}}">{{ page.company }}</a></h4>
             </div>
