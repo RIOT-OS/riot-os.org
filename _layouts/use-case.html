@@ -29,9 +29,30 @@ layout: base
   {% if page.project %}
   <section class="py-0">
     <div class="container">
-
       <div class="row">
-        <div class="col-12 col-lg-8 offset-lg-2 py-5">
+
+        <div class="col-lg-2 d-flex order-lg-first col-6 align-items-center navigation">
+          {% if page.previous.url %}
+          <div class="row pe-2 mb-4 m-lg-0">
+            <div class="col-3">
+              <a href="{{page.previous.url}}" class="h-100 m-auto d-flex align-items-center"
+                 title="Use case: {{page.previous.project}}">
+                <i class="ri-arrow-left-s-line fs-3 align-baseline"></i>
+              </a>
+            </div>
+            <div class="col">
+              <a href="{{page.previous.url}}" class="h-100 m-auto d-flex align-items-center"
+                 title="Use case: {{page.previous.project}}">
+                <small class="text-start">
+                  <strong>{{page.previous.project}}</strong>
+                </small>
+              </a>
+            </div>
+          </div>
+          {% endif %}
+        </div>
+
+        <div class="col-12 order-first col-lg-8 py-5">
           <div class="row">
             <div class="row">
               <figure class="shadow-sm rounded-1">
@@ -52,6 +73,27 @@ layout: base
           <div class="row">
             {{ content }}
           </div>
+        </div>
+
+        <div class="col-lg-2 d-flex col-6 order-last align-items-center navigation">
+          {% if page.next.url %}
+          <div class="row ps-2 mb-4 m-lg-0">
+            <div class="col">
+              <a href="{{page.next.url}}" class="h-100 m-auto d-flex align-items-center"
+                 title="Use case: {{page.next.project}}">
+                <small class="text-end">
+                  <strong>{{page.next.project}}</strong>
+                </small>
+              </a>
+            </div>
+            <div class="col-3">
+              <a href="{{page.next.url}}" class="h-100 m-auto d-flex align-items-center"
+                 title="Use case: {{page.next.project}}">
+                <i class="ri-arrow-right-s-line fs-3 align-baseline"></i>
+              </a>
+            </div>
+          </div>
+          {% endif %}
         </div>
 
       </div>
