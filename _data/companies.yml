@@ -1,0 +1,24 @@
+savoir_faire_linux:
+  name: Savoir-faire Linux
+  logo: savoir-faire-linux-logo.svg
+  url: https://savoirfairelinux.com/en
+
+continental:
+  name: Continental
+  logo: continental-logo.svg
+  url: https://www.continental.com/en
+
+locha:
+  name: Locha Mesh
+  logo: lochamesh-logo.svg
+  url: https://locha.io
+
+sapienza_university:
+  name: Sapienza University of Rome
+  logo: sapienza-university.jpg
+  url: https://www.uniroma1.it/en/
+
+wolfssl:
+  name: wolfSSL
+  logo: wolfssl-logo.jpg
+  url: https://www.wolfssl.com/
