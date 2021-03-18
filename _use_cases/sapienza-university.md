@@ -4,9 +4,7 @@ quote: At Sapienza University of Rome, we train our computer engineer students b
 user: Ioannis Chatzigiannakis
 user_position: Professor of Computer Engineering
 user_photo: user-photos/Ioannis-Chatzigiannak.jpg
-company: Sapienza University of Rome
-company_logo: logos/sapienza-university.jpg
-company_url: https://www.uniroma1.it/en/
+company: sapienza_university
 ---
 
 ## About

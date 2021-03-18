@@ -15,6 +15,7 @@
 
                 {% for use_case in site.use_cases %}
                   {% if use_case.quote %}
+                  {% assign company = site.data.companies[use_case.company] %}
                     <div class="swiper-slide">
                       <div class="use-case-item rounded h-100 d-flex flex-column">
                         <p>
@@ -27,7 +28,7 @@
                         <img src="{{ use_case.user_photo | default: 'riot-logo.png' | prepend: 'assets/img/use-cases/' | relative_url }}"
                              class="use-case-img" alt="{{ use_case.user }}">
                         <h3>{{ use_case.user }}</h3>
-                        <h4>{{ use_case.user_position }}, {{ use_case.company }}</h4>
+                        <h4>{{ use_case.user_position }}, {{ company.name }}</h4>
                         {% if use_case.project %}
                         <div class="col-12 mb-3 m-auto">
                           <a href="{{ use_case.url }}" class="btn-learn-more btn-lg m-auto", role="button">Learn more!</a>

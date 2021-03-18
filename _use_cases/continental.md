@@ -4,9 +4,7 @@ quote: We use RIOT in our after-market product for connected car-sharing. RIOT's
 user: Vincent Dupont
 user_position: IoT Software Architect
 user_photo: user-photos/vincent-dupont.jpg
-company: Continental
-company_logo: logos/continental-logo.svg
-company_url: https://www.continental.com/en
+company: continental
 ---
 
 ## About

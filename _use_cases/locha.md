@@ -4,9 +4,7 @@ quote: In Locha Mesh, we decided to use RIOT for a variety of reasons, including
 user: Jean Pierre Dudey
 user_position: Embedded Software Developer
 user_photo: user-photos/Jean-Pierre-Dudey.jpg
-company: Locha Mesh
-company_logo: logos/lochamesh-logo.svg
-company_url: https://locha.io
+company: locha
 ---
 
 ## About

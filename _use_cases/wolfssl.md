@@ -4,9 +4,7 @@ quote: At wolfSSL we love how easy it is to integrate all the components in the 
 user: Daniele Lacamera
 user_position: Embedded Software Engineer
 user_photo: user-photos/daniele-lacamera.jpg
-company: wolfSSL
-company_logo: logos/wolfssl-logo.jpg
-company_url: https://www.wolfssl.com/
+company: wolfssl
 ---
 
 ## About

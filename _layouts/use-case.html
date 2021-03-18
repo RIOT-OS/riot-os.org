@@ -2,6 +2,8 @@
 layout: base
 ---
 
+{% assign company = site.data.companies[page.company] %}
+
 <main id="use-case">
 
   <section class="header">
@@ -13,10 +15,10 @@ layout: base
 
           <div class="row pt-4 text-center">
             <div class="col-12">
-              {% if page.company_logo %}
-              <img src="{{ page.company_logo | default: 'riot-logo.png' | prepend: 'assets/img/use-cases/' | relative_url }}" class="img-fluid" alt="{{ page.company }} logo">
+              {% if company.logo %}
+              <img src="{{ company.logo | default: 'riot-logo.png' | prepend: 'assets/img/companies/' | relative_url }}" class="img-fluid" alt="{{ company.name }} logo">
               {% endif %}
-              <h4 class="text-uppercase d-inline-block ps-3"><a href="{{ page.company_url | default: '#'}}">{{ page.company }}</a></h4>
+              <h4 class="text-uppercase d-inline-block ps-3"><a href="{{ company.url | default: '#'}}">{{ company.name }}</a></h4>
             </div>
           </div>
         </div>
