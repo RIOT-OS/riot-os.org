@@ -39,31 +39,33 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   background-color: $primary;
   border-color: $primary;
-}
-
-.btn-primary:hover {
-  color: #fff;
-  background-color: $primary-light;
-  border-color: $primary-light;
-}
-
-.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-  color: #fff;
-  background-color: $primary-light;
-  border-color: $primary-light;
-  box-shadow: none !important;
+  &:hover {
+    color: #fff;
+    background-color: $primary-light;
+    border-color: $primary-light;
+  }
+  &:hover, &:active, &:focus {
+    color: #fff;
+    background-color: $primary-light;
+    border-color: $primary-light;
+    box-shadow: none !important;
+  }
 }
 
 .btn-outline-primary {
   color: $primary;
   border-color: $primary;
 
-  &:hover {
+  &:hover, &:active {
     color: $light;
     border-color: $primary;
     background-color: $primary;
   }
+  &:focus, &:active:focus {
+    box-shadow: 0 0 0 0.25rem rgba($primary, .5);
+  }
 }
+
   .btn-learn-more {
     font-family: "Raleway", sans-serif;
     font-weight: 500;
