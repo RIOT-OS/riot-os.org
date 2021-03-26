@@ -12,28 +12,38 @@ subtitle: RIOT has a hardware abstraction layer, which enables us to support man
       <div id="driverList">
         <div class="row row-cols-1 row-cols-md-4 g-4">
           {% for category in site.data.riot_drivers_cats %}
-          <div class="accordion accordion-flush" id="accordionFlushExample{{ category.group }}">
+          <div class="col accordion accordion-flush" id="accordionFlushExample{{ category.group }}">
 
-  <div class="accordion-item">
-      <h2 class="accordion-header exclude" id="flush-headingOne{{ category.group }}">
-          <button class="accordion-button collapsed exclude " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne{{ category.group }}" aria-expanded="false" aria-controls="flush-collapseOne{{ category.group }}">
-          <b class="exclude">{{ category["name"] }}</b>
-      </button>
-    </h2>
-    <div id="flush-collapseOne{{ category.group }}" class="accordion-collapse collapse" aria-labelledby="flush-headingOne{{ category.group }}" data-bs-parent="#accordionFlushExample{{ category.group }}">
-      <div class="accordion-body">
-          <ul class="list-group">
-            {% for driver in site.data.riot_drivers %}
-            {% if driver.parent == category.group %}
-            <li class="list-group-item"><a href="{{ driver.apiurl }}">{{ driver.name }}</a></li>
-            {% endif %}
-            {% endfor %}
-          </ul>
-      </div>
-    </div>
-  </div>
-</div>
-        {% endfor %}
+            <div class="accordion-item">
+              <h2 class="accordion-header exclude btn-primary shadow rounded"
+                id="flush-headingOne{{ category.group }}">
+                <button class="accordion-button collapsed exclude" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#flush-collapseOne{{ category.group }}"
+                  aria-expanded="false" aria-controls="flush-collapseOne{{ category.group }}">
+                  <h5 class="exclude ft-miso text-start w-100">
+                    {{ category["name"] }}
+                    <i class="bi bi-chevron-down"></i>
+                  </h5>
+                </button>
+              </h2>
+              <div id="flush-collapseOne{{ category.group }}" class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne{{ category.group }}"
+                data-bs-parent="#accordionFlushExample{{ category.group }}">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    {% for driver in site.data.riot_drivers %}
+                    {% if driver.parent == category.group %}
+                    <li class="list-group-item"><a href="{{ driver.apiurl }}">{{ driver.name }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </section><!-- End Driver Section -->

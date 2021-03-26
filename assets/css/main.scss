@@ -10,8 +10,9 @@ $baseurl: "{{ site.baseurl }}";
 @import "riot-code.css";
 
 @import "pages/about";
-@import "pages/index";
 @import "pages/blog";
+@import "pages/drivers";
+@import "pages/index";
 @import "pages/use-case";
 
 @import "components/cookie-alert";
