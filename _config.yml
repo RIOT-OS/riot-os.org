@@ -21,3 +21,6 @@ defaults:
       layout: "use-case"
 
 highlighter: rouge
+
+# enable/disable the blog section in the index
+blog: false

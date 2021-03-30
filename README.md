@@ -83,3 +83,7 @@ The metadata required for an use case is the following:
 - `user_position`: Position of the user in the company
 - `user_photo`: Path to the user photo, relative to `assets/img/use-cases/`
 - `company`: key of the company in `companies.yml` (see #adding-companies)
+
+### Blog
+For now the blog is not published. For local development you can render the blog
+section by setting `blog` to `true` in `_config.yml`.
