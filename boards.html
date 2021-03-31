@@ -15,7 +15,7 @@ subtitle: RIOT has a hardware abstraction layer, which enables us to support man
           {% assign boards_by_name = site.data.riot_boards | sort_natural: "name" %}
           {% for board in boards_by_name %}
           <div class="col">
-            <a href="{{ board.apiurl }}">
+            <a href="{{ board.apiurl }}" target="_blank">
               <div class="card shadow rounded btn-primary h-100">
                 <div class="card-body align-middle">
                   <h5 class="text-center">{{ board.name }}</h5>

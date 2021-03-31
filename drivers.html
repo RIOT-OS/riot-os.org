@@ -33,7 +33,7 @@ subtitle: RIOT has a hardware abstraction layer, which enables us to support man
                   <ul class="list-group">
                     {% for driver in site.data.riot_drivers %}
                     {% if driver.parent == category.group %}
-                    <li class="list-group-item"><a href="{{ driver.apiurl }}">{{ driver.name }}</a></li>
+                    <li class="list-group-item"><a href="{{ driver.apiurl }}" target="_blank">{{ driver.name }}</a></li>
                     {% endif %}
                     {% endfor %}
                   </ul>
