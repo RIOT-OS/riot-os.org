@@ -16,6 +16,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.7'
+
+      - name: Setup Environment.
+        run: |
+          gem install jekyll bundler
+          bundle install
+
       - name: Update RIOT data
         run: make update_riot_data
         env:
@@ -28,9 +38,15 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
           restore-keys: ${{ runner.os }}-gems-
 
+      - name: Build Site with Jekyll.
+        run: PRODUCTION=1 make build
+
       - name: Deploy
-        uses: helaili/jekyll-action@v2
+        uses: burnett01/rsync-deployments@4.1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          target_branch: 'gh-pages'
-          jekyll_build_options: '--config _config.yml,_config_production.yml'
+          switches: -avzr --delete
+          path: _site/
+          remote_path: /
+          remote_host: ${{ secrets.SSH_REMOTE_HOST }}
+          remote_user: ${{ secrets.SSH_REMOTE_USER }}
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
