@@ -1,0 +1,18 @@
+<p>There is not much to be gained from 64 bit support as RIOT does not target any other platforms that offer 64 bit.
+That being said there are pros and cons.</p>
+
+<p>Pro:</p>
+<ul>
+  <li>improve RIOT’s code base by fixing 64 bit related errors</li>
+  <li>simplify toolchain setup for native</li>
+</ul>
+
+<p>Con:</p>
+<ul>
+  <li>effort / gain (as it’s unlikely we will support any other 64 bit platform, fixing potential 64 bit errors in RIOT is less beneficial)</li>
+  <li>decreased 32 bit testing (unless we make 32 the default in which case the toolchain setup argument is diminished)</li>
+</ul>
+
+<p>From our perspective this does not justify pulling manpower from other tasks. Nobody will stop you from adding support if you want to, though ;)</p>
+
+<p>See also: https://github.com/RIOT-OS/RIOT/issues/6603</p>

@@ -1,0 +1,7 @@
+<p>This depends on the board and on the application. When you compile an application for a board, the last thing printed gives each sections memory footprint and looks like this:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    text       data     bss     dec     hex filename
+    77732     296   24272  102300    18f9c applications/sixlowapp/bin/iot-lab_M3/sixlowapp.elf
+</code></pre></div></div>
+<p>The required RAM is <code class="language-plaintext highlighter-rouge">data + bss</code>, ROM is <code class="language-plaintext highlighter-rouge">text + data</code>.</p>
+
+<p><strong>Please note:</strong> Usually a big portion of RAM is consumed by the stack space for threads. Although RIOT maintainers try to optimize the default values, manual tweaking may be necessary to get the most efficient results. You can check the maximum stack usage at runtime with the shell command <code class="language-plaintext highlighter-rouge">ps</code> or the corresponding function <code class="language-plaintext highlighter-rouge">thread_print_all()</code> from the module <code class="language-plaintext highlighter-rouge">ps</code>.</p>

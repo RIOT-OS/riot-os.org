@@ -1,0 +1,4702 @@
+<!DOCTYPE html>
+<html lang="en"  class="h-100" >
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>RIOT - The friendly Operating System for the Internet of Things</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/assets/img/favicon.png" rel="icon">
+  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Selecao - v4.0.0
+  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body  class="d-flex flex-column h-100" >
+    <div class="container-md">
+  <!-- ======= Header ======= -->
+<!-- Configurations layouts can apply
+     - header_opaque: set to true to have an opaque background before scrolling
+-->
+  <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+          <a href="/"><span class="visually-hidden">Go to main site</span> <img src="/assets/img/riot-logo.png" alt="RIOT OS logo" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="/#features">Features</a></li>
+          <li class="dropdown">
+            <a href="/#get-started"><span>Users</span> <i class="bi bi-chevron-down"></i></a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a href="/#get-started">Get started</a></li>
+              <li><a href="/#use-cases">Use Cases</a></li>
+              <li><a href="/#faq">FAQ</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="/boards.html"><span>Hardware</span> <i class="bi bi-chevron-down"></i></a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a href="/cpus.html">CPUs</a></li>
+              <li><a href="/boards.html">Boards</a></li>
+              <li><a href="/drivers.html">Drivers</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="/community.html"><span>Community</span> <i class="bi bi-chevron-down"></i></a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a href="/community.html">Overview</a></li>
+              <li><a href="https://forum.riot-os.org" target="_blank">Forum <i class="bi bi-box-arrow-up-right align-text-bottom"></i></a></li>
+              <li><a href="https://github.com/topics/riot-os" target="_blank">GitHub <i class="bi bi-box-arrow-up-right align-text-bottom"></i></a></li>
+              <li><a class="scrollto" href="/community.html#socialmedia">Social Media</a></li>
+              <li><a href="/branding.html">Branding</a></li>
+              <li><a href="https://github.com/RIOT-OS/RIOT/blob/master/CODE_OF_CONDUCT.md" target="_blank">Code of Conduct <i class="bi bi-box-arrow-up-right align-text-bottom"></i></a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+    </div>
+  <main id="main">
+  <section class="simple-page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 text-center text-lg-start">
+          <h2>Supported Drivers</h2>
+          <h3>RIOT has a hardware abstraction layer, which enables us to support many drivers easily.</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+  <!-- ======= Driver Section ======= -->
+  <section id="drivers">
+    <div class="container">
+      <input class="form-control" name="driverSearchInput" type="text" placeholder="Search..">
+      <hr>
+      <div id="driverList">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          
+          <div class="col accordion accordion-flush" id="accordionFlushExampledrivers_multimedia">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header exclude btn-primary shadow rounded"
+                id="flush-headingOnedrivers_multimedia">
+                <button class="accordion-button collapsed exclude" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#flush-collapseOnedrivers_multimedia"
+                  aria-expanded="false" aria-controls="flush-collapseOnedrivers_multimedia">
+                  <h5 class="exclude ft-miso text-start w-100">
+                    Multimedia Device Drivers
+                    <i class="bi bi-chevron-down"></i>
+                  </h5>
+                </button>
+              </h2>
+              <div id="flush-collapseOnedrivers_multimedia" class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOnedrivers_multimedia"
+                data-bs-parent="#accordionFlushExampledrivers_multimedia">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__dfplayer.html" target="_blank">DFPlayer Mini MP3 Player</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="col accordion accordion-flush" id="accordionFlushExampledrivers_netdev">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header exclude btn-primary shadow rounded"
+                id="flush-headingOnedrivers_netdev">
+                <button class="accordion-button collapsed exclude" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#flush-collapseOnedrivers_netdev"
+                  aria-expanded="false" aria-controls="flush-collapseOnedrivers_netdev">
+                  <h5 class="exclude ft-miso text-start w-100">
+                    Network Device Drivers
+                    <i class="bi bi-chevron-down"></i>
+                  </h5>
+                </button>
+              </h2>
+              <div id="flush-collapseOnedrivers_netdev" class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOnedrivers_netdev"
+                data-bs-parent="#accordionFlushExampledrivers_netdev">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__at86rf215.html" target="_blank">AT86RF215 based drivers</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__at86rf2xx.html" target="_blank">AT86RF2xx based drivers</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__ata8520e.html" target="_blank">Microchip ATA8520E transceiver</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__atwinc15x0.html" target="_blank">ATWINC15x0 WiFi module driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__can.html" target="_blank">CAN Drivers</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__cc110x.html" target="_blank">CC1100/CC1100e/CC1101 Sub-GHz transceiver driver</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__cc1xxx.html" target="_blank">CC1100/CC1100e/CC1101/CC1200 common code</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__cc2420.html" target="_blank">CC2420 radio driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__dose.html" target="_blank">Differentially Operated Serial Ethernet</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__enc28j60.html" target="_blank">ENC28J60</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__encx24j600.html" target="_blank">ENCX24J600</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__ethos.html" target="_blank">Ethernet-over-serial driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__kw2xrf.html" target="_blank">KW2x radio-driver</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__kw41zrf.html" target="_blank">KW41Z radio-driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__mii.html" target="_blank">Ethernet Media-Independent Interface (MII)</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__mrf24j40.html" target="_blank">MRF24J40 based drivers</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__netdev__api.html" target="_blank">Netdev - Network Device Driver API</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__nrf24l01p.html" target="_blank">NRF24L01+ driver interface</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__nrf24l01p__ng.html" target="_blank">NRF24L01+ (NG) 2.4 GHz trasceiver driver</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__nrf52__802154.html" target="_blank">IEEE802.15.4 Driver for nRF52840 SoCs</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__nrf5x__nrfble.html" target="_blank">NRF BLE radio driver</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__nrf5x__nrfmin.html" target="_blank">NRF minimal radio driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__pn532.html" target="_blank">PN532 NFC Reader</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__rn2xx3.html" target="_blank">RN2483/RN2903 LoRa module driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__slipdev.html" target="_blank">SLIP network device</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__socket__zep.html" target="_blank">Socket-based ZEP</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__sx126x.html" target="_blank">SX1261/2/8 and LLCC68 LoRa radio driver</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__sx127x.html" target="_blank">Semtech SX1272 and SX1276 radios driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__w5100.html" target="_blank">W5100 ethernet driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__xbee.html" target="_blank">XBee driver</a></li>
+                    
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="col accordion accordion-flush" id="accordionFlushExampledrivers_sensors">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header exclude btn-primary shadow rounded"
+                id="flush-headingOnedrivers_sensors">
+                <button class="accordion-button collapsed exclude" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#flush-collapseOnedrivers_sensors"
+                  aria-expanded="false" aria-controls="flush-collapseOnedrivers_sensors">
+                  <h5 class="exclude ft-miso text-start w-100">
+                    Sensor Device Drivers
+                    <i class="bi bi-chevron-down"></i>
+                  </h5>
+                </button>
+              </h2>
+              <div id="flush-collapseOnedrivers_sensors" class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOnedrivers_sensors"
+                data-bs-parent="#accordionFlushExampledrivers_sensors">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__ad7746.html" target="_blank">AD7746 Capacitance-to-digital converter driver</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__adcxx1c.html" target="_blank">ADCXX1C ADC device driver</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__ads101x.html" target="_blank">ADS101x/111x ADC device driver</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__adt7310.html" target="_blank">ADT7310 SPI temperature sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__adxl345.html" target="_blank">ADXL345 3-Axis accelerometer</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__apds99xx.html" target="_blank">APDS99XX proximity and ambient light sensors</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__at30tse75x.html" target="_blank">AT30TSE75x temperature sensor with EEPROM</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__bh1750fvi.html" target="_blank">BH1750FVI Light Sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__bh1900nux.html" target="_blank">BH1900NUX Temperature sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__bme680.html" target="_blank">BME680 Temperature/Humidity/Pressure/Gas sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__bmp180.html" target="_blank">BMP180 temperature and pressure sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__bmx055.html" target="_blank">BMX055 9-axis sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__bmx280.html" target="_blank">BMP280/BME280 temperature, pressure and humidity sensor</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__ccs811.html" target="_blank">CCS 811 digital gas sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__cst816s.html" target="_blank">Cst816S touch screen driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__dcf77.html" target="_blank">DCF77 long wave receiver with 77,5 kHz</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__dht.html" target="_blank">DHT Family of Humidity and Temperature Sensors</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__ds1307.html" target="_blank">DS1307 RTC</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__ds18.html" target="_blank">DS18 temperature sensor driver</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__ds3231.html" target="_blank">DS3231 Real Time Clock</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__ds3234.html" target="_blank">DS3234 Extremely Accurate SPI RTC</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__ds75lx.html" target="_blank">Maxim DS75LX temperature sensor</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__fxos8700.html" target="_blank">FXOS8700 3-axis accelerometer/magnetometer</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__gp2y10xx.html" target="_blank">GP2Y10xx Optical Dust Sensor device driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__hdc1000.html" target="_blank">HDC1000 Humidity and Temperature Sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__hih6130.html" target="_blank">HIH6130 humidity and temperature sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__hmc5883l.html" target="_blank">HMC5883L 3-axis digital compass</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__hsc.html" target="_blank">HSC temperature and pressure sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__hts221.html" target="_blank">ST HTS221 digital Humidity Sensor</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__ina2xx.html" target="_blank">INA2XX current/power monitor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__ina3221.html" target="_blank">INA3221 current/power monitor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__io1__xplained.html" target="_blank">Atmel IO1 Xplained Extension board</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__isl29020.html" target="_blank">ISL29020 light sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__isl29125.html" target="_blank">ISL29125 RGB light sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__itg320x.html" target="_blank">ITG320X 3-axis gyroscope</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__jc42.html" target="_blank">JC42 compliant temperature sensor driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__l3g4200d.html" target="_blank">L3G4200D gyroscope</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__lc709203f.html" target="_blank">LC709203F</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__lis2dh12.html" target="_blank">LIS2DH12 Accelerometer</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__lis3dh.html" target="_blank">LIS3DH accelerometer</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__lis3mdl.html" target="_blank">LIS3MDL 3-axis magnetometer</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__lpsxxx.html" target="_blank">LPS331AP/LPS25HB/LPS22HB Pressure Sensors Driver</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__lsm303dlhc.html" target="_blank">LSM303DLHC 3D accelerometer/magnetometer</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__lsm6dsl.html" target="_blank">LSM6DSL 3D accelerometer/gyroscope</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__ltc4150.html" target="_blank">LTC4150 coulomb counter</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__mag3110.html" target="_blank">MAG3110 3-Axis Digital Magnetometer</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__mhz19.html" target="_blank">MH-Z19 CO2 sensor</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__mma7660.html" target="_blank">MMA7660 Accelerometer</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__mma8x5x.html" target="_blank">MMA8x5x Accelerometer</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__mpl3115a2.html" target="_blank">MPL3115A2 Pressure Sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__mpu9x50.html" target="_blank">MPU-9X50 (MPU9150 and MPU9250) accelerometer/magnetometer/gyroscope</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__mq3.html" target="_blank">MQ-3 Alcohol Tester</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__opt3001.html" target="_blank">OPT3001 Ambient Light Sensor</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__ph__oem.html" target="_blank">pH OEM sensor device driver</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__pir.html" target="_blank">PIR Motion Sensor</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__pulse__counter.html" target="_blank">Pulse counter</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__qmc5883l.html" target="_blank">QMC5883L 3-Axis Digital Magnetic Sensor</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__scd30.html" target="_blank">SCD30 CO2, temperature and humidity sensor</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__sdp3x.html" target="_blank">SDP3x temperature and differential pressure sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__sds011.html" target="_blank">SDS011 Laser Dust Sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__seesaw__soil.html" target="_blank">Adafruit Seesaw Soil Moisture and Temperature Sensor</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__sht1x.html" target="_blank">SHT10/SHT11/SHT15 Humidity and Temperature Sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__sht2x.html" target="_blank">SHT2X</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__sht3x.html" target="_blank">SHT3x Humidity and Temperature Sensor Series</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__shtc1.html" target="_blank">SHTC1 Temperature and humidity sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__si1133.html" target="_blank">Si1133 UV Index/Ambient Light Sensor with I2C</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__si114x.html" target="_blank">Si1145/6/7 UV/Ambient light/Proximity sensors</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__si70xx.html" target="_blank">Si7006/13/20/21 temperature and humidity sensors</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__sps30.html" target="_blank">SPS30 Particulate Matter Sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__srf02.html" target="_blank">SRF02 ultrasonic range sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__srf04.html" target="_blank">srf04 ultra sonic range finder</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__srf08.html" target="_blank">SRF08 ultrasonic range sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__stmpe811.html" target="_blank">STMPE811 Touchscreen Controller</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__tcs37727.html" target="_blank">TCS37727 RGB Light Sensor</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__tmp00x.html" target="_blank">TMP006/TMP007 Infrared Thermopile Sensor</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__tsl2561.html" target="_blank">TSL2561 illuminance sensor</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__tsl4531x.html" target="_blank">TSL4531x Illuminance sensor</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__vcnl40x0.html" target="_blank">VCNL4010/VCNL4020/VCNL4040 Proximity and Ambient Light Sensors</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__veml6070.html" target="_blank">VEML6070 UV sensor</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="col accordion accordion-flush" id="accordionFlushExampledrivers_actuators">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header exclude btn-primary shadow rounded"
+                id="flush-headingOnedrivers_actuators">
+                <button class="accordion-button collapsed exclude" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#flush-collapseOnedrivers_actuators"
+                  aria-expanded="false" aria-controls="flush-collapseOnedrivers_actuators">
+                  <h5 class="exclude ft-miso text-start w-100">
+                    Actuator Device Drivers
+                    <i class="bi bi-chevron-down"></i>
+                  </h5>
+                </button>
+              </h2>
+              <div id="flush-collapseOnedrivers_actuators" class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOnedrivers_actuators"
+                data-bs-parent="#accordionFlushExampledrivers_actuators">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__apa102.html" target="_blank">APA102 RGB LED</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__dynamixel.html" target="_blank">Dynamixel driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__feetech.html" target="_blank">Feetech driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__grove__ledbar.html" target="_blank">Grove ledbar</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__led.html" target="_blank">Control on-board LEDs</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__lpd8808.html" target="_blank">LPD8808 based LED Strip</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__motor.html" target="_blank">DC Motor Driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__my9221.html" target="_blank">MY9221 LED controller</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__pca9633.html" target="_blank">PCA9633 I2C PWM controller</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__pca9685.html" target="_blank">PCA9685 I2C PWM controller</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__rgbled.html" target="_blank">RGB-LED driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__servo.html" target="_blank">Servo Motor Driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__uart__half__duplex.html" target="_blank">half-duplex UART Driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__ws281x.html" target="_blank">WS2812/SK6812 RGB LED (NeoPixel)</a></li>
+                    
+                    
+                    
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="col accordion accordion-flush" id="accordionFlushExampledrivers_storage">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header exclude btn-primary shadow rounded"
+                id="flush-headingOnedrivers_storage">
+                <button class="accordion-button collapsed exclude" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#flush-collapseOnedrivers_storage"
+                  aria-expanded="false" aria-controls="flush-collapseOnedrivers_storage">
+                  <h5 class="exclude ft-miso text-start w-100">
+                    Storage Device Drivers
+                    <i class="bi bi-chevron-down"></i>
+                  </h5>
+                </button>
+              </h2>
+              <div id="flush-collapseOnedrivers_storage" class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOnedrivers_storage"
+                data-bs-parent="#accordionFlushExampledrivers_storage">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__diskio.html" target="_blank">Disk IO Driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__mtd.html" target="_blank">Memory Technology Device</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__mtd__at24cxxx.html" target="_blank">MTD wrapper for AT24cxxx family of I2C-EEPROMs</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__mtd__at25xxx.html" target="_blank">MTD wrapper for AT25xxx family of SPI-EEPROMs</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__mtd__flashpage.html" target="_blank">Flashpage MTD</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__mtd__mapper.html" target="_blank">MTD address mapper</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__mtd__sdcard.html" target="_blank">mtd wrapper for sdcard_spi</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__mtd__spi__nor.html" target="_blank">Serial NOR flash</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__nvram.html" target="_blank">Non-volatile RAM</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__sdcard__spi.html" target="_blank">SPI SD-Card driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="col accordion accordion-flush" id="accordionFlushExampledrivers_display">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header exclude btn-primary shadow rounded"
+                id="flush-headingOnedrivers_display">
+                <button class="accordion-button collapsed exclude" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#flush-collapseOnedrivers_display"
+                  aria-expanded="false" aria-controls="flush-collapseOnedrivers_display">
+                  <h5 class="exclude ft-miso text-start w-100">
+                    Display Device Drivers
+                    <i class="bi bi-chevron-down"></i>
+                  </h5>
+                </button>
+              </h2>
+              <div id="flush-collapseOnedrivers_display" class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOnedrivers_display"
+                data-bs-parent="#accordionFlushExampledrivers_display">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__aip31068.html" target="_blank">AIP31068 I2C LCD controller</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__disp__dev.html" target="_blank">Display device generic API</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__dsp0401.html" target="_blank">DSP0401</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__hd44780.html" target="_blank">HD44780 LCD driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__ili9341.html" target="_blank">ILI9341 display driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__pcd8544.html" target="_blank">PCD8544 LCD driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__screen__dev.html" target="_blank">Screen device generic API</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="col accordion accordion-flush" id="accordionFlushExampledrivers_soft__periph">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header exclude btn-primary shadow rounded"
+                id="flush-headingOnedrivers_soft__periph">
+                <button class="accordion-button collapsed exclude" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#flush-collapseOnedrivers_soft__periph"
+                  aria-expanded="false" aria-controls="flush-collapseOnedrivers_soft__periph">
+                  <h5 class="exclude ft-miso text-start w-100">
+                    Soft Peripheral Driver Interface
+                    <i class="bi bi-chevron-down"></i>
+                  </h5>
+                </button>
+              </h2>
+              <div id="flush-collapseOnedrivers_soft__periph" class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOnedrivers_soft__periph"
+                data-bs-parent="#accordionFlushExampledrivers_soft__periph">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__soft__spi.html" target="_blank">Soft SPI</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__soft__uart.html" target="_blank">Software UART</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="col accordion accordion-flush" id="accordionFlushExampledrivers_power">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header exclude btn-primary shadow rounded"
+                id="flush-headingOnedrivers_power">
+                <button class="accordion-button collapsed exclude" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#flush-collapseOnedrivers_power"
+                  aria-expanded="false" aria-controls="flush-collapseOnedrivers_power">
+                  <h5 class="exclude ft-miso text-start w-100">
+                    Power Supply Drivers
+                    <i class="bi bi-chevron-down"></i>
+                  </h5>
+                </button>
+              </h2>
+              <div id="flush-collapseOnedrivers_power" class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOnedrivers_power"
+                data-bs-parent="#accordionFlushExampledrivers_power">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__bq2429x.html" target="_blank">BQ2429x</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__tps6274x.html" target="_blank">TPS6274x</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="col accordion accordion-flush" id="accordionFlushExampledrivers_misc">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header exclude btn-primary shadow rounded"
+                id="flush-headingOnedrivers_misc">
+                <button class="accordion-button collapsed exclude" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#flush-collapseOnedrivers_misc"
+                  aria-expanded="false" aria-controls="flush-collapseOnedrivers_misc">
+                  <h5 class="exclude ft-miso text-start w-100">
+                    Miscellaneous Drivers
+                    <i class="bi bi-chevron-down"></i>
+                  </h5>
+                </button>
+              </h2>
+              <div id="flush-collapseOnedrivers_misc" class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOnedrivers_misc"
+                data-bs-parent="#accordionFlushExampledrivers_misc">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__at.html" target="_blank">AT (Hayes) command set library</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__at24cxxx.html" target="_blank">AT24CXXX EEPROM unit</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__at24mac.html" target="_blank">AT24MAC unique ID chip</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__at25xxx.html" target="_blank">AT25xxx family of SPI-EEPROMs</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__edbg__eui.html" target="_blank">Driver for getting MAC address out of Atmel EDBG</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__touch__dev.html" target="_blank">Touch device generic API</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__usbdev__mock.html" target="_blank">USBdev mockup device</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="col accordion accordion-flush" id="accordionFlushExampledrivers_periph">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header exclude btn-primary shadow rounded"
+                id="flush-headingOnedrivers_periph">
+                <button class="accordion-button collapsed exclude" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#flush-collapseOnedrivers_periph"
+                  aria-expanded="false" aria-controls="flush-collapseOnedrivers_periph">
+                  <h5 class="exclude ft-miso text-start w-100">
+                    Peripheral Driver Interface
+                    <i class="bi bi-chevron-down"></i>
+                  </h5>
+                </button>
+              </h2>
+              <div id="flush-collapseOnedrivers_periph" class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOnedrivers_periph"
+                data-bs-parent="#accordionFlushExampledrivers_periph">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__flashrom.html" target="_blank">Flash memory driver</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__adc.html" target="_blank">ADC</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__can.html" target="_blank">CAN</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__cpuid.html" target="_blank">CPUID</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__dac.html" target="_blank">DAC</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__eeprom.html" target="_blank">EEPROM driver</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__flashpage.html" target="_blank">Flash page driver</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__gpio.html" target="_blank">GPIO</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__hwrng.html" target="_blank">HWRNG Abstraction</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__i2c.html" target="_blank">I2C</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__init.html" target="_blank">Common peripheral initialization</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__pm.html" target="_blank">Power Management</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__ptp.html" target="_blank">PTP-Clock</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__pwm.html" target="_blank">PWM</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__qdec.html" target="_blank">Quadrature Decoder (QDEC)</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__rtc.html" target="_blank">RTC</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__rtt.html" target="_blank">RTT</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__spi.html" target="_blank">SPI</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__timer.html" target="_blank">Timer</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__uart.html" target="_blank">UART</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__usbdev.html" target="_blank">usbdev - USB Device Driver API</a></li>
+                    
+                    
+                    
+                    <li class="list-group-item"><a href="https://doc.riot-os.org/group__drivers__periph__wdt.html" target="_blank">WDT</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section><!-- End Driver Section -->
+</main><!-- End #main -->
+
+
+</main>
+
+
+    <!-- ======= Footer ======= -->
+  <footer id="footer"  class="mt-auto" >
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col-12">
+          <a href="index.html">
+            <span class="visually-hidden">Go to main site</span>
+            <img src="/assets/img/riot-logo.png" alt="RIOT OS logo" class="logo img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col">
+          <small class="fw-bold">The friendly Operating System for the Internet of Things.</small>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col text-center social-links">
+                             <a href="https://github.com/RIOT-OS/RIOT" target="_blank"><span class="visually-hidden">Go to RIOT OS Github</span><i class="ri-github-fill"></i></a>
+                  <a href="https://twitter.com/RIOT_OS" target="_blank"><span class="visually-hidden">Go to RIOT OS Twitter</span><i class="ri-twitter-fill"></i></a>
+                  <a href="https://fosstodon.org/@riot" target="_blank"><span class="visually-hidden">Go to RIOT OS Mastodon</span><i class="ri-mastodon-fill"></i></a>
+                  <a href="https://www.youtube.com/channel/UCmcXy2qyoQfq7ByoxtFSOjg" target="_blank"><span class="visually-hidden">Go to RIOT OS Youtube channel</span><i class="ri-youtube-fill"></i></a>
+                  <a href="https://forum.riot-os.org" target="_blank"><span class="visually-hidden">Go to RIOT OS forum</span><i class="ri-chat-1-fill"></i></a>
+
+
+        </div>
+      </div>
+      <div class="copyright">
+        <small>&copy; 2013 - 2021. All Rights Reserved</small> | <a href="/imprint.html">Imprint</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div class="w-100 p-4 rounded-0 fixed-bottom text-center cookiealert" role="alert">
+    &#x1F36A; We use third party cookies to ensure you get the best experience on our website. <a href="https://gdpr.eu/cookies/" target="_blank">Learn more</a>
+
+    <button type="button" class="btn btn-primary btn-sm acceptcookies ms-2">
+        OK
+    </button>
+    <button type="button" class="btn btn-secondary btn-sm rejectcookies ms-2">
+        No
+    </button>
+</div>
+
+  <!-- Vendor JS Files -->
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/assets/vendor/php-email-form/validate.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/assets/vendor/jquery/jquery_2_1_1.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/cookie-alert.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en"  class="h-100" >
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>RIOT - The friendly Operating System for the Internet of Things</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/assets/img/favicon.png" rel="icon">
+  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Selecao - v4.0.0
+  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body  class="d-flex flex-column h-100" >
+    <div class="container-md">
+  <!-- ======= Header ======= -->
+<!-- Configurations layouts can apply
+     - header_opaque: set to true to have an opaque background before scrolling
+-->
+  <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+          <a href="/"><span class="visually-hidden">Go to main site</span> <img src="/assets/img/riot-logo.png" alt="RIOT OS logo" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="/#features">Features</a></li>
+          <li class="dropdown">
+            <a href="/#get-started"><span>Users</span> <i class="bi bi-chevron-down"></i></a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a href="/#get-started">Get started</a></li>
+              <li><a href="/#use-cases">Use Cases</a></li>
+              <li><a href="/#faq">FAQ</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="/boards.html"><span>Hardware</span> <i class="bi bi-chevron-down"></i></a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a href="/cpus.html">CPUs</a></li>
+              <li><a href="/boards.html">Boards</a></li>
+              <li><a href="/drivers.html">Drivers</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="/community.html"><span>Community</span> <i class="bi bi-chevron-down"></i></a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a href="/community.html">Overview</a></li>
+              <li><a href="https://forum.riot-os.org" target="_blank">Forum <i class="bi bi-box-arrow-up-right align-text-bottom"></i></a></li>
+              <li><a href="https://github.com/topics/riot-os" target="_blank">GitHub <i class="bi bi-box-arrow-up-right align-text-bottom"></i></a></li>
+              <li><a class="scrollto" href="/community.html#socialmedia">Social Media</a></li>
+              <li><a href="/branding.html">Branding</a></li>
+              <li><a href="https://github.com/RIOT-OS/RIOT/blob/master/CODE_OF_CONDUCT.md" target="_blank">Code of Conduct <i class="bi bi-box-arrow-up-right align-text-bottom"></i></a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+    </div>
+  <main id="main">
+
+  <section id="blog-header">
+    <div class="background">
+        <img class="blur" src="/assets/img/blog/feather-nrf52840.jpg" alt="Banner for 'How to Port a Board for RIOT'">
+    </div>
+    <div class="container h-100">
+      <div class="row pt-4 d-flex align-items-center text-center h-100">
+        <div class="col-12 text-white">
+          <h1 class="display-3 w-100"> How to Port a Board for RIOT </h1>
+          <h4>
+            
+               by 
+              <a href="mailto:mlenders@riot-os.org">
+              Martine S. Lenders
+              </a>
+              <small>(Freie Universität Berlin)</small>
+
+              <!-- Start Social badges -->
+              
+              
+                <a href="https://github.com/miri64" target="_blank"><i class="ri-github-fill align-text-bottom"></i></a>
+              
+
+              
+                <a href="https://twitter.com/miri_64" target="_blank"><i class="ri-twitter-fill align-text-bottom"></i></a>
+              
+
+              
+                <a href="https://stackoverflow.com/u/11921757" target="_blank"><i class="ri-stack-overflow-fill align-text-bottom"></i></a>
+              
+
+              
+
+              
+
+              
+
+              
+              <!-- End Social badges -->
+
+              
+            
+          </h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-0">
+    <div class="container">
+      <div class="row" id="blog-right">
+        <div class="col-12">
+          <div class="card border-0">
+            <div class="card-body social-links">
+              <div class="card-text text-center fs-1 border-bottom">
+                                  <a href="https://github.com/RIOT-OS/RIOT" target="_blank"><span class="visually-hidden">Go to RIOT OS Github</span><i class="ri-github-fill"></i></a>
+                  <a href="https://twitter.com/RIOT_OS" target="_blank"><span class="visually-hidden">Go to RIOT OS Twitter</span><i class="ri-twitter-fill"></i></a>
+                  <a href="https://fosstodon.org/@riot" target="_blank"><span class="visually-hidden">Go to RIOT OS Mastodon</span><i class="ri-mastodon-fill"></i></a>
+                  <a href="https://www.youtube.com/channel/UCmcXy2qyoQfq7ByoxtFSOjg" target="_blank"><span class="visually-hidden">Go to RIOT OS Youtube channel</span><i class="ri-youtube-fill"></i></a>
+                  <a href="https://forum.riot-os.org" target="_blank"><span class="visually-hidden">Go to RIOT OS forum</span><i class="ri-chat-1-fill"></i></a>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-8 offset-lg-2 py-2">
+          <p><em>This blog post was originally published on <a href="https://blog.martine-lenders.eu/riot-board-en.html">Martine’s blog in February
+2020</a>.</em></p>
+
+<h1 id="introduction">Introduction</h1>
+
+<p>2020 marked a debut for me:
+Though I am a long-term contributor to RIOT—my oldest
+contribution <a href="https://github.com/RIOT-OS/RIOT/commit/a2c7cf8f9afb75fbdf7168e8f8e56605c9cb1037">goes back to June 2011</a>—I never actually ported a board
+to support RIOT. This <a href="https://github.com/RIOT-OS/RIOT/pull/13085">changed at the beginning of 2020</a>.</p>
+
+<p>RIOT is an operating system for the Internet of Things (IoT).
+This means it aims to support hardware platforms on which typical PC operating
+systems such as Linux, Mac OSX, or Windows or even phone operating systems like
+Android or iOS do not fit.
+When talking of IoT devices, the RIOT community usually considers in terms of
+<a href="https://tools.ietf.org/html/rfc7228#section-3">kilobytes of memory</a>. Not gigabytes, not megabytes, <em>kilobytes</em>! As
+in, a few 1000 <em>bytes</em>. The reason behind the focus on memory-constraint
+devices, that IoT devices
+can not follow <a href="https://en.wikipedia.org/wiki/Moore%27s_law">Moore’s Law</a>, which states that every two years the number of
+transistors in a given piece of computer hardware approximately doubles. In
+fact, the efforts to save cost and energy for IoT hardware are directly opposed
+to Moore’s Law: every additional transistor, be it for calculation or storage,
+costs more money and leads to more energy usage. Given, that for the IoT a
+multiple of 10 of devices per person is expected, meaning at least 100 billion
+devices deployed, low cost and low energy usage is vital.</p>
+
+<p>The main code base of RIOT is written in the <a href="https://en.wikipedia.org/wiki/C_(programming_language)">C programming language</a>, but
+bindings for <a href="https://en.wikipedia.org/wiki/C++">C++</a>, <a href="https://en.wikipedia.org/wiki/Rust_(programming_language)">Rust</a>, <a href="https://en.wikipedia.org/wiki/MicroPython">Python</a>, <a href="https://en.wikipedia.org/wiki/JerryScript">JavaScript</a>, and others exist as well.</p>
+
+<p>For RIOT, a board is defined as a module that defines a <a href="https://en.wikipedia.org/wiki/Microcontroller">microcontroller</a> and
+configuration parameters how this microcontroller can interact with other
+devices on this platform and the outside world. A board
+is somewhat like a computer system (e.g. a PC), and the microcontroller the
+central processor (CPU).
+The process of porting a board is providing these configuration parameters.</p>
+
+<p>Personally, I am more involved in the networking architecture of RIOT—I make
+sure RIOT can talk to the outside world. So my closest contact to hardware in
+that area is mostly the interaction with the network device. Thus, there was
+just never the need for me to port a board for RIOT. So why did I do it now?
+Mainly, because I wanted to try and learn, and because I had this piece of
+hardware lying around, for which I knew that the port would be relatively easy,
+considering my skill set.</p>
+
+<p>The board I ported is the <a href="https://learn.adafruit.com/introducing-the-adafruit-nrf52840-feather/">Adafruit Feather nRF52840</a>. I bought this board
+mainly to save some shipping costs, but also because I like
+the form factor of Adafruit’s Feather line and wanted to see more support for it
+in RIOT.</p>
+
+<p>And my work was fruitful: After I provided the pull request, my port then
+became part of RIOT release <a href="https://github.com/RIOT-OS/RIOT/releases/tag/2020.01">2020.01</a> which came out only a few weeks later.</p>
+
+<p>I am intentionally leaving the process of <a href="https://github.com/RIOT-OS/RIOT/blob/master/CONTRIBUTING.md#pull-requests">creating a pull request</a> out
+as I want to focus mainly on how to provide a board port, not how
+to get it upstream.</p>
+
+<h1 id="creating-the-board-port">Creating the board port</h1>
+<p>A board in RIOT is mostly just configuration, both for the build
+system and the actual code. But first I needed a place to put this
+configuration.
+I cut out the “Adafruit” out of the board’s identifying name. Both for
+simplicity and because the <a href="https://learn.adafruit.com/adafruit-feather-m0-basic-proto">Adafruit Feather M0</a> already was called
+<code class="language-plaintext highlighter-rouge">feather-m0</code>. Hence, for
+RIOT’s purposes the board is now just called <code class="language-plaintext highlighter-rouge">feather-nrf52840</code>.
+Board definitions in RIOT are placed in the directory <a href="https://github.com/RIOT-OS/RIOT/tree/78b5c1ee5c55/boards"><code class="language-plaintext highlighter-rouge">boards/</code></a>,
+so I <a href="https://github.com/RIOT-OS/RIOT/tree/78b5c1ee5c55/boards/feather-nrf52840">created a new sub-directory under the name <code class="language-plaintext highlighter-rouge">feather-nrf52840</code></a>
+for my new board configuration to reside in.</p>
+
+<p>There I first created a Makefile to tell the build system <a href="https://en.wikipedia.org/wiki/Make_(software)"><code class="language-plaintext highlighter-rouge">make</code></a> that
+the directory is indeed describing a board. This file is called
+<a href="https://github.com/RIOT-OS/RIOT/blob/78b5c1ee5c55/boards/feather-nrf52840/Makefile"><code class="language-plaintext highlighter-rouge">boards/feather-nrf52840/Makefile</code></a> and includes minimal content:</p>
+
+<figure class="highlight"><pre><code class="language-makefile" data-lang="makefile"><span class="nv">MODULE</span> <span class="o">=</span> board
+
+<span class="k">include</span><span class="sx"> $(RIOTBASE)/Makefile.base</span></code></pre></figure>
+
+<p>The first line tells the build system that this is a module called <code class="language-plaintext highlighter-rouge">board</code> (all
+boards are called like this) and the third includes all the stuff the build
+system developers of RIOT already provided for a module to be built.</p>
+
+<p>However, the build system needs more information. What features (i.e. interfaces
+and devices) does the board support? This is defined in the file
+<a href="https://github.com/RIOT-OS/RIOT/blob/78b5c1ee5c55/boards/feather-nrf52840/Makefile.features"><code class="language-plaintext highlighter-rouge">boards/feather-nrf52840/Makefile.features</code></a>:</p>
+
+<figure class="highlight"><pre><code class="language-makefile" data-lang="makefile"><span class="nv">CPU_MODEL</span> <span class="o">=</span> nrf52840xxaa
+
+<span class="c"># Put defined MCU peripherals here (in alphabetical order)
+</span><span class="nv">FEATURES_PROVIDED</span> <span class="o">+=</span> periph_i2c
+<span class="nv">FEATURES_PROVIDED</span> <span class="o">+=</span> periph_spi
+<span class="nv">FEATURES_PROVIDED</span> <span class="o">+=</span> periph_uart
+<span class="nv">FEATURES_PROVIDED</span> <span class="o">+=</span> periph_usbdev
+
+<span class="c"># Various other features (if any)
+</span><span class="nv">FEATURES_PROVIDED</span> <span class="o">+=</span> radio_nrf802154
+
+<span class="k">include</span><span class="sx"> $(RIOTBOARD)/common/nrf52/Makefile.features</span></code></pre></figure>
+
+<p>The first line tells the build system which CPU (or more accurate
+microcontoller), applying a naming scheme that the build system understands.
+Basically, we configure, “this board is using an nRF52840 microcontroller”.
+Lines 4-9 tell the build system which features are provided by the board, naming
+communication interfaces such as I²C, SPI, UART, and USB, but also that the
+radio of this board can speak the <a href="https://en.wikipedia.org/wiki/IEEE_802.15.4">IEEE 802.15.4</a> protocol—imagine something
+like low-power WiFi—via its nRF microcontroller.
+The last line declares to include further features provided by the nRF52 family
+of microcontrollers in general.</p>
+
+<p>Lastly, I tell the build system with the file
+<a href="https://github.com/RIOT-OS/RIOT/blob/78b5c1ee5c55/boards/feather-nrf52840/Makefile.include"><code class="language-plaintext highlighter-rouge">boards/feather-nrf52840/Makefile.include</code></a>, what else needs
+to be included for this board to be programmable, among them the most important
+thing: the programmer itself. In case of the Feather nRF52840 this is the Segger
+JLink:</p>
+
+<figure class="highlight"><pre><code class="language-makefile" data-lang="makefile"><span class="c"># HACK: replicate dependency resolution in Makefile.dep, only works
+# if `USEMODULE` or `DEFAULT_MODULE` is set by the command line or in the
+# application Makefile.
+</span><span class="k">ifeq</span> <span class="nv">(,$(filter stdio_%,$(DISABLE_MODULE) $(USEMODULE)))</span>
+  <span class="nv">RIOT_TERMINAL</span> <span class="o">?=</span> jlink
+<span class="k">endif</span>
+
+<span class="k">include</span><span class="sx"> $(RIOTMAKE)/tools/serial.inc.mk</span>
+
+<span class="k">include</span><span class="sx"> $(RIOTBOARD)/common/nrf52/Makefile.include</span></code></pre></figure>
+
+<p>Now, we finally leave the build system and tell the microcontroller how to map
+all the peripheral interfaces to the outside world and to devices on the board in
+the <a href="https://github.com/RIOT-OS/RIOT/blob/78b5c1ee5c55/boards/feather-nrf52840/include/periph_conf.h"><code class="language-plaintext highlighter-rouge">boards/feather-nrf52840/include/periph_config.h</code></a>. Namely,
+I configured one UART, one I²C and one SPI interface according to the pin
+labeling on the board. I strictly followed the <a href="https://learn.adafruit.com/assets/68545">schematics</a> provided by Adafruit
+for this and looked at the <code class="language-plaintext highlighter-rouge">periph_conf.h</code> of other nRF52-based boards for
+reference.</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cm">/*
+ * Copyright (C) 2020 Freie Universität Berlin
+ *
+ * This file is subject to the terms and conditions of the GNU Lesser
+ * General Public License v2.1. See the file LICENSE in the top level
+ * directory for more details.
+ */</span>
+
+<span class="cm">/**
+ * @ingroup     boards_feather-nrf52840
+ * @{
+ *
+ * @file
+ * @brief       Peripheral configuration for the Adafruit Feather nRF52840
+ *              Express
+ *
+ * @author      Martine S. Lenders &lt;m.lenders@fu-berlin.de&gt;
+ *
+ */</span>
+
+<span class="cp">#ifndef PERIPH_CONF_H
+#define PERIPH_CONF_H
+</span>
+<span class="cp">#include "periph_cpu.h"
+#include "cfg_clock_32_1.h"
+#include "cfg_rtt_default.h"
+#include "cfg_timer_default.h"
+</span>
+<span class="cp">#ifdef __cplusplus
+</span><span class="k">extern</span> <span class="s">"C"</span> <span class="p">{</span>
+<span class="cp">#endif
+</span>
+<span class="cm">/**
+ * @name    UART configuration
+ * @{
+ */</span>
+<span class="k">static</span> <span class="k">const</span> <span class="n">uart_conf_t</span> <span class="n">uart_config</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">{</span>
+        <span class="p">.</span><span class="n">dev</span>        <span class="o">=</span> <span class="n">NRF_UARTE0</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">rx_pin</span>     <span class="o">=</span> <span class="n">GPIO_PIN</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">24</span><span class="p">),</span>
+        <span class="p">.</span><span class="n">tx_pin</span>     <span class="o">=</span> <span class="n">GPIO_PIN</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">25</span><span class="p">),</span>
+        <span class="p">.</span><span class="n">rts_pin</span>    <span class="o">=</span> <span class="p">(</span><span class="kt">uint8_t</span><span class="p">)</span><span class="n">GPIO_UNDEF</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">cts_pin</span>    <span class="o">=</span> <span class="p">(</span><span class="kt">uint8_t</span><span class="p">)</span><span class="n">GPIO_UNDEF</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">irqn</span>       <span class="o">=</span> <span class="n">UARTE0_UART0_IRQn</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">};</span>
+
+<span class="cp">#define UART_0_ISR          (isr_uart0)
+</span>
+<span class="cp">#define UART_NUMOF          ARRAY_SIZE(uart_config)
+</span><span class="cm">/** @} */</span>
+
+<span class="cm">/**
+ * @name    SPI configuration
+ * @{
+ */</span>
+<span class="k">static</span> <span class="k">const</span> <span class="n">spi_conf_t</span> <span class="n">spi_config</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">{</span>
+        <span class="p">.</span><span class="n">dev</span>  <span class="o">=</span> <span class="n">NRF_SPI0</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">sclk</span> <span class="o">=</span> <span class="mi">14</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">mosi</span> <span class="o">=</span> <span class="mi">13</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">miso</span> <span class="o">=</span> <span class="mi">15</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="cp">#define SPI_NUMOF           ARRAY_SIZE(spi_config)
+</span><span class="cm">/** @} */</span>
+
+<span class="cm">/**
+ * @name    I2C configuration
+ * @{
+ */</span>
+<span class="k">static</span> <span class="k">const</span> <span class="n">i2c_conf_t</span> <span class="n">i2c_config</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">{</span>
+        <span class="p">.</span><span class="n">dev</span> <span class="o">=</span> <span class="n">NRF_TWIM1</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">scl</span> <span class="o">=</span> <span class="mi">11</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">sda</span> <span class="o">=</span> <span class="mi">12</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">speed</span> <span class="o">=</span> <span class="n">I2C_SPEED_NORMAL</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+<span class="cp">#define I2C_NUMOF           ARRAY_SIZE(i2c_config)
+</span><span class="cm">/** @} */</span>
+
+<span class="cp">#ifdef __cplusplus
+</span><span class="p">}</span>
+<span class="cp">#endif
+</span>
+<span class="cp">#endif </span><span class="cm">/* PERIPH_CONF_H */</span></code></pre></figure>
+
+<p>We also need to tell the sensor/actuator abstraction layer of RIOT, <a href="https://doc.riot-os.org/group__drivers__saul.html">SAUL</a>,
+where to find all the buttons and LEDs provided on the board, so it can react to
+button push events and control the LEDs. This we do in
+<a href="https://github.com/RIOT-OS/RIOT/blob/78b5c1ee5c55/boards/feather-nrf52840/include/gpio_params.h"><code class="language-plaintext highlighter-rouge">boards/feather-nrf52840/include/gpio_params.h</code></a>. There are
+two LEDs and one switch, and I again just followed the <a href="https://learn.adafruit.com/assets/68545">schematics</a>:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cm">/*
+ * Copyright (C) 2020 Freie Universität Berlin
+ *
+ * This file is subject to the terms and conditions of the GNU Lesser
+ * General Public License v2.1. See the file LICENSE in the top level
+ * directory for more details.
+ */</span>
+
+<span class="cm">/**
+ * @ingroup     boards_feather-nrf52840
+ * @{
+ *
+ * @file
+ * @brief       Configuration of SAUL mapped GPIO pins
+ *
+ * @author      Martine S. Lenders &lt;m.lenders@fu-berlin.de&gt;
+ */</span>
+
+<span class="cp">#ifndef GPIO_PARAMS_H
+#define GPIO_PARAMS_H
+</span>
+<span class="cp">#include "board.h"
+#include "saul/periph.h"
+</span>
+<span class="cp">#ifdef __cplusplus
+</span><span class="k">extern</span> <span class="s">"C"</span> <span class="p">{</span>
+<span class="cp">#endif
+</span>
+<span class="cm">/**
+ * @brief    LED configuration
+ */</span>
+<span class="k">static</span> <span class="k">const</span>  <span class="n">saul_gpio_params_t</span> <span class="n">saul_gpio_params</span><span class="p">[]</span> <span class="o">=</span>
+<span class="p">{</span>
+    <span class="p">{</span>
+        <span class="p">.</span><span class="n">name</span>  <span class="o">=</span> <span class="s">"LED Red (D3)"</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">pin</span>   <span class="o">=</span> <span class="n">LED0_PIN</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">mode</span>  <span class="o">=</span> <span class="n">GPIO_OUT</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">flags</span> <span class="o">=</span> <span class="p">(</span><span class="n">SAUL_GPIO_INIT_CLEAR</span><span class="p">),</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="p">.</span><span class="n">name</span>  <span class="o">=</span> <span class="s">"LED Blue (Conn)"</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">pin</span>   <span class="o">=</span> <span class="n">LED1_PIN</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">mode</span>  <span class="o">=</span> <span class="n">GPIO_OUT</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">flags</span> <span class="o">=</span> <span class="p">(</span><span class="n">SAUL_GPIO_INIT_CLEAR</span><span class="p">),</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="p">.</span><span class="n">name</span>  <span class="o">=</span> <span class="s">"UserSw"</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">pin</span>   <span class="o">=</span> <span class="n">BTN0_PIN</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">mode</span>  <span class="o">=</span> <span class="n">BTN0_MODE</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">flags</span> <span class="o">=</span> <span class="n">SAUL_GPIO_INVERTED</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">};</span>
+
+<span class="cp">#ifdef __cplusplus
+</span><span class="p">}</span>
+<span class="cp">#endif
+</span>
+<span class="cp">#endif </span><span class="cm">/* GPIO_PARAMS_H */</span><span class="cp">
+</span><span class="cm">/** @} */</span></code></pre></figure>
+
+<p>Lastly, our board needs to include some low-level debugging LED and button <a href="https://en.wikipedia.org/wiki/General-purpose_input/output">GPIO</a>
+pins and needs to initialize those pins. We do this in the in
+<a href="https://github.com/RIOT-OS/RIOT/blob/78b5c1ee5c55/boards/feather-nrf52840/include/board.h"><code class="language-plaintext highlighter-rouge">boards/feather-nrf52840/include/board.h</code></a> and
+<a href="https://github.com/RIOT-OS/RIOT/blob/78b5c1ee5c55/boards/feather-nrf52840/board.c"><code class="language-plaintext highlighter-rouge">boards/feather-nrf52840/board.c</code></a>.
+Rumors tell, this might not be necessary in the future, so watch out for this
+later if you read this when you follow my instructions ;-).</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cm">/*
+ * Copyright (C) 2020 Freie Universität Berlin
+ *
+ * This file is subject to the terms and conditions of the GNU Lesser
+ * General Public License v2.1. See the file LICENSE in the top level
+ * directory for more details.
+ */</span>
+
+<span class="cm">/**
+ * @{
+ *
+ * @file
+ * @author  Martine Lenders &lt;m.lenders@fu-berlin.de&gt;
+ */</span>
+
+<span class="cp">#include "cpu.h"
+#include "board.h"
+</span>
+<span class="cp">#include "periph/gpio.h"
+</span>
+<span class="kt">void</span> <span class="nf">board_init</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="cm">/* initialize the boards LEDs */</span>
+    <span class="n">gpio_init</span><span class="p">(</span><span class="n">LED0_PIN</span><span class="p">,</span> <span class="n">GPIO_OUT</span><span class="p">);</span>
+    <span class="n">gpio_clear</span><span class="p">(</span><span class="n">LED0_PIN</span><span class="p">);</span>
+    <span class="n">gpio_init</span><span class="p">(</span><span class="n">LED1_PIN</span><span class="p">,</span> <span class="n">GPIO_OUT</span><span class="p">);</span>
+    <span class="n">gpio_clear</span><span class="p">(</span><span class="n">LED1_PIN</span><span class="p">);</span>
+
+    <span class="cm">/* initialize the CPU */</span>
+    <span class="n">cpu_init</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="cm">/** @} */</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cm">/*
+ * Copyright (C) 2020 Freie Universität Berlin
+ *
+ * This file is subject to the terms and conditions of the GNU Lesser
+ * General Public License v2.1. See the file LICENSE in the top level
+ * directory for more details.
+ */</span>
+
+<span class="cm">/**
+ * @{
+ *
+ * @file
+ * @author  Martine Lenders &lt;m.lenders@fu-berlin.de&gt;
+ */</span>
+
+<span class="cp">#include "cpu.h"
+#include "board.h"
+</span>
+<span class="cp">#include "periph/gpio.h"
+</span>
+<span class="kt">void</span> <span class="nf">board_init</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="cm">/* initialize the boards LEDs */</span>
+    <span class="n">gpio_init</span><span class="p">(</span><span class="n">LED0_PIN</span><span class="p">,</span> <span class="n">GPIO_OUT</span><span class="p">);</span>
+    <span class="n">gpio_clear</span><span class="p">(</span><span class="n">LED0_PIN</span><span class="p">);</span>
+    <span class="n">gpio_init</span><span class="p">(</span><span class="n">LED1_PIN</span><span class="p">,</span> <span class="n">GPIO_OUT</span><span class="p">);</span>
+    <span class="n">gpio_clear</span><span class="p">(</span><span class="n">LED1_PIN</span><span class="p">);</span>
+
+    <span class="cm">/* initialize the CPU */</span>
+    <span class="n">cpu_init</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="cm">/** @} */</span></code></pre></figure>
+
+<p>After that the most important steps are needed 😉: I tested if everything worked
+as configured, <a href="https://doc.riot-os.org/group__boards__feather-nrf52840.html">provided some documentation how to do that</a>, and
+then called it done.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>Given that you already worked with C and <code class="language-plaintext highlighter-rouge">make</code> and that the microcontroller for
+the board you want to port <a href="/cpus.html">is already provided</a>, porting a board is quite
+straight-forward. Basically, all that is needed are seven very concise files. All
+you need beyond that is to look up what other people did and maybe read a bit up
+on the <a href="https://doc.riot-os.org/group__boards.html">boards doc</a>. Being able to read hardware schematics also helps, but I
+found myself quickly into the graphic notation for that, though I barely had
+contact with this kind of notation before.</p>
+
+<h5 id="update">Update</h5>
+<p>Since the original writing of this blog article <a href="https://github.com/RIOT-OS/RIOT/blob/ecebdb761b8dae7db4907af512f99329ddb1d6e4/boards/feather-nrf52840/Kconfig">another file</a> is
+needed for a board port, so the new Kconfig system can recognize it.
+It mostly reflects the content of <code class="language-plaintext highlighter-rouge">Makefile.features</code> and <code class="language-plaintext highlighter-rouge">Makefile.include</code>,
+just in Kconfig language:</p>
+
+<figure class="highlight"><pre><code class="language-kconfig" data-lang="kconfig"># Copyright (c) 2020 HAW Hamburg
+#
+# This file is subject to the terms and conditions of the GNU Lesser
+# General Public License v2.1. See the file LICENSE in the top level
+# directory for more details.
+
+config BOARD
+    default "feather-nrf52840" if BOARD_FEATHER_NRF52840
+
+config BOARD_FEATHER_NRF52840
+    bool
+    default y
+    select BOARD_COMMON_NRF52
+    select CPU_MODEL_NRF52840XXAA
+    select HAS_PERIPH_I2C
+    select HAS_PERIPH_SPI
+    select HAS_PERIPH_UART
+    select HAS_PERIPH_USBDEV
+    select HAS_RADIO_NRF802154
+
+source "$(RIOTBOARD)/common/nrf52/Kconfig"</code></pre></figure>
+
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+</main>
+
+
+    <!-- ======= Footer ======= -->
+  <footer id="footer"  class="mt-auto" >
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col-12">
+          <a href="index.html">
+            <span class="visually-hidden">Go to main site</span>
+            <img src="/assets/img/riot-logo.png" alt="RIOT OS logo" class="logo img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col">
+          <small class="fw-bold">The friendly Operating System for the Internet of Things.</small>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col text-center social-links">
+                             <a href="https://github.com/RIOT-OS/RIOT" target="_blank"><span class="visually-hidden">Go to RIOT OS Github</span><i class="ri-github-fill"></i></a>
+                  <a href="https://twitter.com/RIOT_OS" target="_blank"><span class="visually-hidden">Go to RIOT OS Twitter</span><i class="ri-twitter-fill"></i></a>
+                  <a href="https://fosstodon.org/@riot" target="_blank"><span class="visually-hidden">Go to RIOT OS Mastodon</span><i class="ri-mastodon-fill"></i></a>
+                  <a href="https://www.youtube.com/channel/UCmcXy2qyoQfq7ByoxtFSOjg" target="_blank"><span class="visually-hidden">Go to RIOT OS Youtube channel</span><i class="ri-youtube-fill"></i></a>
+                  <a href="https://forum.riot-os.org" target="_blank"><span class="visually-hidden">Go to RIOT OS forum</span><i class="ri-chat-1-fill"></i></a>
+
+
+        </div>
+      </div>
+      <div class="copyright">
+        <small>&copy; 2013 - 2021. All Rights Reserved</small> | <a href="/imprint.html">Imprint</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div class="w-100 p-4 rounded-0 fixed-bottom text-center cookiealert" role="alert">
+    &#x1F36A; We use third party cookies to ensure you get the best experience on our website. <a href="https://gdpr.eu/cookies/" target="_blank">Learn more</a>
+
+    <button type="button" class="btn btn-primary btn-sm acceptcookies ms-2">
+        OK
+    </button>
+    <button type="button" class="btn btn-secondary btn-sm rejectcookies ms-2">
+        No
+    </button>
+</div>
+
+  <!-- Vendor JS Files -->
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/assets/vendor/php-email-form/validate.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/assets/vendor/jquery/jquery_2_1_1.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/cookie-alert.js"></script>
+
+</body>
+
+</html>
