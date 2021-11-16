@@ -4,7 +4,8 @@ question: I have an issue with RIOT code I can't solve. How can I get help?
 
 **For critical vulnerabilities we would appreciate you to report them with a 90
 day heads-up to [security@riot-os.org](mailto:security@riot-os.org) first,
-before making them publicly available.**
+before making them publicly available. You may use the GPG-Key
+[44C6AE441172F88D3423E81F5F7964D0F4239033][security-gpg] to encrypt your report.**
 
 It's a very good idea to search our
 [forum](https://forum.riot-os.org){:target="_blank"} first, maybe someone has
@@ -19,3 +20,5 @@ GitHub.
 You're also welcome to ask in the IRC channel #riot-os at
 [freenode.net](http://webchat.freenode.net){:target="_blank"}, but don't be
 disappointed if everyone there is busy.
+
+[security-gpg]: {{ "assets/keys/security.asc" | relative_url }}
