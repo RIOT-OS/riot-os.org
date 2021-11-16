@@ -1,3 +1,5 @@
+[![Deployment status][deployment-badge]][deployment-link]
+
 ## Source code for riot-os.org
 
 ### Building
@@ -87,3 +89,6 @@ The metadata required for an use case is the following:
 ### Blog
 For now the blog is not published. For local development you can render the blog
 section by setting `blog` to `true` in `_config.yml`.
+
+[deployment-badge]: https://github.com/RIOT-OS/riot-os.org/actions/workflows/deployment.yml/badge.svg
+[deployment-link]: https://github.com/RIOT-OS/riot-os.org/actions/workflows/deployment.yml
