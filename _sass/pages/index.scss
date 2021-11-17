@@ -201,26 +201,34 @@ section {
 # social media
 --------------------------------------------------------------*/
 
-#social-media .social-links a {
-  display: inline-block;
-  background: transparent;
-  color: $light;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 56px;
-  height: 56px;
-  transition: 0.3s;
-}
+.social-links {
+  a {
+    display: inline-block;
+    background: transparent;
+    color: $light;
+    line-height: 1;
+    padding: 0.4em;
+    margin-right: 0.1em;
+    border-radius: 50%;
+    text-align: center;
+    width: 1.8em;
+    height: 1.8em;
+    transition: 0.3s;
+  }
 
-#social-media .social-links a:hover {
-  background: $primary;
-  color: $light;
-  text-decoration: none;
-}
+  a:hover {
+    background: $primary;
+    color: $light;
+    text-decoration: none;
+  }
 
+  svg{
+    height:1em;
+    width:1em;
+    margin: auto;
+    display: block;
+  }
+}
 
 /*--------------------------------------------------------------
 # Community
@@ -622,23 +630,6 @@ section {
 
 #footer .social-links a {
   font-size: 18px;
-  display: inline-block;
-  background: transparent;
-  color: $light;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-#footer .social-links a:hover {
-  background: $primary;
-  color: $light;
-  text-decoration: none;
 }
 
 #footer .copyright {
