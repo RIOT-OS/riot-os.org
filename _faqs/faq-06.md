@@ -17,8 +17,8 @@ Another option is to log an
 [issue](https://github.com/RIOT-OS/RIOT/issues/new/choose){:target="_blank"} in
 GitHub.
 
-You're also welcome to ask in the IRC channel #riot-os at
-[freenode.net](http://webchat.freenode.net){:target="_blank"}, but don't be
+You're also welcome to ask in the Matrix room [#riot-os at 
+matrix.org](https://matrix.to/#/#riot-os:matrix.org){:target="_blank"}, but don't be
 disappointed if everyone there is busy.
 
 [security-gpg]: {{ "assets/keys/security.asc" | relative_url }}
