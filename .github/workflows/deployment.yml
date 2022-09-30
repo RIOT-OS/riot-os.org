@@ -50,3 +50,11 @@ jobs:
           remote_host: ${{ secrets.SSH_REMOTE_HOST }}
           remote_user: ${{ secrets.SSH_REMOTE_USER }}
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Keep-alive commit
+        uses: gautamkrishnar/keepalive-workflow@v1
+        with:
+          commit_message: Nothing to see here
+          committer_username: riot-ci
+          committer_email: maintainer@riot-os.org
+          time_elapsed: 1 # TODO: go back to 50 days default
