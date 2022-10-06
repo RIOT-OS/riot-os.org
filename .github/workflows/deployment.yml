@@ -58,3 +58,4 @@ jobs:
           committer_username: riot-ci
           committer_email: maintainer@riot-os.org
           time_elapsed: 1 # TODO: go back to 50 days default
+          gh_token: ${{ secrets.RIOT_CI_TOKEN }}
