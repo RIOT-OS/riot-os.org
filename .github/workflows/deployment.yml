@@ -24,7 +24,8 @@ jobs:
 
       - name: Setup Environment.
         run: |
-          gem install jekyll bundler
+          gem install jekyll -v 4.2.2
+          gem install bundler
           bundle install
 
       - name: Update RIOT data
