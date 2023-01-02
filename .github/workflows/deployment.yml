@@ -48,6 +48,7 @@ jobs:
           path: _site/
           remote_path: /
           remote_host: ${{ secrets.SSH_REMOTE_HOST }}
+          remote_port: ${{ secrets.SSH_REMOTE_PORT }}
           remote_user: ${{ secrets.SSH_REMOTE_USER }}
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
