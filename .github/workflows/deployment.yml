@@ -8,6 +8,7 @@ on:
     branches:
       - master
       - actions_test
+  workflow_dispatch:
 
 jobs:
   build:
