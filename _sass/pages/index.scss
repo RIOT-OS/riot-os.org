@@ -817,10 +817,10 @@ section {
 }
 
 ///
-// Twitter timeline
+// Mastodon timeline
 ///
-#twitter-timeline {
-  $twitter-blue: #1DA1F2;
+#mastodon-timeline {
+  $mastodon-purple: #6364FF;
 
   max-height: 450px;
   overflow: hidden;
@@ -833,13 +833,13 @@ section {
   }
 
   .placeholder {
-    color: $twitter-blue;
+    color: $mastodon-purple;
     width: 100%;
     i {
       font-size: 5rem;
     }
     a {
-      color: $twitter-blue;
+      color: $mastodon-purple;
     }
   }
 }

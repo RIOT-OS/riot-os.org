@@ -247,28 +247,25 @@
   });
 
   /**
-   * Create a new 'script' element which sources Twitter widgets script
+   * Create an 'iframe' element which shows the mastofeed
    */
-  function loadTwitterScript() {
-    let script = document.createElement('script');
-    let timeline = $("#twitter-timeline");
-    let cb = () => {
-      // When the script is loaded we bind to the widget rendering event to display it
-      twttr.events.bind("rendered", (event) => {
-          timeline.addClass("rendered");
-      });
-    }
+  function loadMastodonTimeline() {
+    let iframe = document.createElement('iframe');
+    let timeline = $("#mastodon-timeline");
 
-    script.src = "https://platform.twitter.com/widgets.js"
-    script.onload = cb;
-    document.head.append(script);
+    iframe.src = "https://www.riot-os.org/mastofeed/apiv2/feed?replies=false&boosts=false&theme=light&size=90.9";
+    iframe.title = "@RIOT_OS mastodon feed";
+    iframe.width = "100%";
+    iframe.height = "100%";
+    timeline.children('.placeholder').remove()
+    timeline.append(iframe);
   }
 
   /**
    * We need to wait until we know the user accepts using third party cookies
    */
   $(window).on("cookiesAccepted", () => {
-    loadTwitterScript();
+    loadMastodonTimeline();
   });
 
 })()
