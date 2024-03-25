@@ -2,14 +2,14 @@
 question: How does RIOT compare to other operating systems for embedded or IoT devices?
 ---
 
-## Disclaimer
+##### Disclaimer
 
 Developing an OS for embedded systems involves many trade-offs.
 Hence, there is not a single right choice for every application.
 In this comparison we try to give a balanced comparison of the high-level architectural trade-offs other operating systems took and how they compare to RIOT.
 Additionally, we compare the government of the project and the licensing.
 
-## RIOT
+##### RIOT
 
 RIOT runs on many different CPU architectures by many different vendors, from [a tiny 8-bit MCU with 2 KiB RAM and 32 KiB flash][riot-arduino-nano] all the way up to high-performance [ARM Cortex M][riot-same54-xpro] and [RISC-V][riot-esp32c3-devkit] MCUs.
 Because RIOT abstracts the hardware differences by providing the same API for the same functionality across this large range of MCUs, projects building upon RIOT are highly portable and therefore resilient to changes in the supply chain.
@@ -29,7 +29,7 @@ RIOT is distributed under a copyleft license and strongly prefers free and open 
 Still, RIOT does contain proprietary drivers (some even using binary blobs) where no free alternative is available, e.g. for the ESP WiFi chipset.
 <!-- FIXME: Make FAQ entries linkable and link to "Why LGPL?" -->
 
-## Vendor Specific SDKs
+##### Vendor Specific SDKs
 
 Most MCU vendors provide an SDK that is tied to and only supports MCUs of that specific vendor.
 The advantage of the vendor SDKs is that they are developed in lock-step with the hardware and expose all features of the hardware early on.
@@ -40,7 +40,7 @@ The RIOT community has so for maintained many popular boards well after the vend
 
 Vendor specific SDKs typically do not have any copyleft clauses.
 
-## Arduino
+##### Arduino
 
 Both RIOT and [Arduino][arduino-homepage] have a strong focus on a gentle learning curve and a low entry barrier.
 Arduino however goes a step further and sacrifices advanced features such as native multi-threading, a full-fledged and mature network stack, or a VFS subsystem for simplicity.
@@ -56,7 +56,7 @@ This results in easier reuse of code and higher productivity without having to w
 The Arduino software is released under a copyleft license and hardware support can be extended greatly beyond the official Arduino boards by using third-party Arduino cores.
 The development of the ecosystem is sponsored and controlled by a single company that owns the registered trademark of Arduino, while with RIOT an [independent community][riot-community-process] is responsible for governance.
 
-## Zephyr
+##### Zephyr
 
 [Zephyr][zephyr-homepage] has a larger and more complex code base, a very sophisticated configuration system, and unique tooling and is backed by a larger community than RIOT.
 This results in a larger feature set at the expense of a steeper learning curve.
@@ -70,7 +70,7 @@ We do believe that RIOT has an edge over Zephyr when a gentle learning curve, me
 Zephyr uses a permissive license and is developed by the Linux Foundation.
 Its development is governed by a [technical steering committee][zephyr-tsc] elected from (paying) members, whereas RIOT is steered by a [self-governed community][riot-community-process].
 
-## FreeRTOS / FreeRTOS for AWS IoT
+##### FreeRTOS / FreeRTOS for AWS IoT
 
 [FreeRTOS][freertos-homepage] focuses on the basic core-OS features such as a scheduler and a small set of libraries.
 This clear focus resulted in FreeRTOS being ported to more platforms than RIOT, despite its smaller development community.
@@ -84,7 +84,7 @@ RIOT can communicate with centralized cloud services (without any preference on 
 
 FreeROTS and FreeRTOS for AWS IoT are both developed by Amazon Web Services, Inc. under a permissive license.
 
-## Contiki-NG
+##### Contiki-NG
 
 [Contiki-NG][contiki-ng-homepage] has a smaller development community and a small and focused code base.
 It has a strong focus on research, whereas RIOT intents to be a general-purpose OS.
