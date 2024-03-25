@@ -50,7 +50,7 @@ RIOT still allows new users to quickly get productive, but without limiting deve
 As a nice treat for users that started with Arduino but ran into limitations, our [Arduino compatibility layer][riot-arduino] allows re-using sketches and libraries from the Arduino world.
 
 Arduino has a vast ecosystem of libraries developed independently by third parties.
-RIOT's set of modules and packages is not that vast, but RIOT's modules are seamlessly integrated, have consistent APIs and integrate well with each other.
+The number of modules and packages shipped with RIOT is smaller, but they are seamlessly integrated, provide a consistent API and combine well with each other.
 This results in easier reuse of code and higher productivity without having to worry about interoperability issues of components and "impedance matching" between misaligned APIs.
 
 The Arduino software is released under a copyleft license and hardware support can be extended greatly beyond the official Arduino boards by using third-party Arduino cores.
