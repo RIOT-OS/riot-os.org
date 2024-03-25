@@ -1,5 +1,5 @@
 ---
-question: How does RIOT compare to operating systems for embedded or IoT devices?
+question: How does RIOT compare to other operating systems for embedded or IoT devices?
 ---
 
 Compared to **vendor specific solutions**, RIOT runs on many different CPU architectures by many different vendors, from a tiny 8-bit MCU with 2 KiB RAM and 32 KiB flash all the way up to high performance ARM Cortex M and RISC-V MCUs.
