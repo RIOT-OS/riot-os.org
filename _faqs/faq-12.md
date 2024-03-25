@@ -99,6 +99,7 @@ Contiki-NG's development is steered by a small group of (mostly) computer scienc
 
 <!-- Links, sorted alphabetically: -->
 [arduino-homepage]: https://www.arduino.cc
+[contiki-ng-homepage]: https://www.contiki-ng.org/
 [freertos-aws-homepage]: https://www.freertos.org/iot-libraries.html
 [freertos-homepage]: https://www.freertos.org
 [riot-arduino-nano]: https://doc.riot-os.org/group__boards__arduino-nano.html
@@ -111,4 +112,3 @@ Contiki-NG's development is steered by a small group of (mostly) computer scienc
 [riot-zep-dispatcher]: https://github.com/RIOT-OS/RIOT/tree/master/dist/tools/zep_dispatch
 [zephyr-homepage]: https://www.zephyrproject.org
 [zephyr-tsc]: https://www.zephyrproject.org/wp-content/uploads/sites/38/2020/09/CLEAN-LF-Zephyr-Charter-20200624-effective-20200901.pdf
-[contiki-ng-homepage]: https://www.contiki-ng.org/
