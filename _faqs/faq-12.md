@@ -42,7 +42,7 @@ Vendor specific SDKs typically do not have any copyleft clauses.
 
 ## Arduino
 
-Both RIOT and Arduino have a strong focus on a gentle learning curve and a low entry barrier.
+Both RIOT and [Arduino][arduino-homepage] have a strong focus on a gentle learning curve and a low entry barrier.
 Arduino however goes a step further and sacrifices advanced features such as native multi-threading, a full-fledged and mature network stack, or a VFS subsystem for simplicity.
 This combined with a trimmed-down IDE results in a lower entry barrier for Arduino compared to RIOT.
 
@@ -58,7 +58,7 @@ The development of the ecosystem is sponsored and controlled by a single company
 
 ## Zephyr
 
-Zephyr has a larger and more complex code base, a very sophisticated configuration system, and unique tooling and is backed by a larger community than RIOT.
+[Zephyr][zephyr-homepage] has a larger and more complex code base, a very sophisticated configuration system, and unique tooling and is backed by a larger community than RIOT.
 This results in a larger feature set at the expense of a steeper learning curve.
 
 RIOT's leaner code base makes the code easier to understand and results in a lower memory footprint.
@@ -72,13 +72,13 @@ Its development is governed by a [technical steering committee][zephyr-tsc] elec
 
 ## FreeRTOS / FreeRTOS for AWS IoT
 
-FreeRTOS focuses on the basic core-OS features such as a scheduler and a small set of libraries.
+[FreeRTOS][freertos-homepage] focuses on the basic core-OS features such as a scheduler and a small set of libraries.
 This clear focus resulted in FreeRTOS being ported to more platforms than RIOT, despite its smaller development community.
 
 RIOT on the other hand packs a lot more features as seamlessly integrated as modules and packages.
 The ability to quickly enable and build upon these features reduces the development time needed for a certain application.
 
-FreeRTOS for AWS IoT provides libraries that ease the use of cloud APIs offered by a certain service provider from microcontrollers.
+[FreeRTOS for AWS IoT][freertos-aws-homepage] provides libraries that ease the use of cloud APIs offered by a certain service provider from microcontrollers.
 RIOT on the other hand is open minded about the network architecture and enables applications developers to choose freely:
 RIOT can communicate with centralized cloud services (without any preference on the service provider), use a centralized on-premise architecture, use decentralized machine-to-machine communication, or operate offline.
 
@@ -86,7 +86,7 @@ FreeROTS and FreeRTOS for AWS IoT are both developed by Amazon Web Services, Inc
 
 ## Contiki-NG
 
-Contiki-NG has a smaller development community and a small and focused code base.
+[Contiki-NG][contiki-ng-homepage] has a smaller development community and a small and focused code base.
 It has a strong focus on research, whereas RIOT intents to be a general-purpose OS.
 A unique feature of Contiki-NG is the Cooja Network Simulator.
 RIOT provides similar simulation features with the [ZEP packet dispatcher][riot-zep-dispatcher], but clearly Cooja is a more tightly integrated and polished experience.
@@ -97,14 +97,18 @@ While Contiki-NG's network simulator and small code base make it a strong compet
 
 Contiki-NG's development is steered by a small group of (mostly) computer science researchers and it is distributed under a permissive license.
 
-
 <!-- Links, sorted alphabetically: -->
+[arduino-homepage]: https://www.arduino.cc
+[freertos-aws-homepage]: https://www.freertos.org/iot-libraries.html
+[freertos-homepage]: https://www.freertos.org
 [riot-arduino-nano]: https://doc.riot-os.org/group__boards__arduino-nano.html
 [riot-arduino]: https://doc.riot-os.org/group__sys__arduino.html
 [riot-community-process]: https://doc.riot-os.org/community-processes.html
 [riot-espc3-devkit]: https://doc.riot-os.org/group__boards__esp32c3__devkit.html
-[riot-forum]: https://forum.riot-os.org/
+[riot-forum]: https://forum.riot-os.org
 [riot-matrix]: https://matrix.to/#/#riot-os:matrix.org
 [riot-same54-xpro]: https://doc.riot-os.org/group__boards__same54-xpro.html
 [riot-zep-dispatcher]: https://github.com/RIOT-OS/RIOT/tree/master/dist/tools/zep_dispatch
+[zephyr-homepage]: https://www.zephyrproject.org
 [zephyr-tsc]: https://www.zephyrproject.org/wp-content/uploads/sites/38/2020/09/CLEAN-LF-Zephyr-Charter-20200624-effective-20200901.pdf
+[contiki-ng-homepage]: https://www.contiki-ng.org/
