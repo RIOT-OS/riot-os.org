@@ -35,7 +35,7 @@ Most MCU vendors provide an SDK that is tied to and only supports MCUs of that s
 The advantage of the vendor SDKs is that they are developed in lock-step with the hardware and expose all features of the hardware early on.
 The RIOT community can only start working on drivers once the MCUs are generally available and more exotic features that are only relevant to niche use cases may never be supported in favor of a cleaner and more portable API in RIOT.
 
-From a government point of view, RIOT is developed by a self-governed community, while the vendor SDKs are under tight control of the vendor.
+From a governance point of view, RIOT is developed by a self-governed community, while the vendor SDKs are under tight control of the vendor.
 The RIOT community has so for maintained many popular boards well after the vendors declared them obsolete, while vendor SDKs often phase out support for older MCUs sooner.
 
 Vendor specific SDKs typically do not have any copyleft clauses.
