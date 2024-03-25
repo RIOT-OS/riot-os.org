@@ -54,7 +54,7 @@ RIOT's set of modules and packages is not that vast, but RIOT's modules are seam
 This results in easier reuse of code and higher productivity without having to worry about interoperability issues of components and "impedance matching" between misaligned APIs.
 
 The Arduino software is released under a copyleft license and hardware support can be extended greatly beyond the official Arduino boards by using third-party Arduino cores.
-The development of the ecosystem is sponsored and controlled by a single company that owns the registered trademark of Arduino, while RIOT is governed by an independent community.
+The development of the ecosystem is sponsored and controlled by a single company that owns the registered trademark of Arduino, while with RIOT an [independent community][riot-community-process] is responsible for governance.
 
 ## Zephyr
 
