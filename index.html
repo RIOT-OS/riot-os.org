@@ -466,9 +466,9 @@ main: true
         <ul class="faq-list">
 
           {% for faqs in site.faqs %}
-            <li>
-              <div data-bs-toggle="collapse" class="collapsed question" href="#faq{{ forloop.index }}">{{ faqs.question }}<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-              <div id="faq{{ forloop.index }}" class="collapse" data-bs-parent=".faq-list">
+            <li id="{% if faqs.anchor %}{{ faqs.anchor }}{% else %}faq-{{ forloop.index }}{% endif %}">
+              <div data-bs-toggle="collapse" class="collapsed question" href="#faq-answer-{{ forloop.index }}">{{ faqs.question }}<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+              <div id="faq-answer-{{ forloop.index }}" class="collapse" data-bs-parent=".faq-list">
                 <p>
                   {{ faqs.content }}
                 </p>
