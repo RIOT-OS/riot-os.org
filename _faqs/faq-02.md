@@ -1,5 +1,6 @@
 ---
 question: Why LGPL?
+anchor: faq-why-lgpl
 ---
 
 Studies such as [this one](http://www.gartner.com/newsroom/id/2869521) show that small companies and start-ups are going to determine IoT. More than bigger companies, such small structures need to spread development and maintenance costs for the kernel and all the software that is not their core business. Our analysis is that this is more compatible with LGPL than with BSD/MIT.
