@@ -27,7 +27,7 @@ Members in the community mostly belong to one (or more) of the following groups:
 
 RIOT is distributed under a copyleft license and strongly prefers free and open source components over proprietary code and binary blobs.
 Still, RIOT does contain proprietary drivers (some even using binary blobs) where no free alternative is available, e.g. for the ESP WiFi chipset.
-<!-- FIXME: Make FAQ entries linkable and link to "Why LGPL?" -->
+See also [“Why LGPL?”](#faq-why-lgpl)
 
 ##### Vendor Specific SDKs
 
