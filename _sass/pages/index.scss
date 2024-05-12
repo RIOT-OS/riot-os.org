@@ -655,7 +655,7 @@ section {
     overflow: hidden;
     position: relative;
     background: linear-gradient(0deg, $dark 0%, darken($dark, 10) 100%);
-    padding: 0;
+    padding: 90px 0 0 0;
 
     .carousel-container {
         display: flex;
@@ -819,6 +819,10 @@ section {
       transform: translate(85px, 0%);
     }
   }
+}
+
+:root {
+  scroll-padding-top: 90px;
 }
 
 ///
