@@ -3,7 +3,7 @@ question: Why LGPL?
 anchor: faq-why-lgpl
 ---
 
-Studies such as [this one](http://www.gartner.com/newsroom/id/2869521) show that small companies and start-ups are going to determine IoT. More than bigger companies, such small structures need to spread development and maintenance costs for the kernel and all the software that is not their core business. Our analysis is that this is more compatible with LGPL than with BSD/MIT.
+Studies such as [this one](https://www.gartner.com/en/newsroom/press-releases/2014-10-09-gartner-says-by-2017-50-percent-of-internet-of-things-solutions-will-originate-in-startups-that-are-less-than-three-years-old) show that small companies and start-ups are going to determine IoT. More than bigger companies, such small structures need to spread development and maintenance costs for the kernel and all the software that is not their core business. Our analysis is that this is more compatible with LGPL than with BSD/MIT.
 
 We are of the opinion that, compared to BSD/MIT, LGPL will improve final user experience, security and privacy, by hindering device lock-down, favoring up-to-date, and field-upgradable code. We think this a more solid base to provide a consistent, compatible, secure-by-default standard system which developers can build upon to create trustworthy IoT applications, while not hindering business models based on closed source linked with RIOT (see the [automated tools](https://github.com/RIOT-OS/RIOT/tree/master/examples/bindist) provided to help check LGPL compliance, and/or [this technical guide](https://github.com/RIOT-OS/RIOT/wiki/LGPL-compliancy-guide))
 
