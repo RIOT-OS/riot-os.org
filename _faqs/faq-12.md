@@ -105,7 +105,7 @@ Contiki-NG's development is steered by a small group of (mostly) computer scienc
 [riot-arduino-nano]: https://doc.riot-os.org/group__boards__arduino-nano.html
 [riot-arduino]: https://doc.riot-os.org/group__sys__arduino.html
 [riot-community-process]: https://doc.riot-os.org/community-processes.html
-[riot-espc3-devkit]: https://doc.riot-os.org/group__boards__esp32c3__devkit.html
+[riot-esp32c3-devkit]: https://doc.riot-os.org/group__boards__esp32c3__devkit.html
 [riot-forum]: https://forum.riot-os.org
 [riot-matrix]: https://matrix.to/#/#riot-os:matrix.org
 [riot-same54-xpro]: https://doc.riot-os.org/group__boards__same54-xpro.html
