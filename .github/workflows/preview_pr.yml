@@ -15,7 +15,7 @@ jobs:
       ${{ github.event.workflow_run.event == 'pull_request' &&
       github.event.workflow_run.conclusion == 'success' }}
     steps:
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v4
         with:
           node-version: '14'
 
@@ -23,7 +23,7 @@ jobs:
         run: npm --global install surge
 
       - name: Download artifact
-        uses: dawidd6/action-download-artifact@v2
+        uses: dawidd6/action-download-artifact@v6
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           workflow: receive_pr.yml
@@ -33,7 +33,7 @@ jobs:
 
       - name: 'Get PR number'
         id: get-pr-number
-        uses: actions/github-script@v3
+        uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
