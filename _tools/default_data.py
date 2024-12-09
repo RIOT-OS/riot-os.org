@@ -118,6 +118,75 @@ DEFAULT_CONTRIBUTORS = [
         "avatar_url": "https://avatars.githubusercontent.com/u/5160052?v=4",
     },
 ]
+DEFAULT_MAINTAINERS = [
+    {
+        "login": "miri64",
+        "avatar_url": "https://avatars.githubusercontent.com/u/675644?v=4",
+        "name": "Martine Lenders",
+        "html_url": "https://github.com/miri64",
+        "admin": True,
+        "owner": False,
+        "areas": [
+            "sys/net",
+            "tests/*/tests/*.py",
+        ],
+    },
+    {
+        "login": "aabadie",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1375137?v=4",
+        "name": "Alexandre Abadie",
+        "html_url": "https://github.com/aabadie",
+        "admin": False,
+        "owner": False,
+        "areas": [
+            "pkg/semtech-loramac/",
+            "doc/",
+        ],
+    },
+    {
+        "login": "OlegHahm",
+        "name": "Oleg Hahm",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1590423?v=4",
+        "html_url": "https://github.com/OlegHahm",
+        "admin": False,
+        "owner": True,
+        "areas": [],
+    },
+    {
+        "login": "kaspar030",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4679640?v=4",
+        "name": "Kaspar Schleiser",
+        "html_url": "https://github.com/kaspar030",
+        "admin": False,
+        "owner": True,
+        "areas": [
+            "sys/include/ztimer.h",
+            "pm.c",
+        ],
+    },
+    {
+        "login": "benpicco",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1301112?v=4",
+        "html_url": "https://github.com/benpicco",
+        "name": "",
+        "admin": True,
+        "owner": False,
+        "areas": [
+            "drivers/at86rf215/",
+        ],
+    },
+    {
+        "login": "biboc",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4921425?v=4",
+        "html_url": "https://github.com/biboc",
+        "name": "biboc",
+        "admin": False,
+        "owner": False,
+        "areas": [
+            "cpu/samd21/",
+        ],
+    },
+]
 DEFAULT_STATS = {
     "boards": len(DEFAULT_BOARDS),
     "cpus": len(DEFAULT_BOARDS),

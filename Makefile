@@ -15,6 +15,7 @@ RIOT_DATA_FILES += $(DATA_DIR)/riot_contributors.yml
 RIOT_DATA_FILES += $(DATA_DIR)/riot_drivers.yml
 RIOT_DATA_FILES += $(DATA_DIR)/riot_drivers_cats.yml
 RIOT_DATA_FILES += $(DATA_DIR)/riot_cpus.yml
+RIOT_DATA_FILES += $(DATA_DIR)/riot_maintainers.yml
 
 WATCH ?= 0
 
@@ -39,6 +40,8 @@ update_riot_repo: $(RIOTBASE)
 ifeq ($(RIOTBASE),$(_DEFAULT_RIOTBASE))
 	@git -C $(RIOTBASE) pull
 endif
+
+$(DATA_DIR)/riot_maintainers.yml: $(RIOTBASE)/CODEOWNERS
 
 $(RIOT_DATA_FILES):
 	@$(RIOT_FETCH_DATA_CMD)

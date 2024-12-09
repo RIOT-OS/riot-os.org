@@ -16,7 +16,8 @@ except ImportError:
 
 from default_data import (
     DEFAULT_BOARDS, DEFAULT_CPUS, DEFAULT_DRIVERS,
-    DEFAULT_DRIVER_CATEGORIES, DEFAULT_CONTRIBUTORS, DEFAULT_STATS
+    DEFAULT_DRIVER_CATEGORIES, DEFAULT_CONTRIBUTORS, DEFAULT_STATS,
+    DEFAULT_MAINTAINERS,
 )
 
 DATA_DIR = os.getenv("DATA_DIR", os.path.join(os.path.abspath(__file__)))
@@ -57,6 +58,15 @@ cpus: ${cpus}
 commits: ${commits}
 """
 
+MAINTAINERS_TEMPLATE = """- login: ${login}
+  avatar_url: ${avatar_url}
+  html_url: https://github.com/${login}
+  name: ${name}
+  admin: ${admin}
+  owner: ${owner}
+  areas: ${areas}
+"""
+
 TEMPLATES = {
     "boards": BOARDS_TEMPLATE,
     "cpus": CPU_TEMPLATE,
@@ -64,6 +74,7 @@ TEMPLATES = {
     "drivers_cats": DRIVER_CATEGORIES_TEMPLATE,
     "contributors": CONTRIBUTORS_TEMPLATE,
     "stats": STATS_TEMPLATE,
+    "maintainers": MAINTAINERS_TEMPLATE,
 }
 
 
@@ -115,6 +126,51 @@ def fetch_contributors_data():
         { "login": login, "avatar_url": url }
         for login, url in fetched_contributors.items()
     ]
+
+
+def fetch_maintainer_data():
+    if requests is None:
+        print(
+            "Warning: 'requests' package is missing, default contributors "
+            "will be returned (only 10 contributors).\nYou can install "
+            "'requests' using 'make install_python_requirements'."
+        )
+        return DEFAULT_MAINTAINERS
+    if not os.getenv("GITHUB_TOKEN"):
+        print(
+            "Warning: no GitHub token provided via GITHUB_TOKEN environment "
+            "variable, default maintainers will be returned (only 6 "
+            "maintainers).\nYou need a GitHub personal access token with "
+            "admin:org > read:org scope."
+        )
+        return DEFAULT_MAINTAINERS
+    maintainers = get_team_members("maintainers")
+    admins = get_team_members("admin")
+    owners = get_team_members("owners")
+    maintainers = maintainers.union(admins)
+    maintainers = maintainers.union(owners)
+    maintainer_areas = get_maintainer_codeowner_patterns(maintainers)
+    res = []
+    for maintainer in maintainer_areas:
+        github_profile = get_github_user(maintainer)
+        if "login" not in github_profile or github_profile["login"] != maintainer:
+            print(
+                "Warning: error on fetching GitHub profile. Make sure "
+                "the GITHUB_TOKEN has appropriate rights"
+            )
+            return DEFAULT_MAINTAINERS
+        res.append(
+            {
+                "login": maintainer,
+                "name": github_profile["name"] if github_profile["name"] else "",
+                "avatar_url": github_profile["avatar_url"],
+                "html_url": github_profile["html_url"],
+                "admin": maintainer in admins,
+                "owner": maintainer in owners,
+                "areas": list(sorted(maintainer_areas[maintainer])),
+            }
+        )
+    return res
 
 
 def search_data(file_paths, regexp, parent_regexp=None, multi=False):
@@ -273,6 +329,54 @@ def fetch_stats_data():
     }
 
 
+def get_team_members(team):
+    token = os.getenv("GITHUB_TOKEN")
+    assert token is not None
+    members = requests.get(
+        f"https://api.github.com/orgs/RIOT-OS/teams/{team}/members",
+        headers={
+            "Accept": "application/vnd.github+json",
+            "Authorization": f"Bearer {token}",
+            "X-GitHub-Api-Version": "2022-11-28",
+        },
+    )
+    try:
+        return set(m["login"] for m in members.json())
+    except Exception as exc:
+        print(f"Error fetching team {team}: {exc}", file=sys.stderr)
+        raise
+
+
+def get_github_user(username):
+    token = os.getenv("GITHUB_TOKEN")
+    assert token is not None
+    user = requests.get(
+        f"https://api.github.com/users/{username}",
+        headers={
+            "Accept": "application/vnd.github+json",
+            "Authorization": f"Bearer {token}",
+            "X-GitHub-Api-Version": "2022-11-28",
+        },
+    )
+    return user.json()
+
+
+def get_maintainer_codeowner_patterns(maintainers):
+    maintainer_patterns = {m: set() for m in maintainers}
+
+    with open(os.path.join(RIOTBASE, "CODEOWNERS")) as codeowners_file:
+        for line in codeowners_file:
+            if re.search(r"^\s*#", line) or re.match(r"^\s*$", line):
+                # skip comments and empty lines
+                continue
+            pattern, *owners = re.split(r"\s+", line.strip())
+            for owner in owners:
+                owner = owner.lstrip("@")
+                if owner in maintainer_patterns:
+                    maintainer_patterns[owner].add(pattern.lstrip("/"))
+    return maintainer_patterns
+
+
 def main():
     """Main function."""
     if not os.path.exists(RIOTBASE):
@@ -290,11 +394,12 @@ def main():
         drivers = fetch_drivers_data()
         driver_categories = fetch_driver_categories_data()
         contributors = fetch_contributors_data()
+        maintainers = fetch_maintainer_data()
         stats = fetch_stats_data()
     for name, data in (
         ("boards", boards), ("cpus", cpus), ("drivers", drivers),
         ("drivers_cats", driver_categories), ("contributors", contributors),
-        ("stats", [stats])
+        ("stats", [stats]), ("maintainers", maintainers)
     ):
         render_data_to_file(name, data)
     if os.path.exists(RIOTBASE):
