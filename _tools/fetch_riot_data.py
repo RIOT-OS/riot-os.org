@@ -329,6 +329,18 @@ def fetch_stats_data():
     }
 
 
+def get_next_page(response):
+    if "Link" not in response.headers:
+        return None
+    links = re.split(r",\s*", response.headers["Link"])
+    for link in links:
+        params = re.split(r";\s*", link)
+        link_match = re.match("^<(.*)>$", params[0])
+        for param in params:
+            if param == 'rel="next"' and link_match:
+                return link_match[1]
+    return None
+
 def get_team_members(team):
     token = os.getenv("GITHUB_TOKEN")
     assert token is not None
@@ -340,11 +352,25 @@ def get_team_members(team):
             "X-GitHub-Api-Version": "2022-11-28",
         },
     )
-    try:
-        return set(m["login"] for m in members.json())
-    except Exception as exc:
-        print(f"Error fetching team {team}: {exc}", file=sys.stderr)
-        raise
+    res = set()
+    while members:
+        try:
+            res = res.union(set(m["login"] for m in members.json()))
+        except Exception as exc:
+            print(f"Error fetching team {team}: {exc}", file=sys.stderr)
+            raise
+        next_page = get_next_page(members)
+        if not next_page:
+            break
+        members = requests.get(
+            next_page,
+            headers={
+                "Accept": "application/vnd.github+json",
+                "Authorization": f"Bearer {token}",
+                "X-GitHub-Api-Version": "2022-11-28",
+            },
+        )
+    return res
 
 
 def get_github_user(username):
