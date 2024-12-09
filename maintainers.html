@@ -26,7 +26,7 @@ subtitle: RIOT is nurtured by a strong community of maintainers.
                   <a href="{{ maintainer.html_url }}" target="_blank"><img class="maintainers-img" src="{{ maintainer.avatar_url }}" alt="{{ maintainer.login }} avatar" /></a>
                   <a href="{{ maintainer.html_url }}" target="_blank">
                     @{{ maintainer.login }}
-                    {% if maintainer.name or maintainer.name != maintainer.login %}<small>({{ maintainer.name }})</small>{% endif %}
+                    {% if maintainer.name != "None" and maintainer.name != maintainer.login %}<small>({{ maintainer.name }})</small>{% endif %}
                   </a>
                 </h5>
                 <ul>
