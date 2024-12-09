@@ -21,11 +21,11 @@ subtitle: RIOT is nurtured by a strong community of maintainers.
       </p>
 
       <p id="maintainer-list">
-        <div class="row row-cols-1 g-4">
+        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols g-4">
         {% assign maintainer_by_login = site.data.riot_maintainers | sort_natural: "login" %}
         {% for maintainer in maintainer_by_login %}
-          <div class="col">
-            <div class="card shadow rounded">
+          <div class="col d-flex">
+            <div class="card shadow rounded w-100">
               <div class="card-body">
                 <h5 class="card-title">
                   <a href="{{ maintainer.html_url }}" target="_blank"><img class="maintainers-img" src="{{ maintainer.avatar_url }}" alt="{{ maintainer.login }} avatar" /></a>
