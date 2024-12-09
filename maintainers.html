@@ -24,11 +24,11 @@ subtitle: Our maintainers help RIOT to grow and improve.
           <div class="col">
             <div class="card shadow rounded w-100">
               <div class="card-body">
-                <h5 class="card-title">
+                <h5 class="card-title text-truncate">
                   <a href="{{ maintainer.html_url }}" target="_blank"><img class="maintainers-img" src="{{ maintainer.avatar_url }}" alt="{{ maintainer.login }} avatar" /></a>
                   <a href="{{ maintainer.html_url }}" target="_blank">
                     @{{ maintainer.login }}
-                    {% if maintainer.name != "None" and maintainer.name != maintainer.login %}<br/><small>({{ maintainer.name }})</small>{% endif %}
+                    {% if maintainer.name != "None" and maintainer.name != maintainer.login %}<small class="text-muted align-middle"> | {{ maintainer.name }}</small>{% endif %}
                   </a>
                 </h5>
                 <ul>
