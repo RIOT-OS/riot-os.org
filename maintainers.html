@@ -28,7 +28,7 @@ subtitle: Our maintainers help RIOT to grow and improve.
                   <a href="{{ maintainer.html_url }}" target="_blank"><img class="maintainers-img" src="{{ maintainer.avatar_url }}" alt="{{ maintainer.login }} avatar" /></a>
                   <a href="{{ maintainer.html_url }}" target="_blank">
                     @{{ maintainer.login }}
-                    {% if maintainer.name != "None" and maintainer.name != maintainer.login %}<small class="text-muted align-middle"> | {{ maintainer.name }}</small>{% endif %}
+                    {% if maintainer.name and maintainer.name != maintainer.login %}<small class="text-muted align-middle"> | {{ maintainer.name }}</small>{% endif %}
                   </a>
                 </h5>
                 <ul>

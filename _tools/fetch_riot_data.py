@@ -162,7 +162,7 @@ def fetch_maintainer_data():
         res.append(
             {
                 "login": maintainer,
-                "name": github_profile["name"],
+                "name": github_profile["name"] if github_profile["name"] else "",
                 "avatar_url": github_profile["avatar_url"],
                 "html_url": github_profile["html_url"],
                 "admin": maintainer in admins,
