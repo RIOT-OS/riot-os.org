@@ -8,16 +8,11 @@ subtitle: RIOT is nurtured by a strong community of maintainers.
   <section id="maintainers">
     <div class="container">
       <p>
-      This is the current list of maintainers within the RIOT community with there area of
-      expertise within the
-      <a href="https://github.com/RIOT-OS/RIOT/" target="_blank">RIOT codebase</a>.
-
-      If a maintainer is marked with <q>Has no chosen area of expertise</q>, they did not add any
-      ownership within
-      <a href="https://github.com/RIOT-OS/RIOT/blob/master/CODEOWNERS" target="_blank">
-        <tt>CODEOWNERS</tt>
-      </a>. This does not mean that they do not feel responsible for any part
-      of the code base, they just did not declare it.
+      The RIOT community is supported by the following maintainers.
+      If a maintainer has expertise in certain parts of the
+      <a href="https://github.com/RIOT-OS/RIOT">RIOT codebase</a> and has declared this within
+      <a href="https://github.com/RIOT-OS/RIOT/blob/master/CODEOWNERS">CODEOWNERS</a>, this is
+      explicitly noted.
       </p>
 
       <p id="maintainer-list">
@@ -43,8 +38,6 @@ subtitle: RIOT is nurtured by a strong community of maintainers.
                 {% endif %}
                 {% for area in maintainer.areas %}
                   <li><tt>{{ area }}</tt></li>
-                {% else %}
-                  <li>Has no chosen area of expertise</li>
                 {% endfor %}</ul>
               </div>
             </div>
