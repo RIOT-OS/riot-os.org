@@ -11,7 +11,7 @@ Since solutions competing with RIOT are quasi-exclusively BSD/MIT, we gauge that
 
 Last but not least, we think that (L)GPL is a better base than BSD/MIT to keep the community united in the mid and long run.
 
-For the record: we have also considered MIT/BSD (see [this thread](https://lists.riot-os.org/pipermail/devel/2014-December/001468.html)), but there was not enthusiastic majority supporting such a switch.
+For the record: we have also considered MIT/BSD (see, e.g., [this thread](https://forum.riot-os.org/t/switch-to-bsd/612)), but there was not enthusiastic majority supporting such a switch.
 
 Compare [https://github.com/RIOT-OS/RIOT/issues/2128][GH2128]
 
