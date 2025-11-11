@@ -250,7 +250,7 @@ def fetch_boards_data():
 def fetch_cpus_data():
     """Fetch all cpus Doxygen description data (name, doxygen group)."""
     files = [
-        "doc.txt",
+        "doc.md",
         os.path.join("include", "cpu.h"),
         os.path.join("include", "cpu_conf.h"),
         os.path.join("include", "periph_cpu.h"),
