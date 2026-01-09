@@ -245,27 +245,4 @@
       })
     });
   });
-
-  /**
-   * Create an 'iframe' element which shows the mastofeed
-   */
-  function loadMastodonTimeline() {
-    let iframe = document.createElement('iframe');
-    let timeline = $("#mastodon-timeline");
-
-    iframe.src = "https://www.riot-os.org/mastofeed/apiv2/feed?replies=false&boosts=false&theme=light&size=90.9";
-    iframe.title = "@RIOT_OS mastodon feed";
-    iframe.width = "100%";
-    iframe.height = "100%";
-    timeline.children('.placeholder').remove()
-    timeline.append(iframe);
-  }
-
-  /**
-   * We need to wait until we know the user accepts using third party cookies
-   */
-  $(window).on("cookiesAccepted", () => {
-    loadMastodonTimeline();
-  });
-
 })()
