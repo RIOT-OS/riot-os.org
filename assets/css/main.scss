@@ -16,7 +16,6 @@ $baseurl: "{{ site.baseurl }}";
 @import "pages/index";
 @import "pages/use-case";
 
-@import "components/cookie-alert";
 @import "components/header";
 @import "components/navbar";
 @import "components/simple-page-header";
