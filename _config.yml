@@ -4,6 +4,10 @@ exclude:
   - _tools
   - Makefile
   - README.md
+include:
+  - .well-known
+keep_files:
+  - .well-known
 
 sass:
     sass_dir: _sass

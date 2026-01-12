@@ -1,0 +1,5 @@
+Contact: mailto:security@riot-os.org
+Expires: 2028-01-13T10:09:55.000Z
+Policy: https://git.riot-os.org/RIOT-OS/RIOT/src/branch/master/SECURITY.md
+Preferred-Languages: en
+Encryption: https://riot-os.org/assets/keys/security.asc
