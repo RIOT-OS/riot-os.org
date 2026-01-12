@@ -411,6 +411,7 @@ def main():
         drivers = DEFAULT_DRIVERS
         driver_categories = DEFAULT_DRIVER_CATEGORIES
         contributors = DEFAULT_CONTRIBUTORS
+        maintainers = DEFAULT_MAINTAINERS
         stats = DEFAULT_STATS
     else:
         sys.stdout.write("Generating RIOT data files... ")
