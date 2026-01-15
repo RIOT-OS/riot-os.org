@@ -24,7 +24,7 @@ DATA_DIR = os.getenv("DATA_DIR", os.path.join(os.path.abspath(__file__)))
 DEFAULT_RIOT_BASE = os.path.join(os.path.abspath(__file__), "_RIOT")
 RIOTBASE = os.path.abspath(os.getenv("RIOTBASE", DEFAULT_RIOT_BASE))
 
-RIOT_DOC_BASE_URL = "https://doc.riot-os.org"
+RIOT_DOC_BASE_URL = "https://api.riot-os.org"
 TEMPLATE_BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 #
