@@ -3,3 +3,4 @@ Expires: 2028-01-13T10:09:55.000Z
 Policy: https://guide.riot-os.org/general/security/
 Preferred-Languages: en
 Encryption: https://riot-os.org/assets/keys/security.asc
+Bug-Bounty: None
