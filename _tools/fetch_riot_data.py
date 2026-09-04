@@ -193,7 +193,7 @@ def search_data(file_paths, regexp, parent_regexp=None, multi=False):
                         continue
                     else:
                         break
-                name = match.group(2)
+                name = match.group(2).replace('"', '\\"')
                 group = match.group(1).replace("_", "__")
                 result = { "name": f"\"{name}\"", "group": group }
                 if parent_regexp is not None:

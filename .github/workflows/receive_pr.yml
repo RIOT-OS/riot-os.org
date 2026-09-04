@@ -16,25 +16,31 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.RIOT_CI_ACCESS_TOKEN }}
 
-      # Use GitHub Actions' cache to shorten build times and decrease load on servers
-      - uses: actions/cache@v4
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
-          restore-keys: ${{ runner.os }}-gems-
+          ruby-version: '3.0.2'
+          bundler-cache: true
+
+      - name: Setup Environment
+        run: |
+          gem update --system 3.3.22
+          gem install jekyll -v 4.2.2
+          gem install bundler -v 2.4.22
+          bundle install
 
       - name: Build
-        uses: jerryjvl/jekyll-build-action@v1
+        run: make build
 
       - name: Save PR number
         run: |
           mkdir -p ./pr
           echo ${{ github.event.number }} > ./pr/number
 
-      # push build to workflow artifacts
       - uses: actions/upload-artifact@v4
         with:
           name: site
           path: |
             ./_site
             ./pr
+
