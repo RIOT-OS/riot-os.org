@@ -20,7 +20,7 @@ jobs:
           node-version: '14'
 
       - name: Install surge
-        run: npm --global install surge
+        run: npm --global install surge@latest
 
       - name: Download artifact
         uses: dawidd6/action-download-artifact@v6
