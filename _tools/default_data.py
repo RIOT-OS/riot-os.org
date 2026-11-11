@@ -2,29 +2,28 @@
 # Default data, only used when RIOTBASE is not provided or doesn't exist
 #
 DEFAULT_BOARDS = [
-    { "name": "Arduino Duemilanove", "group": "arduino-duemilanove" },
-    { "name": "Atmel SAM D10 Xplained Mini", "group": "samd10-xmini" },
-    { "name": "MSB-IoT", "group": "msbiot" },
-    { "name": "Native Board", "group": "native" },
-    { "name": "Particle Xenon", "group": "particle-xenon" },
-    { "name": "PineTime", "group": "pinetime" },
-    { "name": "STM32 Nucleo-L4R5ZI", "group": "nucleo144-l4r5" },
-    { "name": "STM32 Nucleo-L552ZE-Q", "group": "nucleo-l552ze-q" },
-    { "name": "SiFive HiFive1 RISC-V board", "group": "hifive1" },
-    { "name": "nRF52840-MDK", "group": "nrf52840-mdk" }
+    { "name": "Arduino Duemilanove", "slug": "arduino-duemilanove" },
+    { "name": "Atmel SAM D10 Xplained Mini", "slug": "samd10-xmini" },
+    { "name": "MSB-IoT", "slug": "msbiot" },
+    { "name": "Native64 Board", "slug": "native64" },
+    { "name": "Particle Xenon", "slug": "particle-xenon" },
+    { "name": "PineTime", "slug": "pinetime" },
+    { "name": "STM32 Nucleo-L4R5ZI", "slug": "nucleo-l4r5zi" },
+    { "name": "STM32 Nucleo-L552ZE-Q", "slug": "nucleo-l552ze-q" },
+    { "name": "SiFive HiFive1 RISC-V board", "slug": "hifive1" },
+    { "name": "nRF52840-MDK", "slug": "nrf52840-mdk" }
 
 ]
 DEFAULT_CPUS = [
-    { "group": "mips__pic32mz", "name": "PIC32MZ" },
-    { "group": "nrf5x__common", "name": "Nordic nRF5x MCU" },
-    { "group": "lm4f120", "name": "LM4F" },
-    { "group": "esp32", "name": "ESP32" },
-    { "group": "nrf5x__common", "name": "Nordic nRF5x MCU" },
-    { "group": "samd21", "name": "Atmel SAMD10/SAMD20/SAMD21/SAMR21" },
-    { "group": "sam3", "name": "Atmel SAM3" },
-    { "group": "cc26x2__cc13x2", "name": "TI CC26x2, CC13x2" },
-    { "group": "esp32", "name": "ESP32" },
-    { "group": "lpc1768", "name": "NXP LPC1768" }
+    { "slug": "nrf5x_common", "name": "Nordic nRF5x MCU" },
+    { "slug": "lm4f120", "name": "LM4F" },
+    { "slug": "esp32", "name": "ESP32" },
+    { "slug": "nrf5x_common", "name": "Nordic nRF5x MCU" },
+    { "slug": "samd21", "name": "Atmel SAMD10/SAMD20/SAMD21/SAMR21" },
+    { "slug": "sam3", "name": "Atmel SAM3" },
+    { "slug": "cc26x2_cc13x2", "name": "TI CC26x2, CC13x2" },
+    { "slug": "esp32", "name": "ESP32" },
+    { "slug": "lpc1768", "name": "NXP LPC1768" }
 ]
 DEFAULT_DRIVERS = [
     {
