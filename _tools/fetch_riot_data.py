@@ -32,11 +32,11 @@ TEMPLATE_BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # Data files templates
 #
 BOARDS_TEMPLATE = """- name: ${name}
-  apiurl: ${doc_url}/boards/${group}
+  apiurl: ${doc_url}/boards/${slug}/
 """
 
 CPU_TEMPLATE = """- name: ${name}
-  apiurl: ${doc_url}/cpus/${group}
+  apiurl: ${doc_url}/cpus/${slug}/
 """
 
 DRIVERS_TEMPLATE = """- name: ${name}
@@ -236,33 +236,33 @@ def _subdirs(dirname, exclude=set()):
     return sorted(set(dirnames) - exclude)
 
 
+def search_doc_data(dirname, regexp, exclude=set()):
+    """Search doxygen data in the doc.md file of each subdirectory."""
+    results = []
+    for subdir in _subdirs(dirname, exclude=exclude):
+        doc_file = os.path.join(RIOTBASE, dirname, subdir, "doc.md")
+        if not os.path.exists(doc_file):
+            continue
+        # Only the first matching group documents the directory itself
+        for result in search_data([doc_file], regexp, multi=True)[:1]:
+            result.update({"slug": subdir})
+            results += [result]
+    return results
+
+
 def fetch_boards_data():
-    """Fetch all boards Doxygen description data (name, doxygen group)."""
-    boards_doc = [
-        os.path.join(RIOTBASE, line.split(":")[0])
-        for line in subprocess.check_output(
-            shlex.split(f"git -C {RIOTBASE} grep -n '@defgroup\\s*boards_'")
-        ).decode()[:-1].split("\n")
-    ]
-    boards = search_data(boards_doc, r"^.*boards_([a-zA-Z0-9\-_\.]+)[ ]+(.*)$")
+    """Fetch all boards Doxygen description data (name, page slug)."""
+    boards = search_doc_data(
+        "boards", r"^.*boards_([a-zA-Z0-9\-_\.]+)[ ]+(.*)$",
+        exclude=set(["common"])
+    )
     # Some board groups are not relevant and have to be removed
     return [board for board in boards if not "common" in board["group"]]
 
 
 def fetch_cpus_data():
-    """Fetch all cpus Doxygen description data (name, doxygen group)."""
-    files = [
-        "doc.md",
-        os.path.join("include", "cpu.h"),
-        os.path.join("include", "cpu_conf.h"),
-        os.path.join("include", "periph_cpu.h"),
-    ]
-    cpu_doc = [
-        os.path.join(RIOTBASE, "cpu", cpu_path, file_path)
-        for cpu_path in _subdirs("cpu") for file_path in files
-        if os.path.exists(os.path.join(RIOTBASE, "cpu", cpu_path, file_path))
-    ]
-    cpus = search_data(cpu_doc, r"^.*cpu_([a-zA-Z0-9\-_\.]+)[ ]+(.*)$")
+    """Fetch all cpus Doxygen description data (name, page slug)."""
+    cpus = search_doc_data("cpu", r"^.*cpu_([a-zA-Z0-9\-_\.]+)[ ]+(.*)$")
     # Some cpu names/groups are not relevant and have to be removed or need
     # cleanup
     return [
